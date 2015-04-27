@@ -1,0 +1,111 @@
+<?php 
+session_start();
+if (!isset($_GET['dbg']))
+	ini_set('display_errors',  FALSE);
+else ini_set('display_errors', TRUE);
+define ( 'PATH', ''); 
+define("DIRECTORY_CONFIG", 		"config/"); 
+require_once(DIRECTORY_CONFIG . 'config.php'); 
+include_once(DIRECTORY_CLASS  . 'class.oracle_db.php'); 
+echo "<pre>";
+$database = new oracle_db();
+
+//$query = "SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL FROM ( SELECT DIA, SUM(TOTAL) AS TOTAL, SUM(CASE WHEN CODIGO_RESPUESTA < 11 THEN TOTAL ELSE 0 END ) AS ACCEPTED, SUM(CASE WHEN CODIGO_RESPUESTA > 10 THEN TOTAL ELSE 0 END ) AS REJECTED FROM SED.TBL_MON_BIN_POS_NAC_201410 WHERE BIN IN ( SELECT PREFIJO FROM APP.PRA_TBL_APP_PREAUTORIZADOR ) AND DIA = 19 GROUP BY DIA UNION SELECT DIA, SUM(TOTAL) AS TOTAL, SUM(CASE WHEN CODIGO_RESPUESTA < 11 THEN TOTAL ELSE 0 END ) AS ACCEPTED, SUM(CASE WHEN CODIGO_RESPUESTA > 10 THEN TOTAL ELSE 0 END ) AS REJECTED FROM SED.TBL_MON_BIN_POS_INT_201410 WHERE BIN IN ( SELECT PREFIJO FROM APP.PRA_TBL_APP_PREAUTORIZADOR ) AND DIA = 19 GROUP BY DIA ) GROUP BY DIA";
+
+//$query = "SELECT * FROM " . PFX_MAIN_DB . "token ";
+//$result = $database->query( $query , array( ':dia' => 1 ));
+//var_dump( $result );
+//$query = "SELECT * FROM APP.PRA_TBL_APP_PREAUTORIZADOR  WHERE rownum <= 10 ";
+
+//$query = "SELECT * FROM " . PFX_MAIN_DB . "service_user ";
+
+//$query = "SELECT * FROM APP.TBL_SMS_LOG WHERE ID_BROKER = 'P' AND  rownum <= 10 ";
+
+//$query =" SELECT COUNT(*) AS TOTAL FROM APP.TBL_SMS_LOG WHERE ID_BROKER = 'P' AND LOCAL_DATE > TO_DATE(:lcl_date, 'yyyy-mm-dd hh24:mi') ";
+
+//$result = $database->query( $query)//,  ); //,
+//array(':dia' => 19)  );
+
+
+//$result = $database->query( $query, array(':lcl_date' => date('Y-m-d 00:00'))); 
+//$query = "SELECT SUM(TOTAL) AS TOTAL, CODIGO_RESPUESTA FROM SED.TBL_MON_HORA_ATM_NAC_201411 WHERE  CODIGO_RESPUESTA > 10  AND DIA = :dia AND rownum < 10  GROUP BY CODIGO_RESPUESTA ";
+/*
+$query = "SELECT * FROM SED.TBL_MON_HORA_POS_NAC_" . date('Ym') . " WHERE (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE') AND KC0_INDICADOR_DE_COMERCIO_ELEC IN (5,6)  AND rownum < 6";
+
+$query = "SELECT DIA, SUM(TOTAL) AS TOTAL,  
+	  			SUM(CASE WHEN CODIGO_RESPUESTA < 11 THEN TOTAL ELSE 0 END ) AS ACCEPTED,  
+	  			SUM(CASE WHEN CODIGO_RESPUESTA > 10 THEN TOTAL ELSE 0 END ) AS REJECTED  ";
+$query = "SELECT DIA FROM SED.TBL_MON_HORA_POS_NAC_" . date('Ym') . "
+	  		WHERE (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE')  AND DIA = :dia  AND KC0_INDICADOR_DE_COMERCIO_ELEC IN ('5','6') 
+		GROUP BY DIA  ";
+
+$cod = "";
+$query = "SELECT su_user, tk_token_apple
+                        FROM " . PFX_MAIN_DB . "service_user
+                                INNER JOIN " . PFX_MAIN_DB . "token ON tk_user = su_user
+                        WHERE su_se_id_service = :id_service AND tk_timestamp > :since AND su_user LIKE '" . $cod . "%'";
+//$query = "SELECT *  FROM " . PFX_MAIN_DB . "service_user";
+
+//echo $query;
+//$result = $database->query( $query , array( ':id_service' => 1, ':since' => 9999 ));
+
+$query = " SELECT * FROM " . PFX_MAIN_DB . "alert WHERE rownum < 10  ORDER BY id_alert DESC  ";
+$result = $database->query( $query , array( ':id_service' => 1, ':since' => 9999 ));
+*/
+
+$query = "SELECT * FROM " . PFX_MAIN_DB . "lastupdate " ;
+$result = $database-> query ();
+
+echo "<p>";
+echo "<p>";
+
+echo "<p> POS_NAC_" . date('Ym') . " <br/> ";
+
+$query = "SELECT * FROM SED.TBL_MON_HORA_POS_NAC_" . date('Ym') . " WHERE rownum = 1 AND DIA = :dia ";
+$result = $database->query( $query , array( ':dia' => 1 ));
+
+var_dump( $result );
+
+echo "<p>";
+echo "<p>";
+echo "<p>";
+echo "<p> POS_INT_" . date('Ym') . " <br/> ";
+
+$query = "SELECT * FROM SED.TBL_MON_HORA_POS_INT_" . date('Ym') . " WHERE rownum = 1 AND DIA = :dia ";
+$result = $database->query( $query , array( ':dia' => 1 ));
+var_dump( $result);
+
+
+
+echo "<p>";
+echo "<p>";
+echo "<p>";
+
+echo "<p> ATM_NAC_" . date('Ym') . " <br/> ";
+
+$query = "SELECT * FROM SED.TBL_MON_HORA_ATM_NAC_" . date('Ym') . " WHERE rownum = 1 AND DIA = :dia ";
+$result = $database->query( $query , array( ':dia' => 1 )); 
+
+var_dump( $result );
+
+echo "<p>";
+echo "<p>";
+echo "<p>";
+echo "<p> ATM_INT_" . date('Ym') . " <br/> ";
+
+$query = "SELECT * FROM SED.TBL_MON_HORA_ATM_INT_" . date('Ym') . "  WHERE rownum = 1 AND DIA = :dia ";
+$result = $database->query( $query , array( ':dia' => 1 )); 
+
+
+var_dump( $result);
+
+
+echo "<p>";
+echo "<p>";
+echo "<p>";
+
+echo "DATABASE: <br/>";
+var_dump( $database );
+
+echo "</pre>";
+?>

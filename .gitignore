@@ -1,0 +1,23 @@
+recursos
+
+.project
+
+gfx/Sin título-5.fw.png
+
+.DS_STORE
+
+.DS_Store
+
+.DS_Store
+
+*.pem
+
+*.p12
+
+*.pem
+
+certificados_pem/server_certificates_bundle_production.p12
+
+certificados_pem/entrust_root_certification_authority.pem
+
+*.p12

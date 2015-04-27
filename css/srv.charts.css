@@ -1,0 +1,94 @@
+/** Charts Style **/
+.overlay {
+	width: 	160px;
+	height: 100px;
+	position: absolute;
+	top: 	 90px; /* chartArea top  */
+	left: 	 55px; /* chartArea left */
+}
+
+.overlay_title {
+	width: 	100px;
+	height:  20px;
+	position: absolute;
+	top: 	 10px; /* chartArea top  */
+	left: 	220px; /* chartArea left */
+	
+	color: 	#666;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.overlay-source {
+	position: absolute;
+	top: 	100px; /* chartArea top  */
+	left: 	270px; /* chartArea left */
+	
+}
+
+.overlay-source div {
+	width: 70px;
+	height: 70px;
+	padding-top: 19px;
+	text-align:center;
+	color: 	#fefefe;
+	background: #333;
+	text-align: center;
+	font-size: 1.5em;
+	border-radius: 50%;
+}
+
+.chart-ring {
+	height: 270px;
+	/*width:  330px;*/
+	width: 300px;
+	float: left;
+}
+
+.chart-side {
+	height: 270px;
+	/*width:   80px;*/
+	width: 14%;
+	float: left;
+	/*background: #0d995f;*/ 
+	background: #333333;  
+	color: #fff;
+	
+	text-align:left; 
+	padding: 120px 0; 
+	font-size: 1.5em
+}
+
+.chart-bottom {
+	height: 40px;
+	/*width:   80px;*/
+	width: 300px;
+	float: left;
+	background: #0d995f; 
+	color: #fff;
+	
+	text-align:center;  
+	font-size: 1.5em
+}
+
+
+
+.chart-table {
+	
+}
+
+.chart-table-side {
+	color: #fff;
+	background: #990D17 !important; 
+	font-size: 1.2em;
+	width:   20px;
+	top:0; bottom: 0;
+}
+
+.rotate {
+-moz-transform: rotate(-90.0deg);  /* FF3.5+ */
+ -ms-transform: rotate(-90.0deg);  /* IE9+ */
+  -o-transform: rotate(-90.0deg);  /* Opera 10.5 */
+-webkit-transform: rotate(-90.0deg);  /* Safari 3.1+, Chrome */
+     transform: rotate(-90.0deg);  /* Standard */
+}
