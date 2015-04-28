@@ -12,7 +12,7 @@ require_once(DIRECTORY_CONFIG . 'config_views.php');
 
 include_once(DIRECTORY_CLASS  . 'class.object.php');
 include_once(DIRECTORY_CLASS  . 'class.log.php');
-include_once(DIRECTORY_CLASS  . 'class.oracle_db.php'); 
+require_once(DIRECTORY_CLASS  . 'class.pdo_mysql.php');
 include_once(DIRECTORY_CLASS  . 'class.session.php');
 include_once(DIRECTORY_CLASS  . 'class.index.php');
 

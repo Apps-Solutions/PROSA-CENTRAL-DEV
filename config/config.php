@@ -7,7 +7,7 @@ define('SYS_MAIL', 				'admin@gruposellcom.com');
 define('PFX_SYS', 				'pra_');
 
   
-/****************** Main DB Configuration ******************/ 
+/****************** Main DB Configuration *****************
 define ("ORCL_HOST",            '192.168.105.89');
 define ("ORCL_PORT",            '1527');
 define ("ORCL_SERVICE_NAME",    'ROP');
@@ -16,7 +16,13 @@ define ("ORCL_PASSWORD",        'Apps_mo1');
 
 define ("PFX_MAIN_DB", 			'APP.pra_');
 define ("PFX_SRV_DB", 			'SED.');
-define ("PFX_SMS_DB", 			'SMS.');
+define ("PFX_SMS_DB", 			'SMS.');*/ 
+
+define("DB_HOST", 				'localhost');
+define("DB_USERNAME", 			'root');
+define("DB_PASSWORD", 			'root');
+define("DB_NAME", 				'prosa');
+define("PFX_MAIN_DB", 			'rg_');
 
 /****************** Time intervals Configuration ******************/ 
 define ("TIME_DB_UPDATE",		10); 	// Intervalo de tiempo de actualización de tablas de BD de transacciones
