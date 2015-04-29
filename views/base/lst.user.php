@@ -1,8 +1,8 @@
 <?php
 
 global $Session; 
-$id_client = $Session->get_user_client();
-
+//$id_client = $Session->get_user_client();
+$id_client = 5;
 if ( !$id_client ){ 
 	require_once DIRECTORY_VIEWS. 'base/403.php';
 	die();

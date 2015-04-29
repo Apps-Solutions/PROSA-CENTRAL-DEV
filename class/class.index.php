@@ -56,7 +56,10 @@ class Index {
 		global $config_menu;
 		global $Session; 
 		
-		return $this->loop_menu( $Session->build_menu() ); 
+	
+		print_r($Session->build_menu()) ;
+	  
+	 	return $this->loop_menu( $Session->build_menu() );
 	}
 	 
 	function loop_menu( $link, $deep = 0 ){ 
@@ -110,7 +113,7 @@ class Index {
 	function logic( $command ){
 		global $uiCommand;
         global $Session;
-		
+		/*
         if(!in_array($Session->get_level(),$uiCommand[$command][0])) {
             $command = LOGIN; 
         }
@@ -118,7 +121,7 @@ class Index {
 		if($Session->logged_in() && !isset($uiCommand[$command])) {
            $command = LOGIN; 
         }
-
+*/
 		$this->title      = $uiCommand[$command]['1'];
 		$this->content    = $uiCommand[$command]['2'];
 		$this->js         = $uiCommand[$command]['3'];
