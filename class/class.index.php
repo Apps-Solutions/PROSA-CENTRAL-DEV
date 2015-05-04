@@ -113,7 +113,7 @@ class Index {
 	function logic( $command ){
 		global $uiCommand;
         global $Session;
-		/*
+		/**/
         if(!in_array($Session->get_level(),$uiCommand[$command][0])) {
             $command = LOGIN; 
         }
@@ -121,7 +121,7 @@ class Index {
 		if($Session->logged_in() && !isset($uiCommand[$command])) {
            $command = LOGIN; 
         }
-*/
+
 		$this->title      = $uiCommand[$command]['1'];
 		$this->content    = $uiCommand[$command]['2'];
 		$this->js         = $uiCommand[$command]['3'];

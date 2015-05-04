@@ -540,7 +540,7 @@ class DataTable{
 						foreach($this->columns as $k => $cols)
 						{
 								if( $cols['export'] === TRUE )
-										$head_xls[] = utf8_encode($cols['lbl']); //utf8_encode()
+										$head_xls[] = $cols['lbl']; //utf8_encode()
 						}
 						
 						if ( $result !== FALSE )
@@ -575,7 +575,7 @@ class DataTable{
 												require $this->template_xls; 
 												$resp = ob_get_clean();
 												$row = array();
-												$resp=utf8_decode($resp); //utf8_decode(); 
+												$resp=$resp; //utf8_decode(); 
 												$row = explode('|', $resp);
 												
 												$xls->insert_row( $row );

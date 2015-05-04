@@ -27,10 +27,10 @@ class Client extends Object {
 			$result= $this->db->query( $query, array( ":id_client" => $this->id_client) );
 			
 			if ( !$result ){
-				$this->set_error( "Ocurrió un error al consultar la información de la BBDD. ", ERR_DB_QRY, 1 );
+				$this->set_error( "Ocurriï¿½ un error al consultar la informaciï¿½n de la BBDD. ", ERR_DB_QRY, 1 );
 				return FALSE;
 			} else if ( count($result) == 0 ){
-				$this->set_error( "No se encontró el registro. ", ERR_DB_NOT_FOUND, 1 );
+				$this->set_error( "No se encontrï¿½ el registro. ", ERR_DB_NOT_FOUND, 1 );
 				$this->clean();
 			} else {
 				$info = $result[0];
@@ -50,7 +50,7 @@ class Client extends Object {
 	
 	private function get_users(){
 		if ($this->code != ""){
-		/*	$ldap = new LDAP();
+		/**/	$ldap = new LDAP();
 			$branch = "OU=" . $this->code . ",OU=Nacional,OU=Cliente"; 
 			$users = $ldap->search_branch( $branch ); 
 			foreach ($users as $j => $usr) { 
@@ -61,7 +61,7 @@ class Client extends Object {
 			foreach ($users as $j => $usr) { 
 				$this->users[] = $usr;  
 			}
-		*/}
+		}
 	}
 	
 	private function get_services(){
@@ -83,7 +83,7 @@ class Client extends Object {
 					} 
 				}
 			} else {
-				$this->set_error( "Ocurrió un error al consultar los servicios en la BBDD. ", ERR_DB_QRY, 1 );
+				$this->set_error( "Ocurriï¿½ un error al consultar los servicios en la BBDD. ", ERR_DB_QRY, 1 );
 			} 
 		}
 	}
@@ -111,11 +111,11 @@ class Client extends Object {
 	
 	private function validate(){ 
 		if ( !$this->client != '' ){
-			$this->set_error( 'Nombre de Cliente vacío. ', ERR_VAL_EMPTY );
+			$this->set_error( 'Nombre de Cliente vacï¿½o. ', ERR_VAL_EMPTY );
 			return FALSE;
 		} 
 		if ( !$this->code != '' ){
-			$this->set_error( 'Código de Cliente vacío. ', ERR_VAL_EMPTY );
+			$this->set_error( 'Cï¿½digo de Cliente vacï¿½o. ', ERR_VAL_EMPTY );
 			return FALSE;
 		} 
 		return TRUE;  
@@ -152,13 +152,13 @@ class Client extends Object {
 				if ( !$resp ){ 
 					$errs = $this->db->error; 
 					// $errs[(count($errs)-1)] 
-					$this->set_error( "Ocurrió un error al intentar guardar la infomración. (save)" , ERR_DB_EXEC, 2);
+					$this->set_error( "Ocurriï¿½ un error al intentar guardar la infomraciï¿½n. (save)" , ERR_DB_EXEC, 2);
 					return FALSE;
 				} 
 				else return TRUE;
 			}
 		} else {
-			$this->set_error( 'Acción restringida. ', SES_RESTRICTED_ACCESS );
+			$this->set_error( 'Acciï¿½n restringida. ', SES_RESTRICTED_ACCESS );
 			return FALSE; 
 		}
 	}
@@ -170,12 +170,12 @@ class Client extends Object {
 			$data = array( ':id_client' => $this->id_client ); 
 			$resp = $this->db->execute( $query, $data ); 
 			if ( !$resp ){  
-				$this->set_error( "Ocurrió un error al intentar borrar el registro. (delete)" , ERR_DB_EXEC, 2);
+				$this->set_error( "Ocurriï¿½ un error al intentar borrar el registro. (delete)" , ERR_DB_EXEC, 2);
 				return FALSE;
 			} 
 			else return TRUE;
 		} else {
-			$this->set_error( 'Acción restringida. ', SES_RESTRICTED_ACCESS );
+			$this->set_error( 'Acciï¿½n restringida. ', SES_RESTRICTED_ACCESS );
 			return FALSE; 
 		}
 	}
@@ -205,7 +205,7 @@ class Client extends Object {
 					if ( !$result ){ 
 						$errs = $this->db->error; 
 						// $errs[(count($errs)-1)] 
-						$this->set_error( "Ocurrió un error al intentar guardar la infomración. (set_service) " , ERR_DB_EXEC, 2);
+						$this->set_error( "Ocurriï¿½ un error al intentar guardar la infomraciï¿½n. (set_service) " , ERR_DB_EXEC, 2);
 						return FALSE;
 					} 
 					else return TRUE;
@@ -214,12 +214,12 @@ class Client extends Object {
 				
 				
 			} else {
-				$this->set_error( 'Servicio inválido. ', SES_RESTRICTED_ACCESS );
+				$this->set_error( 'Servicio invï¿½lido. ', SES_RESTRICTED_ACCESS );
 				return FALSE; 
 			}
 			
 		} else {
-			$this->set_error( 'Acción restringida. ', SES_RESTRICTED_ACCESS );
+			$this->set_error( 'Acciï¿½n restringida. ', SES_RESTRICTED_ACCESS );
 			return FALSE; 
 		}
 	}
@@ -240,7 +240,7 @@ class Client extends Object {
 			
 			return $response;
 		} else {
-			$this->set_error("Acción restringida get_client_services_form ", SES_RESTRICTED_ACTION, 3 );
+			$this->set_error("Acciï¿½n restringida get_client_services_form ", SES_RESTRICTED_ACTION, 3 );
 			ob_start();
 			require DIRECTORY_VIEWS . "base/403.php"; 
 			$response .= ob_get_clean(); 
@@ -273,7 +273,7 @@ class Client extends Object {
 			}
 			 
 		} else {
-			$this->set_error("Acción restringida get_client_services_form ", SES_RESTRICTED_ACTION, 3 ); 
+			$this->set_error("Acciï¿½n restringida get_client_services_form ", SES_RESTRICTED_ACTION, 3 ); 
 			require DIRECTORY_VIEWS . "base/403.php";   
 		} 
 	}
@@ -297,7 +297,7 @@ class Client extends Object {
 			}
 		/*	
 		} else {
-			$this->set_error("Acción restringida get_client_services_form ", SES_RESTRICTED_ACTION, 3 ); 
+			$this->set_error("Acciï¿½n restringida get_client_services_form ", SES_RESTRICTED_ACTION, 3 ); 
 			require DIRECTORY_VIEWS . "base/403.php";   
 		}
 			*/	
@@ -335,7 +335,7 @@ class Client extends Object {
 						}
 						return $response;
 					} else {
-						$this->set_error("Ocurrió un error al cargar la información.",ERR_DB_QRY);
+						$this->set_error("Ocurriï¿½ un error al cargar la informaciï¿½n.",ERR_DB_QRY);
 						return FALSE;
 					} 
 				} else {
@@ -349,7 +349,7 @@ class Client extends Object {
 				return $response;   
 			}
 		} else {
-			$this->set_error("Acción restringida get_client_users_services_table ", SES_RESTRICTED_ACTION, 3 );
+			$this->set_error("Acciï¿½n restringida get_client_users_services_table ", SES_RESTRICTED_ACTION, 3 );
 			ob_start();
 			require DIRECTORY_VIEWS . "base/403.php"; 
 			$response .= ob_get_clean(); 
@@ -421,7 +421,7 @@ class Client extends Object {
 				if ( !$result )
 				{ 
 					$errs = $this->db->error; 
-					$this->set_error( "Ocurrió un error al intentar guardar la infomración. (set_client_service) " , ERR_DB_EXEC, 2);
+					$this->set_error( "Ocurriï¿½ un error al intentar guardar la infomraciï¿½n. (set_client_service) " , ERR_DB_EXEC, 2);
 					return FALSE;
 				} 
 				else
@@ -431,14 +431,14 @@ class Client extends Object {
 			}
 			else
 			{
-				$this->set_error( 'Servicio inválido. ', SES_RESTRICTED_ACCESS );
+				$this->set_error( 'Servicio invï¿½lido. ', SES_RESTRICTED_ACCESS );
 				return FALSE; 
 			}
 			
 		}
 		else
 		{
-			$this->set_error( 'Acción restringida. ', SES_RESTRICTED_ACCESS );
+			$this->set_error( 'Acciï¿½n restringida. ', SES_RESTRICTED_ACCESS );
 			return FALSE; 
 		}
 	}

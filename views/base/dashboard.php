@@ -2,7 +2,7 @@
 
 ?> 
 	<div class="row" id="dashboard-header"> 
-		<h3 class="col-sm-12"> Bienvenido <?php //echo $Session->get_name(); ?> </h3>   
+		<h3 class="col-sm-12"> Bienvenido <?php echo $Session->get_name(); ?> </h3>   
 	</div> 
 	<div id='dashboard-content'>
 		<div class="row"> &nbsp; </div> 

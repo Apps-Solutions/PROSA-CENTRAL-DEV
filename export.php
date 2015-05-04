@@ -20,7 +20,7 @@ require 'init.php';
 	
 	
 	$tabla = new DataTable($action);
-	
+	/*
 	if( isset($_REQUEST['date_srch']) && $_REQUEST['date_srch'] != '' )
 	{
 		if( isset($_REQUEST['date_start']) && $_REQUEST['date_start'] != '' )
@@ -33,7 +33,7 @@ require 'init.php';
 			$tabla->set_filter( $_REQUEST['date_srch'], strtotime( $_REQUEST['date_end'] ), '<=' );
 		}
 	}
-	
+	*/
 	$xls = $tabla->get_list_xls();
 	
 	echo $xls;
