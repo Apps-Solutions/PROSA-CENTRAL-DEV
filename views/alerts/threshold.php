@@ -77,6 +77,7 @@ $threshold = new Threshold();
 								<div class="row">
 									<div class="col-xs-12 text-right"> 
 										<button class='btn' onclick='edit_window(0);' > <i class="fa fa-plus"></i> Nueva ventana de mantenimiento </button>
+										<button class='btn' style="background: #990d17; color: #FFF;" onclick='click_export();' > <i class="fa fa-cloud-download"></i> Exportar </button>
 										<!--
 										
 										<input id="inp_srch_start" name="srch_start" placeholder="Desde" class="form-control" value="" required="required" data-validation="required" data-date-format="YYYY/MM/DD HH:mm" type="datetime" style="width:15%;float: left;margin-left: 5px;"/>

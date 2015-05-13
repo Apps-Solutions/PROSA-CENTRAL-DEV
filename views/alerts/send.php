@@ -135,11 +135,7 @@
                     <div class='col-xs-12' style="overflow: auto; height: 500px;">
                         <table class="table table-striped table-bordered clearfix" id="clientes_table" >
                             <thead>
-<<<<<<< HEAD
                                 <tr><td>FIID</td><td>Banco</td><td align="center"> <input type="checkbox" id='inp_cli_all' value='' onchange=""/></td></tr>
-=======
-                                <tr><td>Cliente</td><td>FIID</td><td align="center"> <input type="checkbox" id='inp_cli_all' value='' onchange=""/></td></tr>
->>>>>>> origin/master
                             </thead>
                             <tbody><?php echo $agenda->get_clients_table(); ?>
 
@@ -184,27 +180,10 @@
 </div>
 
 
-<<<<<<< HEAD
-
 <div class="row"> &nbsp; </div>
 <div class="row"> &nbsp; </div>
 <div class="row"> &nbsp; </div>
 
 
 </form>
-=======
->>>>>>> origin/master
 
-<div class="row"> &nbsp; </div>
-<div class="row"> &nbsp; </div>
-<div class="row"> &nbsp; </div>
-<<<<<<< HEAD
-=======
-
-
-</form>
-
-<div class="row"> &nbsp; </div>
-<div class="row"> &nbsp; </div>
-<div class="row"> &nbsp; </div>
->>>>>>> origin/master

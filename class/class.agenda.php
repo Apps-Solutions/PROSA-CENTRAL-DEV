@@ -57,8 +57,8 @@ class Agenda extends Object {
        */
       private function load_clients()
       {
-         // $db = new oracle_db();
-         $db = new PDOMySQL();
+          //$db = new oracle_db();
+		  $db = new PDOMySQL();
           $query = "SELECT * FROM " . PFX_MAIN_DB . "client WHERE cl_status > 0 ";
           $clients = $db->query($query);
           if ($clients)
@@ -208,6 +208,7 @@ class Agenda extends Object {
 		//$values = array( ":su_user" => $user );
 		//$db = new oracle_db();
 		$db = new PDOMySQL();
+		
 		$result = $db->query($qry);
 		
 		$response = "";
@@ -259,7 +260,7 @@ class Agenda extends Object {
               if ($data && is_array($data))
               {
                   //$db = new oracle_db();
-                  $db = new PDOMySQL();
+				   $db = new PDOMySQL();
                   $query = "UPDATE " . PFX_MAIN_DB . "threshold SET "
                           . " th_threshold 	= :th_threshold , "
                           . " th_time_prosa 	= :th_time_prosa,  "
@@ -335,7 +336,8 @@ class Agenda extends Object {
       public function get_users_attached($id_service)
       {
           //$db = new oracle_db();
-			$db = new PDOMySQL();
+		  $db = new PDOMySQL();
+
           $qry = "select * from " . PFX_MAIN_DB . "service_user where su_se_id_service = " . $id_service . " ";
 
           $result = $db->query($qry);
@@ -358,8 +360,8 @@ class Agenda extends Object {
       }
  
       public function get_service($id, $tipo){
-         // $db = new oracle_db();
-         $db = new PDOMySQL();
+          //$db = new oracle_db();
+		  $db = new PDOMySQL();
           $qry = "SELECT * FROM " . PFX_MAIN_DB . "service_client WHERE " . ($tipo == 'service_client' ? "sc_se_id_service" : "sc_cl_id_client") . "=" . $id . " ";
           $result = $db->query($qry);
           $resp = array();

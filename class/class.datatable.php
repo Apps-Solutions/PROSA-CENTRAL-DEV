@@ -79,10 +79,6 @@ class DataTable{
 						$this->query = 	"select id_alert, al_timestamp, se_service, cl_client, al_text " . //, al_user ".
 
 
-/*
-						$this->query = 	"select id_alert, al_timestamp, se_service, cl_client, al_text, al_user ".
->>>>>>> origin/master
- * */
 						"from ". PFX_MAIN_DB ."alert inner join ".PFX_MAIN_DB."service on id_service = al_se_id_service inner join ".PFX_MAIN_DB."client on id_client = al_cl_id_client";
 						$this->sidx = ( $this->sidx != 'id') ? $this->sidx : 'CL_CLIENT';
 						break;
@@ -247,13 +243,13 @@ class DataTable{
 		}
 
 		public function get_html_search(){
-			$total_id=array();
+			/*$total_id=array();
 	      	foreach ($this->columns as $k => $co){          
 	              if ($co['searchable']){
 	                  array_push($total_id,$co['lbl']);
 	              }			
 	          }		
-			if(count($total_id)>1){
+			if(count($total_id)>1){*/
 			?>
 			<select id="inp_<?php echo $this->table_id ?>_srch_idx">
 			<?php 
@@ -264,11 +260,19 @@ class DataTable{
 				}
 			?>
 			</select>
-			<?php 
+			<?php /*
           
           }else{
+
+				echo $this->columns[0]['lbl']; 
+				// Verificar búsquedas
+				?>
+			<!--<input type='hidden' id='inp_<?php echo $this->table_id_srch_idx ?>_srch_idx' value='<?php echo $this->columns[0]; ?>'/>-->
+				<?php
+
 				echo $this->columns[0]['lbl'];
-			}
+
+			}*/
 		  ?>
 			<input type="text" id="inp_<?php echo $this->table_id ?>_srch_string">
 			<button onclick="reload_table('<?php echo $this->table_id ?>')"><i class="fa fa-search"></i></button>
@@ -352,7 +356,7 @@ class DataTable{
 												if($this->export)
 												{
 										?>
-												<button onclick="export_table_xls('<?php echo $this->table_id ?>');"><i class="fa fa-cloud-download"></i>Exportar</button>
+												<button onclick="export_table_xls('<?php echo $this->table_id ?>');" style="visibility: hidden;"><i class="fa fa-cloud-download"></i>Exportar</button>
 										<?php
 												}
 										?>
@@ -542,7 +546,7 @@ class DataTable{
 						foreach($this->columns as $k => $cols)
 						{
 								if( $cols['export'] === TRUE )
-										$head_xls[] = $cols['lbl']; //utf8_encode()
+										$head_xls[] = utf8_encode($cols['lbl']); //utf8_encode()
 						}
 						
 						if ( $result !== FALSE )
@@ -577,7 +581,7 @@ class DataTable{
 												require $this->template_xls; 
 												$resp = ob_get_clean();
 												$row = array();
-												$resp=$resp; //utf8_decode(); 
+												$resp=utf8_decode($resp); //utf8_decode(); 
 												$row = explode('|', $resp);
 												
 												$xls->insert_row( $row );

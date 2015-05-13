@@ -921,3 +921,1224 @@ Stack trace:
 #4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
 #5 {main}
 [2015-05-13 13:19:49] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:24:31] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:31] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:31] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:24:34] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:34] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:34] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:24:41] carlos.servin @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.servin.
+[2015-05-13 13:24:41] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:41] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:41] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:24:49] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:49] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:49] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:24:49] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:24:49] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:24:49] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:24:55] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:55] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:24:55] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:25:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:25:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:25:02] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:25:02] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:25:02] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:25:03] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:25:03] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:25:03] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:25:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:25:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:25:05] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:25:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:25:05] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:25:05] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:26:47] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:26:47] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:26:47] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:26:47] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:26:47] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:26:47] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 13:26:48] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:26:48] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:26:48] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:29:45] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:29:45] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:29:45] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 13:43:20] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:43:20] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:43:20] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 13:43:20] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 13:43:56] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:43:56] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:43:56] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 13:43:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:43:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:43:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 13:43:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 13:46:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:46:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 13:46:05] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 15:32:28] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 15:32:28] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 15:32:28] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 16:18:51] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 16:18:51] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 16:18:52] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:09:14] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:09:14] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:09:14] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:19:42] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:19:42] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:19:42] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:19:42] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:19:42] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:19:42] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:24:18] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:24:18] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:24:18] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:24:18] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:24:18] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:24:18] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:26:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:26:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:26:02] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:26:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:26:02] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:26:02] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:26:05] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:26:06] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:26:29] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:26:29] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:28:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:28:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:28:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:28:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:28:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:28:23] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:28:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:28:23] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:28:23] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:28:27] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:28:27] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:28:27] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:30:37] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:30:37] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:30:37] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:30:54] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:30:54] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:30:54] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 17:30:54] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:31:07] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:31:07] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:31:07] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:31:07] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:31:07] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:33:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:02] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:02] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:33:02] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:33:02] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:33:03] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:03] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:03] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:33:03] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:33:03] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:33:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 17:33:05] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:33:09] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:09] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:09] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 17:33:09] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:33:14] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:14] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:14] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:33:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:33:17] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:34:06] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:06] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:06] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:34:15] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:15] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:15] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:34:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:17] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:34:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:34:23] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:34:23] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:34:23] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:17] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:17] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:18] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:19] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:19] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:19] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:19] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:19] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:20] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:20] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:20] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:20] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:20] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:21] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:21] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:21] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 17:38:23] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:38:24] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:24] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:24] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:38:27] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:27] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:27] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:38:32] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:32] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:32] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:32] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:38:32] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:32] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:36] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:36] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:38:36] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:38:36] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:38:36] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:38:36] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:50] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:50] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:50] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:39:50] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:39:50] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:50] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:54] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:54] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:54] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:39:54] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:54] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:56] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:56] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:56] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:39:58] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:58] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:58] carlos.servin @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 17:39:58] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 17:39:58] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:58] carlos.servin @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 17:39:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:39:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 17:39:59] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:42:46] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:42:46] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:42:46] carlos.servin @ 127.0.0.1:  ERROR @ Class Threshold Ocurrió un error al obtener los umbrales de la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(52): PDOMySQL->query('SELECT \n\t\t\t\t\tid...')
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.threshold.php(26): Threshold->load(0)
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/threshold.php(3): Threshold->Threshold()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#5 {main}
+[2015-05-13 17:42:46] carlos.servin @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-13 17:43:29] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:43:29] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 17:43:29] carlos.servin @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 18:15:39] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
+[2015-05-13 18:15:39] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 18:15:39] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 18:15:39] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/base/dashboard.php(19): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 18:15:45] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 18:15:45] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 18:15:45] carlos @ 127.0.0.1:  ERROR @ Class  Ocurri� un error al obtener los clientes de la BBDD. 
+[2015-05-13 18:15:45] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/views/alerts/send.php(92): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(156): include_once('/opt/lampp/htdo...')
+#4 {main}
+[2015-05-13 18:15:45] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 18:15:45] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-13 18:15:49] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(59): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 18:15:49] carlos @ 127.0.0.1:  ERROR @ Class Session: Ocurrió un error al consultar la BBDD. exception 'PDOException' with message 'SQLSTATE[3D000]: Invalid catalog name: 1046 No database selected' in /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php:98
+Stack trace:
+#0 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.pdo_mysql.php(98): PDOStatement->execute()
+#1 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(222): PDOMySQL->query('SELECT * FROM r...', false)
+#2 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.session.php(241): Session->get_services()
+#3 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/class/class.index.php(63): Session->build_menu()
+#4 /opt/lampp/htdocs/GitHub/PROSA-CENTRAL-DEV/index.php(151): Index->get_menu()
+#5 {main}
+[2015-05-13 18:15:49] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
