@@ -1,13 +1,12 @@
 <?php
 require 'init.php';
  
- /* */
 if (isset($_POST['command']) && $_POST['command'] != ''){
 	$command = $_POST['command'];
 } else if (isset($_GET['command']) && $_GET['command'] != ''){
 	$command = $_GET['command'];
 } else 
- $command = HOME;
+  $command = HOME;
 
 global $mensaje, $error;
 if (isset($_GET['msg'])) $mensaje .= $_GET['msg'];
@@ -25,6 +24,7 @@ if ($error != ''){
 }
 
 $Index->logic($command); 
+
 /**/
 if (!$Session->logged_in() || $Session->get_profile() > 2 ){
 	require_once 'frm.login.php';

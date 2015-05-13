@@ -113,7 +113,8 @@ abstract class Service extends Object{
      * 
      */ 
     public function __construct() {
-    	$this->db = new oracle_db(); 
+    	//$this->db = new oracle_db();
+    	$this->db = new PDOMySQL(); 
 		$this->codes = $this->get_codes();
 	}
 	

@@ -36,21 +36,22 @@ class Session {
 	
 	public function login( $user, $password = FALSE, $token = FALSE){ 
 		if ( $password && $password != ''){
-			$ldap = new LDAP(); 
+			/*$ldap = new LDAP(); 
 			if ( !$ldap ){
 				$this->set_error(   'Unable to connect to LDAP Server.', LOG_PRC_DOWN, 1 );
 				throw new Exception('Unable to connect to LDAP Server.');
 			}
 			$login =  $ldap->login($user, $password);
-			
-			if ( !$login ){ 
+			*/
+		/*	if ( !$login ){ 
 				return LOGIN_BADLOGIN; 
 			} else {
 				$info = $ldap->get_user_info( $user ); 
-//				$info = TRUE;
-				if ( $info ){ /* TODO: Check groups */
+				//$info = TRUE;
+				if ( $info ){*/ 
+				 /* TODO: Check groups */
 					//$groups = explode( '#',$info->memberof );
-					$this->name 	= $info->displayname;
+					/*$this->name 	= $info->displayname;
 					$this->user 	= $info->user;
 					$this->email 	= $info->email;
 					$this->profile 	= $info->profile;
@@ -59,8 +60,14 @@ class Session {
 					$_SESSION[PFX_SYS . 'token']	= $this->token;
 					$_SESSION[PFX_SYS . 'email']	= $this->email;
 					$_SESSION[PFX_SYS . 'user']		= $this->user; 
-					$_SESSION[PFX_SYS . 'profile']	= $this->profile;
+					$_SESSION[PFX_SYS . 'profile']	= $this->profile;*/
 					
+					
+						$_SESSION[PFX_SYS . 'name']		= $user;
+					$_SESSION[PFX_SYS . 'token']	= "3adadas";
+					$_SESSION[PFX_SYS . 'email']	= "cservin@qqq.com";
+					$_SESSION[PFX_SYS . 'user']		= $user; 
+					$_SESSION[PFX_SYS . 'profile']	= "1";
 					if ( $this->profile == 1 ){
 						define('IS_ADMIN', TRUE  );
 					} else {
@@ -69,13 +76,13 @@ class Session {
 					session_write_close();
 					$this->set_msg( "Login successful user $user." );
 					return LOGIN_SUCCESS;
-				} else {
+				/*} else {
 					return LOGIN_BADLOGIN;
 				} 
-			} 
-		} else {
+			} */
+		} /*else {
 			return LOGIN_BADLOGIN;
-		}
+		}*/
 	}
 	
 	private function set_from_session(){ 
@@ -124,7 +131,8 @@ class Session {
 		if ( $this->logged_in() ){
 			$fiid = substr($this->user,0, 4); 
 			$query = "SELECT id_client FROM " . PFX_MAIN_DB . "client WHERE cl_code = :code ";
-			$db = new oracle_db();
+			//$db = new oracle_db();
+			$db = new PDOMySQL();
 			$result = $db->query( $query, array(':code' => $fiid ) ); 
 			if ( $result !== FALSE ){
 				return $result[0]['ID_CLIENT'];
@@ -177,7 +185,8 @@ class Session {
 	}
 	
 	public function is_admin(){
-		return ($this->profile == 1);
+		//return ($this->profile == 1); //original
+		return ($_SESSION[PFX_SYS . 'profile'] == 1);
 	}
  
 	public function end_session() {
@@ -208,7 +217,8 @@ class Session {
 						. " WHERE su_user = :su_user ORDER BY se_order ";
 					$params = array( ':su_user' => $this->user ); 
 				} 
-				$db = new oracle_db(); 
+				//$db = new oracle_db(); 
+				$db = new PDOMySQL();
 				$services = $db->query( $query, $params ); 
 				if ( $services ){
 					$this->services = $services;

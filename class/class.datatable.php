@@ -166,7 +166,8 @@ class DataTable{
 		public function get_list_html( $ajax = FALSE ){ 
 			if (count($this->error) == 0 && $this->query != '' && $this->template != ''){ 
 				//global $obj_bd;
-				$obj_bd = new oracle_db();
+				//$obj_bd = new oracle_db();
+				$obj_bd = new PDOMySQL();
 				$query = $this->query 
 							. " " . $this->where 
 							. " " . $this->group
@@ -526,7 +527,8 @@ class DataTable{
 				if (count($this->error) == 0 && $this->query != '' && $this->template != '')
 				{
 						//global $obj_bd;
-						$obj_bd = new oracle_db();
+						//$obj_bd = new oracle_db();
+						$obj_bd = new PDOMySQL();
 						$query = $this->query 
 									. " " . $this->where 
 									. " " . $this->group

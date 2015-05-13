@@ -7,8 +7,8 @@ class Alert extends Object{
     
     function Alert($id_alert = 0)
     {
-	$this->db = new oracle_db();
-	
+	//$this->db = new oracle_db();
+	$this->db = new PDOMySQL();
 	if( $id_alert > 0 )
 	{
 	    //cargar los datos de esa alerta.

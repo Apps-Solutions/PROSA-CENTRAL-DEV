@@ -14,7 +14,8 @@
       function __construct()
       {
           $this->tk_apple = '';
-          $this->db = new oracle_db();
+          //$this->db = new oracle_db();
+          $this->db = new PDOMySQL();
       }
 
       /* @function get_TokenApple

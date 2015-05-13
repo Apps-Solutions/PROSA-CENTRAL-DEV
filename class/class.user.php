@@ -73,7 +73,8 @@ class User{
 				. " WHERE se_status = 1 "
 				. " ORDER BY se_order ";
 				
-		$obj_bd = new oracle_db();
+		//$obj_bd = new oracle_db();
+		$obj_bd = new PDOMySQL();
 		$result = $obj_bd->query( $query , array( ':id_client' => $id_client, ':us_user' => $user ) );
 		$response = "";
 		
@@ -113,7 +114,8 @@ class User{
 			//$foun = $this->has_service( $id_service );
 			
 			$us_user = str_replace("_", ".", $us_user);
-		    $obj_bd = new oracle_db();
+		    //$obj_bd = new oracle_db();
+			$obj_bd = new PDOMySQL();
 			
 			if ( $status )
 			{

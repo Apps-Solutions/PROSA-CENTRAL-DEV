@@ -17,8 +17,8 @@ class Client extends Object {
 	function __construct( $id_client, $users = TRUE, $services = TRUE ) {
 			
 		$this->class = "Client";
-		$this->db = new oracle_db();
-		
+		//$this->db = new oracle_db();
+		$this->db = new PDOMySQL();
 		if ( is_numeric($id_client) && $id_client > 0 ){
 			$this->id_client = $id_client;
 			

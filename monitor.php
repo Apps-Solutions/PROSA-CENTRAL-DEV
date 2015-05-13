@@ -148,7 +148,8 @@ function save_alert( $id_client, $id_service, $message, $th = 0 ){
 
 
 $Log = new Log( PATH . LOG_DIR . "monitor_log_" . date( 'Ymd' ));
-$db = new oracle_db();
+//$db = new oracle_db();
+$db = new PDOMySQL();
 //$Ldap = new LDAP();
 $agenda = new Agenda();
 

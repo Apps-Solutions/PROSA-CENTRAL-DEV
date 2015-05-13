@@ -18,7 +18,8 @@ class prosaApi extends api{
 			throw new Exception('Unable to connect to LDAP Server.');
 		}
 		*/
-		$this->db = new oracle_db(); 
+		//$this->db = new oracle_db();
+		$this->db = new PDOMySQL();  
 		if ($this->request['request'] != 'login'){ 
 			if (array_key_exists('token', $this->request) && !$this->check_token()){
 				$this->set_error( 'Invalid User Token. ', LOG_SESS_ERR, 1 );

@@ -47,7 +47,8 @@ class Threshold extends Object {
 		$qry .= " ORDER BY se_service ";
 		 
 		$this->thresholds = array(); 
-		$db 	= new oracle_db();
+		//$db 	= new oracle_db();
+		$db 	= new PDOMySQL();
 		$info 	= $db->query( $qry );
 		if ( $info ){
 		 	$this->thresholds = $info;
@@ -87,7 +88,8 @@ class Threshold extends Object {
 	 public function get_list_maintainance_html( $p = 0 ){ 
 		if ( IS_ADMIN ){
 			
-			$db = new oracle_db();
+			//$db = new oracle_db();
+			$db = new PDOMySQL();
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "maintenance "
 						. " INNER JOIN " . PFX_MAIN_DB . "service ON id_service = ma_se_id_service "
 					. " WHERE ma_status > 0 ";
@@ -112,7 +114,8 @@ class Threshold extends Object {
 		if ( IS_ADMIN )
 		{
 			
-			$db = new oracle_db();
+			//$db = new oracle_db();
+			$db = new PDOMySQL();
 			$query =  " SELECT * FROM " . PFX_MAIN_DB . "maintenance "
 				. " INNER JOIN " . PFX_MAIN_DB . "service ON id_service = ma_se_id_service "
 				. " WHERE ma_status > 0 ";
@@ -202,7 +205,8 @@ class Threshold extends Object {
 	public function save( $data = FALSE ){
 		if ( IS_ADMIN ){
 			if ( $data && is_array($data)){
-				$db = new oracle_db();
+				//$db = new oracle_db();
+				$db = new PDOMySQL();
 				$query = "UPDATE " . PFX_MAIN_DB. "threshold SET "
 							. " th_threshold 	= :th_threshold , "
 							. " th_time_prosa 	= :th_time_prosa,  "
@@ -239,6 +243,7 @@ class Threshold extends Object {
 	 public function save_maintenance_window( $info = FALSE ){
 	 	if ( IS_ADMIN ){
 	 		if ( $info && is_array( $info ) ){
+	 			//$db = new oracle_db();
 	 			$db = new oracle_db();
 	 			if ( $info['id_window'] > 0 ){
 	 				$query = "UPDATE " . PFX_MAIN_DB . "maintenance SET "
@@ -298,7 +303,8 @@ class Threshold extends Object {
 	
 	public function info_maintenance($id_main)
 	{
-		$db = new oracle_db();
+		//$db = new oracle_db();
+		$db = new PDOMySQL();
 		$qry = 	" select id_maintenance, ma_start, ma_end, se_service, ma_se_id_service ".
 			" from ". PFX_MAIN_DB."maintenance inner join ".PFX_MAIN_DB."service on id_service = ma_se_id_service ".
 			" where id_maintenance = :id_main ";

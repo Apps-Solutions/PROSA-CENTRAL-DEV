@@ -56,10 +56,12 @@ class Index {
 		global $config_menu;
 		global $Session; 
 		
-	
-		print_r($Session->build_menu()) ;
+		$link=$Session->build_menu();
+		
+		//return $link;
 	  
 	 	return $this->loop_menu( $Session->build_menu() );
+		//return $this->build_menu();
 	}
 	 
 	function loop_menu( $link, $deep = 0 ){ 

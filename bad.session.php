@@ -2,10 +2,10 @@
 session_start(); 
 define("PFX_SYS", "pra_");
 
-					$_SESSION[PFX_SYS . 'name']		= "Carlos Servín";
+					$_SESSION[PFX_SYS . 'name']		= "Beatriz Elena Huesca Guevara. ";
 					$_SESSION[PFX_SYS . 'token']	= "123456";
-					$_SESSION[PFX_SYS . 'email']	= "carlos.servin@gruposellcom.com";
-					$_SESSION[PFX_SYS . 'user']		= "cservin"; 
+					$_SESSION[PFX_SYS . 'email']	= "bhguevar";
+					$_SESSION[PFX_SYS . 'user']		= "bhguevar"; 
 					$_SESSION[PFX_SYS . 'profile']	= "1";
 					
 					

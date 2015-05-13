@@ -41,7 +41,9 @@ class Login {
 
 	function log_in($user, $password){ 
 		global $Session;
-		$logged = $Session->login($user, $password); 
+	
+		$logged = $Session->login($user, $password);
+		 
 		if ( $logged == LOGIN_SUCCESS ){
 			return LOGIN_SUCCESS;
 		} else {
