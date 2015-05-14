@@ -206,6 +206,7 @@ class Session {
 	}
 	
 	public function get_services(){
+		global $obj_bd;
 		if ( count($this->services) == 0 ){
 			if ( $this->logged_in() ){ 
 				if ( $this->profile == 1 ){
@@ -218,8 +219,8 @@ class Session {
 					$params = array( ':su_user' => $this->user ); 
 				} 
 				//$db = new oracle_db(); 
-				$db = new PDOMySQL();
-				$services = $db->query( $query, $params ); 
+				//$db = new PDOMySQL();
+				$services = $obj_bd ->query( $query, $params ); 
 				if ( $services ){
 					$this->services = $services;
 					return $services;

@@ -55,20 +55,20 @@ class Agenda extends Object {
       /**
        * load_clients()
        */
-      private function load_clients()
-      {
+      private function load_clients(){
+      	global $obj_bd;
           //$db = new oracle_db();
-		  $db = new PDOMySQL();
+		 // $db = new PDOMySQL();
           $query = "SELECT * FROM " . PFX_MAIN_DB . "client WHERE cl_status > 0 ";
-          $clients = $db->query($query);
+          $clients = $obj_bd->query($query);
           if ($clients)
           {
               foreach ($clients as $k => $cli)
               {
                   $client = new stdClass;
-                  $client->id_client = $cli['ID_CLIENT'];
-                  $client->client = $cli['CL_CLIENT'];
-                  $client->code = $cli['CL_CODE'];
+                  $client->id_client = $cli['id_client'];
+                  $client->client = $cli['cl_client'];
+                  $client->code = $cli['cl_code'];
                   $this->clients[] = $client;
               }
           }
@@ -199,6 +199,7 @@ class Agenda extends Object {
 	  
 	  public function get_services_users_prosa($user)
 	  {
+	  global $obj_bd;
 		$qry = 	 "select id_service, se_service, su_user, ".
 				 "CASE WHEN NOT su_user IS NULL THEN 1 ELSE 0 END as checked ".
 				 "from ". PFX_MAIN_DB ."service ".
@@ -207,9 +208,9 @@ class Agenda extends Object {
 				 
 		//$values = array( ":su_user" => $user );
 		//$db = new oracle_db();
-		$db = new PDOMySQL();
+		//$db = new PDOMySQL();
 		
-		$result = $db->query($qry);
+		$result = $obj_bd->query($qry);
 		
 		$response = "";
 		if($result)
@@ -217,8 +218,8 @@ class Agenda extends Object {
 				foreach ($result as $key => $serv)
 				{ 
 						$record = array();
-						$record['id_service'] = $serv['ID_SERVICE'];
-						$record['service']	= utf8_decode($serv['SE_SERVICE'] );
+						$record['id_service'] = $serv['id_service'];
+						$record['service']	= utf8_decode($serv['se_service'] );
 						$record['checked'] 	= $serv['CHECKED'];
 						$record['pfx'] 		= 'serv_user_prosa_'  . str_replace(".","_", strip_tags(trim($user))).'_';
 						$record['function']	= "set_user_prosa_service('" . str_replace(".","_", strip_tags(trim($user))) . "', " . $serv['ID_SERVICE'] . ");";
@@ -255,12 +256,13 @@ class Agenda extends Object {
        */
       public function save($data = FALSE)
       {
+      	global $obj_bd;
           if (IS_ADMIN)
           {
               if ($data && is_array($data))
               {
                   //$db = new oracle_db();
-				   $db = new PDOMySQL();
+				   //$db = new PDOMySQL();
                   $query = "UPDATE " . PFX_MAIN_DB . "threshold SET "
                           . " th_threshold 	= :th_threshold , "
                           . " th_time_prosa 	= :th_time_prosa,  "
@@ -276,7 +278,7 @@ class Agenda extends Object {
                            ":id_service" => number_format($vals['id_service'], 0),
                            ":th_timestamp" => time()
                       );
-                      $resp = $db->execute($query, $params);
+                      $resp = $obj_bd->execute($query, $params);
                       if (!$resp)
                       {
                           $this->error[] = $db->get_error_msg();
@@ -335,12 +337,13 @@ class Agenda extends Object {
 
       public function get_users_attached($id_service)
       {
+      	global $obj_bd;
           //$db = new oracle_db();
-		  $db = new PDOMySQL();
+		  //$db = new PDOMySQL();
 
           $qry = "select * from " . PFX_MAIN_DB . "service_user where su_se_id_service = " . $id_service . " ";
 
-          $result = $db->query($qry);
+          $result =$obj_bd->query($qry);
           $resp = array();
 
           if ($result)
@@ -361,9 +364,10 @@ class Agenda extends Object {
  
       public function get_service($id, $tipo){
           //$db = new oracle_db();
-		  $db = new PDOMySQL();
+		  //$db = new PDOMySQL();
+		  global $obj_bd;
           $qry = "SELECT * FROM " . PFX_MAIN_DB . "service_client WHERE " . ($tipo == 'service_client' ? "sc_se_id_service" : "sc_cl_id_client") . "=" . $id . " ";
-          $result = $db->query($qry);
+          $result = $obj_bd->query($qry);
           $resp = array();
 
           if ($result)

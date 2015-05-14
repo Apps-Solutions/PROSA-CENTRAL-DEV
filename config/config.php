@@ -21,8 +21,8 @@ define ("PFX_SMS_DB", 			'SMS.');*/
 define("DB_HOST", 				'localhost');
 define("DB_USERNAME", 			'root');
 define("DB_PASSWORD", 			'root');
-define("DB_NAME", 				'prosa');
-define("PFX_MAIN_DB", 			'rg_');
+define("DB_NAME", 				'ps_prosa');
+define("PFX_MAIN_DB", 			'pra_');
 
 /****************** Time intervals Configuration ******************/ 
 define ("TIME_DB_UPDATE",		10); 	// Intervalo de tiempo de actualización de tablas de BD de transacciones

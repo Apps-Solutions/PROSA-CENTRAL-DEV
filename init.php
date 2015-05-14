@@ -24,7 +24,7 @@ include_once(DIRECTORY_FUNCS . 'func.php');
 include_once(DIRECTORY_CLASS . 'class.ldap.php');
 
 $Log 		= new Log(); 
-
+$obj_bd 	= new PDOMySQL( DB_HOST, DB_USERNAME, DB_PASSWORD, DB_NAME );
 $Session 	= new Session();
 $Index		= new Index();
 

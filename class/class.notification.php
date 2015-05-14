@@ -25,9 +25,10 @@
 
        function get_TokenApple($user)
       {
+      	global $obj_bd;
           $query = "SELECT tk_token_apple FROM " . PFX_MAIN_DB . "token WHERE tk_timestamp > 0 AND tk_user = :tk_user ";
 
-          $result = $this->db->query($query, array(':tk_user' => $user));
+          $result = $$obj_bd->query($query, array(':tk_user' => $user));
           
           if (count($result) > 0)
           {
@@ -59,7 +60,7 @@
 
       public function save_Alert($cliente, $servicio, $mesage, $usuario)
       {
-
+		global $obj_bd;
           if (IS_ADMIN)
           {
               if (count($cliente) > 0 || count($servicio) > 0 && $mesage != '')
@@ -79,7 +80,7 @@
                           {
                               if (!empty($id_cliente))
                               {
-                                  $id_alert = $this->db->get_id(PFX_MAIN_DB . "alert", "id_alert");
+                                  $id_alert = $obj_bd->get_id(PFX_MAIN_DB . "alert", "id_alert");
 
                                   $values = array(':id_alert' => $id_alert,
                                        ':al_cl_id_client' => $id_cliente,
@@ -89,7 +90,7 @@
                                        ':al_status' => 1,
                                        ':al_user' => $usuario);
 
-                                  $result = $this->db->execute($query, $values);
+                                  $result = $obj_bd->execute($query, $values);
 
                                   if (!$result)
                                   {

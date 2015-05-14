@@ -1,6 +1,4 @@
-<?php 
-	
-?>
+
 <tr> 
 	<td> <?php echo $record->name . " (" . $record->email . ")" ?> </td> 
 	<td align="center"> 

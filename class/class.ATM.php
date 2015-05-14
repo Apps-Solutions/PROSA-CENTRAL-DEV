@@ -35,6 +35,7 @@ class ATM extends Service {
 	}
 	 
 	private function get_day_total( $day , $grouped = FALSE ){
+		global $obj_bd;
 		$query = " SELECT DIA, SUM(TOTAL) AS TOTAL FROM ( "
 					. " SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_ATM_NAC_" . date('Ym') . " "  
 					. " WHERE DIA = :dia GROUP BY DIA "
@@ -42,7 +43,6 @@ class ATM extends Service {
 					. " SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_ATM_INT_" . date('Ym') . " "  
 					. " WHERE DIA = :dia GROUP BY DIA " 
 				. " ) GROUP BY DIA "; 
-		$result = $this->db->query( $query, array( ':dia' => $day ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
 		} else {
@@ -78,7 +78,7 @@ class ATM extends Service {
 	
 	
 	private function set_service_totals(){
-		 
+		 global $obj_bd;
 		$query0 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
@@ -113,8 +113,8 @@ class ATM extends Service {
 						. " GROUP BY DIA "
 					. " ) GROUP BY DIA ";
 		
-		$result0 = $this->db->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
-		$result1 = $this->db->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
+		$result0 = $obj_bd->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
+		$result1 = $obj_bd->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		if ( $result0 !== FALSE && $result1 !== FALSE){
 			$t0 = 0;
 			$t1 = 0;
@@ -155,6 +155,7 @@ class ATM extends Service {
 	} 
 	
 	private function set_top_rejected_emiadq( $type, $idx ){
+		global $obj_bd;
 		$fiid = ( $type == 'EMI' ) ? 'FIID_TARJ' : 'FIID_CAJERO';
 		$this->indicators[$idx]['top_rejected'] = array();
 		$query =  " SELECT CODIGO_RESPUESTA, SUM(TOTAL) AS TOTAL FROM ( "
@@ -175,7 +176,7 @@ class ATM extends Service {
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 
 		
-		$result = $this->db->query( $query_top,  $params );
+		$result = $obj_bd->query( $query_top,  $params );
 		if ( $result !== FALSE ){
 			if ( count($result) > 0 ){
 				$sum = 0;

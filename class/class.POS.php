@@ -80,7 +80,7 @@ class POS extends Service {
 	
 	
 	private function set_service_totals(){
-		 
+		 global $obj_bd;
 		$query0 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
@@ -119,8 +119,8 @@ class POS extends Service {
 						. " GROUP BY DIA "
 					. " ) GROUP BY DIA ";
 		
-		$result0 = $this->db->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
-		$result1 = $this->db->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
+		$result0 = $obj_bd->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
+		$result1 = $obj_bd->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		if ( $result0 !== FALSE && $result1 !== FALSE){
 			$t0 = 0;
 			$t1 = 0;
@@ -160,6 +160,7 @@ class POS extends Service {
 	} 
 	
 	private function set_top_rejected_emiadq( $type, $idx ){
+		global $obj_bd;
 		$fiid = ( $type == 'EMI' ) ? 'FIID_TARJ' : 'FIID_COMER';
 		$this->indicators[$idx]['top_rejected'] = array(); 
 		$query =  " SELECT CODIGO_RESPUESTA, SUM(TOTAL) AS TOTAL FROM ( "
@@ -177,7 +178,7 @@ class POS extends Service {
 
 		$query_top = 'SELECT CODIGO_RESPUESTA, TOTAL FROM ( ' . $query . ' ) WHERE rownum <= 5 ';
 		
-		$result = $this->db->query( $query_top,   array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
+		$result = $obj_bd->query( $query_top,   array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		if ( $result !== FALSE ){
 			if ( count($result) > 0 ){
 				$sum = 0;

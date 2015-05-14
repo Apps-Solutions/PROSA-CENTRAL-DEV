@@ -115,15 +115,17 @@ abstract class Service extends Object{
     public function __construct() {
     	//$this->db = new oracle_db();
     	$this->db = new PDOMySQL(); 
+		
 		$this->codes = $this->get_codes();
 	}
 	
 	protected function load_threshold(){
+		global $obj_bd;
 		if ( $this->code != '' ){
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "service "
 				. " INNER JOIN " . PFX_MAIN_DB . "threshold ON th_se_id_service = id_service "
 				. " WHERE se_command = :code "; 
-			$info = $this->db->query( $query, array( ':code' => $this->code ) );
+			$info = $obj_bd->query( $query, array( ':code' => $this->code ) );
 			if ( $info && count($info) > 0 ){
 				$this->threshold  = $info[0]['TH_THRESHOLD'];
 				$this->time_prosa = $info[0]['TH_TIME_PROSA'];
@@ -135,8 +137,9 @@ abstract class Service extends Object{
 	} 
 	
 	protected function get_last_total(){
+		global $obj_bd;
 		$query = "SELECT lt_total, lt_timestamp FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service = :id_service ";
-		$result = $this->db->query( $query, array( ':id_service' => $this->id_service) );
+		$result = $obj_bd->query( $query, array( ':id_service' => $this->id_service) );
 		if ( $result !== FALSE ){
 			$resp = array();
 			if ( count($result) > 0 ){ 
@@ -158,6 +161,7 @@ abstract class Service extends Object{
 	}
 	
 	protected function set_last_total( $total ){
+		global $obj_bd;
 		if ( $exist = $this->get_last_total() ){
 			if ($exist['timestamp'] == 0 ){
 				$query = "INSERT INTO " . PFX_MAIN_DB . "last_total ( lt_se_id_service, lt_total, lt_timestamp) "
@@ -168,7 +172,7 @@ abstract class Service extends Object{
 					. " WHERE lt_se_id_service = :id_service ";
 			}
 			$values = array( ':id_service' => $this->id_service, ':total' => $total, ':timestamp' => time() );
-			if ($result = $this->db->execute( $query, $values ) !== FALSE){
+			if ($result = $obj_bd->execute( $query, $values ) !== FALSE){
 				return TRUE;
 			} else {
 				$this->set_error("Ocurrió un error al actualizar el último total.", ERR_DB_EXEC );
@@ -178,9 +182,10 @@ abstract class Service extends Object{
 		return FALSE;
 	}
 	
-	public function has_maintenance(){ 
+	public function has_maintenance(){
+		global $obj_bd; 
 		$query = "SELECT * FROM " . PFX_MAIN_DB . "maintenance WHERE ma_se_id_service = " . $this->id_service . " AND ma_start <= :now AND ma_end <= :now ";
-		$result = $this->db->query( $query, array( ':now' => time()) );
+		$result = $obj_bd->query( $query, array( ':now' => time()) );
 		if ( $result !== FALSE ){
 			if ( count($result) > 0 ) return TRUE;
 			else return FALSE;
@@ -286,9 +291,10 @@ abstract class Service extends Object{
 		}
 	}
 	
-	protected function get_codes(){ 
+	protected function get_codes(){
+		global $obj_bd; 
 		$query = "SELECT CODIGO AS response, CODIGO_RESPUESTA AS code FROM " . PFX_SRV_DB . "COD_RESP_POS ";
-		$result = $this->db->query($query );
+		$result = $obj_bd->query($query );
 		$resp = array();
 		foreach ($result as $k => $cod) {
 			$resp[ $cod['CODE'] ] = ($cod['RESPONSE']); 
@@ -298,9 +304,10 @@ abstract class Service extends Object{
  
 	 
 	protected function set_client_code(){
+		global $obj_bd;
 		if ( $this->id_client > 0 ){
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "client WHERE id_client = :id_client ";
-			$result = $this->db->query( $query, array( ':id_client' => $this->id_client ) );
+			$result = $obj_bd->query( $query, array( ':id_client' => $this->id_client ) );
 			if ( $result !== FALSE){ 
 				if ( count($result) > 0 ){
 					$info = $result[0];

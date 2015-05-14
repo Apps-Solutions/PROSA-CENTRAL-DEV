@@ -31,6 +31,7 @@ class Threshold extends Object {
 	 * 
 	 */
 	private function load( $id_serv = 0  ){
+		global $obj_bd;
 		$qry = "SELECT 
 					id_service,
 					se_service, 
@@ -48,8 +49,8 @@ class Threshold extends Object {
 		 
 		$this->thresholds = array(); 
 		//$db 	= new oracle_db();
-		$db 	= new PDOMySQL();
-		$info 	= $db->query( $qry );
+		//$db 	= new PDOMySQL();
+		$info 	= $obj_bd->query( $qry );
 		if ( $info ){
 		 	$this->thresholds = $info;
 		}  else {
@@ -87,14 +88,14 @@ class Threshold extends Object {
 	 */
 	 public function get_list_maintainance_html( $p = 0 ){ 
 		if ( IS_ADMIN ){
-			
+			global $obj_bd;
 			//$db = new oracle_db();
 			$db = new PDOMySQL();
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "maintenance "
 						. " INNER JOIN " . PFX_MAIN_DB . "service ON id_service = ma_se_id_service "
 					. " WHERE ma_status > 0 ";
 			
-			$windows = $db->query( $query );
+			$windows = $obj_bd->query( $query );
 			$response = ""; 
 			if ( count($windows) > 0 ){
 				foreach ($windows as $k => $record) { 
@@ -111,6 +112,7 @@ class Threshold extends Object {
 	 
 	 public function filter_list_maintainance_html($filtros, $valores, $oprs, $formato)
 	 {
+	 	global $obj_bd;
 		if ( IS_ADMIN )
 		{
 			
@@ -134,7 +136,7 @@ class Threshold extends Object {
 				$where .= ' AND '.$params[$i] . ' '. $oprdrs[$i]. ' ' . $values[$i]. ' ';
 			}
 			
-			$windows = $db->query( $query.$where );
+			$windows = $obj_bd->query( $query.$where );
 			$response = "";
 			
 			if ( count($windows) > 0 )
@@ -203,10 +205,11 @@ class Threshold extends Object {
 	* @return        Boolean TRUE if success; FALSE if failed
 	*/  
 	public function save( $data = FALSE ){
+		global $obj_bd;
 		if ( IS_ADMIN ){
 			if ( $data && is_array($data)){
 				//$db = new oracle_db();
-				$db = new PDOMySQL();
+				//$db = new PDOMySQL();
 				$query = "UPDATE " . PFX_MAIN_DB. "threshold SET "
 							. " th_threshold 	= :th_threshold , "
 							. " th_time_prosa 	= :th_time_prosa,  "
@@ -221,7 +224,7 @@ class Threshold extends Object {
 									 ":id_service" 		=> number_format($vals['id_service'],0), 
 									 ":th_timestamp"	=> time() 
 								);
-					$resp = $db->execute( $query, $params );
+					$resp = $obj_bd->execute( $query, $params );
 					if ( !$resp ){ 
 						$this->error[] = $db->get_error_msg( );
 					} 
@@ -241,10 +244,11 @@ class Threshold extends Object {
 	 * 
 	 */
 	 public function save_maintenance_window( $info = FALSE ){
+	 	global $obj_bd;
 	 	if ( IS_ADMIN ){
 	 		if ( $info && is_array( $info ) ){
 	 			//$db = new oracle_db();
-	 			$db = new oracle_db();
+	 			//$db = new oracle_db();
 	 			if ( $info['id_window'] > 0 ){
 	 				$query = "UPDATE " . PFX_MAIN_DB . "maintenance SET "
 	 							. " ma_se_id_service = :id_service, "
@@ -272,10 +276,10 @@ class Threshold extends Object {
 							);
 	 			}
 	 			 
-				$resp = $db->execute( $query, $data );
+				$resp = $obj_bd->execute( $query, $data );
 				
 				if ( !$resp ){ 
-					$errs = $db->get_error_array( ); 
+					$errs = $obj_bd->get_error_array( ); 
 					$this->set_error( $errs[0], ERR_DB_EXEC, 2);
 					return FALSE;
 				} 
@@ -303,29 +307,30 @@ class Threshold extends Object {
 	
 	public function info_maintenance($id_main)
 	{
+		global $obj_bd;
 		//$db = new oracle_db();
 		$db = new PDOMySQL();
 		$qry = 	" select id_maintenance, ma_start, ma_end, se_service, ma_se_id_service ".
 			" from ". PFX_MAIN_DB."maintenance inner join ".PFX_MAIN_DB."service on id_service = ma_se_id_service ".
 			" where id_maintenance = :id_main ";
 		
-		$result = $db->query($qry, array( ':id_main' => $id_main ) );
+		$result = $obj_bd->query($qry, array( ':id_main' => $id_main ) );
 		//$resp = $db->query($qry);
 		
 		if( $result != FALSE )
 		{	
 			$info = $result[0];
 			$response = array();
-			$response["start_str"] = date( 'Y/m/d H:i:s', $info['MA_START']);
-			$response["end_str"] =   date( 'Y/m/d H:i:s', $info['MA_END']);
-			$response["id_service"] = $info["MA_SE_ID_SERVICE"];
-			$response["id_window"] = $info["ID_MAINTENANCE"];
+			$response["start_str"] = date( 'Y/m/d H:i:s', $info['ma_start']);
+			$response["end_str"] =   date( 'Y/m/d H:i:s', $info['ma_end']);
+			$response["id_service"] = $info["ma_se_id_service"];
+			$response["id_window"] = $info["id_maintenance"];
 			$response["qry"] = $qry;
 			return $response;
 		}
 		else
 		{
-			$errs = $db->get_error_array( ); 
+			$errs = $obj_bd->get_error_array( ); 
 			$this->set_error( $errs[0], ERR_DB_EXEC, 2);
 			return FALSE;
 		}

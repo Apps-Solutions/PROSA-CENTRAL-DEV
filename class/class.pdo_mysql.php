@@ -10,6 +10,10 @@
 class PDOMySQL{
 	var $connection; 	//PDO connection ID
 	var $error; 		//Error array
+	//var $bd_host="localhost"; 
+	//var  $bd_user="root";
+	//var $bd_password= "root";
+	//var  $bd_data_base="prosa";
 	
 	/**
 	* PDOMySQL()
@@ -20,10 +24,11 @@ class PDOMySQL{
 	*				$bd_data_base. 	DB Data Base
 	* @return		$bd_conexion 	DB Connection 
 	*/
-	 
+	
 	function PDOMySQL($bd_host, $bd_user, $bd_password, $bd_data_base){
 		try {
 			$this->connection = new PDO("mysql:host=$bd_host;dbname=$bd_data_base", $bd_user, $bd_password);
+		
 			$this->connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		} catch ( PDOException $e ){
 			die( 'Could not connect to '.$bd_host.' server <br> Message: ' . $e );

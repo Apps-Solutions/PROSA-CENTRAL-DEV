@@ -32,10 +32,10 @@ class SMS extends Service {
 	} 
 	
 	private function get_day_total( $day , $grouped = FALSE ){
-
+		global $obj_bd;
 		$query =  "SELECT COUNT(*) AS TOTAL FROM " . PFX_SMS_DB . "TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS "  
 				. " WHERE ID_BROKER = 'P' AND LOCAL_DATE > TO_DATE(:lcl_date, 'yyyy-mm-dd hh24:mi') " ;
-		$result = $this->db->query( $query, array( ':lcl_date' => date('Y-m-d 00:00') ) );
+		$result = $obj_bd->query( $query, array( ':lcl_date' => date('Y-m-d 00:00') ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
 		} else {

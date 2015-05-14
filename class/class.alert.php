@@ -3,12 +3,12 @@
 class Alert extends Object{
     
     private $db;
-
     
     function Alert($id_alert = 0)
     {
+    	global $obj_bd;
 	//$this->db = new oracle_db();
-	$this->db = new PDOMySQL();
+	$this->$obj_bd = new PDOMySQL();
 	if( $id_alert > 0 )
 	{
 	    //cargar los datos de esa alerta.
@@ -18,13 +18,14 @@ class Alert extends Object{
     
     public function get_list_alerts_html($id_client = 0)
     {
+    	global $obj_bd;
 	$qry = 	"select id_alert, al_timestamp, se_service, cl_client, al_text, al_user ".
 		"from ". PFX_MAIN_DB ."alert inner join ".PFX_MAIN_DB."service on id_service = al_se_id_service inner join ".PFX_MAIN_DB."client on id_client = al_cl_id_client";
 		
 		
 	$where = ( IS_ADMIN ? '' : ' WHERE al_cl_id_client = '.$id_client );
 		
-	$resp = $this->db->query($qry.$where);
+	$resp = $this->$obj_bd->query($qry.$where);
 	
 	if($resp)
 	{

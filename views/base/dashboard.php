@@ -26,7 +26,7 @@
 									<div class="col-xs-12  ">
 										<img src='img/ico_service.png' />
 									</div>
-									<span><?php echo utf8_decode($service['SE_SERVICE'])?></span>
+									<span><?php echo utf8_decode($service['se_service'])?></span>
 								</div> 
 							</div>
 						</a>

@@ -15,16 +15,17 @@ class Client extends Object {
 	private $db;
 	
 	function __construct( $id_client, $users = TRUE, $services = TRUE ) {
+			global $obj_bd;
 			
 		$this->class = "Client";
 		//$this->db = new oracle_db();
-		$this->db = new PDOMySQL();
+		//$this->db = new PDOMySQL();
 		if ( is_numeric($id_client) && $id_client > 0 ){
 			$this->id_client = $id_client;
 			
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "client WHERE id_client = :id_client "; 
 			$params = array(":id_client" => $this->id_client ); 
-			$result= $this->db->query( $query, array( ":id_client" => $this->id_client) );
+			$result= $obj_bd->query( $query, array( ":id_client" => $this->id_client) );
 			
 			if ( !$result ){
 				$this->set_error( "Ocurri� un error al consultar la informaci�n de la BBDD. ", ERR_DB_QRY, 1 );
@@ -123,6 +124,7 @@ class Client extends Object {
 	
 	public function save(){
 		global $Session;
+		global $obj_bd;
 		if ( $Session->is_admin() ){
 			if ( $this->validate() ){ 
 				if ( $this->id_client > 0 ){ 
@@ -140,7 +142,7 @@ class Client extends Object {
 					$query = "INSERT INTO " . PFX_MAIN_DB . "client ( id_client, cl_client, cl_code, cl_status, cl_timestamp ) "
 							. " VALUES  ( :id_client, :cl_client, :cl_code, :cl_status, :cl_timestamp ) ";
 					
-					$id_client = $this->db->get_id( PFX_MAIN_DB . "client", "id_client"  );
+					$id_client = $obj_bd->get_id( PFX_MAIN_DB . "client", "id_client"  );
 					$data = array( 	":id_client" 	=> $id_client,
 									":cl_client"	=> $this->client,
 									":cl_code"		=> $this->code, 
@@ -148,7 +150,7 @@ class Client extends Object {
 									":cl_timestamp" => time()
 								 );  
 				} 
-				$resp = $this->db->execute( $query, $data ); 
+				$resp = $obj_bd->execute( $query, $data ); 
 				if ( !$resp ){ 
 					$errs = $this->db->error; 
 					// $errs[(count($errs)-1)] 
@@ -165,10 +167,11 @@ class Client extends Object {
 
 	public function delete(){ 
 		global $Session;
+		global $obj_bd;
 		if ( $Session->is_admin()){
 			$query = "UPDATE " . PFX_MAIN_DB . "client SET cl_status = 0 WHERE id_client = :id_client ";
 			$data = array( ':id_client' => $this->id_client ); 
-			$resp = $this->db->execute( $query, $data ); 
+			$resp = $obj_bd->execute( $query, $data ); 
 			if ( !$resp ){  
 				$this->set_error( "Ocurri� un error al intentar borrar el registro. (delete)" , ERR_DB_EXEC, 2);
 				return FALSE;
@@ -182,6 +185,7 @@ class Client extends Object {
 
 	public function set_service( $id_service, $state ){
 		global $Session;
+		global $obj_bd;
 		if ( $Session->is_admin() ){ 
 			if ( $id_service > 0 ){
 				$found = $this->has_service( $id_service );
@@ -200,10 +204,10 @@ class Client extends Object {
 						$values = array( ":id_client" => $this->id_client, ":id_service" => $id_service );						
 					}
 					
-					$result =  $this->db->execute( $query, $values );
+					$result =  $obj_bd->execute( $query, $values );
 						  
 					if ( !$result ){ 
-						$errs = $this->db->error; 
+						$errs = $obj_bd->error; 
 						// $errs[(count($errs)-1)] 
 						$this->set_error( "Ocurri� un error al intentar guardar la infomraci�n. (set_service) " , ERR_DB_EXEC, 2);
 						return FALSE;
@@ -307,6 +311,7 @@ class Client extends Object {
 	public function get_client_users_services_table( $user ){
 		global $Session;
 		global $Validate; 
+		global $obj_bd;
 		$user = $Validate->clean_input($user);  
 		if ( $Session->is_admin()){ 
 			if ( $this->has_user( $user ) ){ 
@@ -318,7 +323,7 @@ class Client extends Object {
 								 . " LEFT JOIN " . PFX_MAIN_DB . "service_user ON sc_se_id_service = su_se_id_service AND su_user = :us_user "
 							. " WHERE se_status = 1 "
 							. " ORDER BY se_service "; 
-					$result = $this->db->query( $query , array( ':id_client' => $this->id_client, ':us_user' => $user ) );
+					$result = $obj_bd->query( $query , array( ':id_client' => $this->id_client, ':us_user' => $user ) );
 					$response = "";
 					if ( $result ){
 						foreach ($result as $key => $serv) { 
@@ -371,10 +376,11 @@ class Client extends Object {
 	
 	private function user_has_service($user, $id_service)
 	{
+		global $obj_bd;
 		$qry = "select * from ". PFX_MAIN_DB ."service_user where SU_SE_ID_SERVICE = :id_service AND SU_USER = :us_user";
 		$params = array( ":id_service" => $id_service, ":us_user" => $user );
 		
-		$result =  $this->db->execute( $query, $params );
+		$result =  $obj_bd->execute( $query, $params );
 		
 		if($result)
 		{
@@ -395,6 +401,7 @@ class Client extends Object {
 	public function set_client_user_service($id_service, $us_user, $status)
 	{
 		global $Session;
+		global $obj_bd;
 		if ( $Session->is_admin() )
 		{ 
 			if ( $id_service > 0 )
@@ -416,11 +423,11 @@ class Client extends Object {
 					$values = array( ":us_user" => $us_user, ":id_service" => $id_service );						
 				}
 				
-				$result =  $this->db->execute( $query, $values );
+				$result =  $obj_bd->execute( $query, $values );
 					  
 				if ( !$result )
 				{ 
-					$errs = $this->db->error; 
+					$errs = $obj_bd->error; 
 					$this->set_error( "Ocurri� un error al intentar guardar la infomraci�n. (set_client_service) " , ERR_DB_EXEC, 2);
 					return FALSE;
 				} 

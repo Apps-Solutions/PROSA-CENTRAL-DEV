@@ -34,7 +34,7 @@ if ( !class_exists('Service')){
 	} 
 	
 	private function get_day_total( $day , $grouped = FALSE ){
-		
+		global $obj_bd;
 		$query = " SELECT DIA, SUM(TOTAL) AS TOTAL FROM ( "
 				. "SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " "  
 				. " WHERE (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE') AND DIA = :dia GROUP BY DIA"
@@ -43,7 +43,7 @@ if ( !class_exists('Service')){
 				. " WHERE (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE') AND DIA = :dia GROUP BY DIA"
 				. " ) GROUP BY DIA";
 				
-		$result = $this->db->query( $query, array( ':dia' => $day ) );
+		$result = $obj_bd->query( $query, array( ':dia' => $day ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
 		} else {
@@ -78,7 +78,7 @@ if ( !class_exists('Service')){
 	}
 	
 	private function set_service_totals(){
-		 
+		 global $obj_bd;
 		$query0 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
@@ -122,8 +122,8 @@ if ( !class_exists('Service')){
 						. " GROUP BY DIA "
 					. " ) GROUP BY DIA "; 
 					
-		$result0 = $this->db->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
-		$result1 = $this->db->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
+		$result0 = $obj_bd->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
+		$result1 = $obj_bd->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		if ( $result0 !== FALSE && $result1 !== FALSE){
 			$t0 = 0;
 			$t1 = 0;
@@ -164,7 +164,7 @@ if ( !class_exists('Service')){
 	} 
 	
 	private function set_top_rejected_3DSSL($srv, $idx){
-		
+		global $obj_bd;
 		$this->indicators[$idx]['top_rejected'] = array();  
 		$query =  " SELECT CODIGO_RESPUESTA, SUM(TOTAL) AS TOTAL FROM ( "
 					  . " SELECT SUM(TOTAL) AS TOTAL, CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') 
@@ -186,7 +186,7 @@ if ( !class_exists('Service')){
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 
 		
-		$result = $this->db->query( $query_top,  $params );
+		$result = $obj_bd->query( $query_top,  $params );
 		if ( $result !== FALSE ){
 			if ( count($result) > 0 ){
 				$sum = 0;

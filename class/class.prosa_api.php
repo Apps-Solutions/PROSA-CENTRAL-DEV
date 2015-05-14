@@ -10,6 +10,7 @@ class prosaApi extends api{
 	public $error;
 	
     public function __construct($request, $origin) {
+    	global $obj_bd;
         parent::__construct($request);
 		/*
 		$this->ldap = new LDAP();
@@ -75,12 +76,13 @@ class prosaApi extends api{
 	 * 
 	 * @return 	Array on success; FALSE otherwise
 	 */
-	protected function logout(){ 
+	protected function logout(){
+		global $obj_bd; 
 		$query = "UPDATE " . PFX_MAIN_DB . "token SET tk_timestamp = :timestamp, tk_token_apple = :apple "
 							. " WHERE tk_user = :tk_user " ;
 		$params = array( ':timestamp' => 0, ':tk_user' => $this->User->user, ':apple' => '' ); 
 		
-		$resp = $this->db->execute($query,$params); 
+		$resp = $obj_bd->execute($query,$params); 
 		if ( !$resp ) {
 			$this->set_error( "An error occured while updating the token. ", LOG_DB_ERR, 3 ) ;
 			return FALSE;
@@ -94,6 +96,7 @@ class prosaApi extends api{
 	  * Check Token
 	  */
 	protected function check_token(){
+		global $obj_bd;
  		if (!array_key_exists('user', $this->request)) {
  			$this->set_error('No User (user) Provided', LOG_API_ERR, 3);
             throw new Exception('No User (user) Provided');
@@ -105,7 +108,7 @@ class prosaApi extends api{
 		$token 	= $this->request['token'];
 		
 		$query  = "SELECT * FROM " . PFX_MAIN_DB . "token WHERE tk_user = :us_user  AND tk_token_prosa = :token ";
-		$result = $this->db->query( $query, array( ':us_user' => $user, ':token' => $token ) ); 
+		$result = $obj_bd->query( $query, array( ':us_user' => $user, ':token' => $token ) ); 
 		if ( $result === FALSE ) {
 			$this->set_error( 'An error occured while querying the DB for the token. ', LOG_DB_ERR, 3 );
 			throw new Exception('Database error.');
@@ -126,13 +129,14 @@ class prosaApi extends api{
 	}
 
 	protected function renew_token(){
+		global $obj_bd;
 		if ($this->User->user != ''){
 			
 			$query = "UPDATE " . PFX_MAIN_DB . "token SET tk_timestamp = :timestamp "
 							. " WHERE tk_user = :user " ;
 			$params = array( ':timestamp' => ( time() + (86400 * 20) ), ':user' => $this->User->user );
 			
-			if ( $result = $this->db->execute( $query, $params ) ) {
+			if ( $result = $obj_bd->execute( $query, $params ) ) {
 				$this->set_error("An error occured while saving the token. ", LOG_DB_ERR, 3  );
 				return FALSE;
 			}
@@ -142,7 +146,8 @@ class prosaApi extends api{
 		} 
 	}
 	 
-	protected function set_token(){ 
+	protected function set_token(){
+		global $obj_bd; 
 		if ($this->User->user != ''){
 			$token = md5( 	"PROSA#" .
 							$this->User->user . "#" . 
@@ -151,7 +156,7 @@ class prosaApi extends api{
 			$query  = "SELECT * FROM " . PFX_MAIN_DB . "token WHERE tk_user = :id_user ";
 			$params = array( ':id_user' => $this->User->user );
 			 
-			$result = $this->db->query( $query, $params ); 
+			$result = $obj_bd->query( $query, $params ); 
 			
 			if ( $result === FALSE ){  
 				$this->set_error( 'An error occured while querying the DB for the token. ', LOG_DB_ERR, 3 ); 
@@ -165,7 +170,7 @@ class prosaApi extends api{
 			  
 			$params = array( ':tk_user' => $this->User->user, ':tk_token' => $token, ':tk_timestamp' => (time() + (86400 * 20) ) );
 			 
-			$result = $this->db->execute($query, $params); 
+			$result = $obj_bd->execute($query, $params); 
 			if ( !$result ) { 
 				$this->set_error("An error occured while saving the token. " , LOG_DB_ERR, 3  );
 				return FALSE;
@@ -180,6 +185,7 @@ class prosaApi extends api{
 	}
 
 	protected function set_apple_token( ){
+		global $obj_bd;
 		if ( $this->User->user != '' ){
 			if (!array_key_exists('apple_token', $this->request) && $this->request['apple_token'] == '') {
 	            $this->set_error('No Apple Token (token) provided.', LOG_API_ERR, 3);
@@ -189,7 +195,7 @@ class prosaApi extends api{
 	        $token= $this->request['apple_token']; 
 	        $query  = "SELECT * FROM " . PFX_MAIN_DB . "token WHERE tk_user = :us_user ";
 			 
-			$result = $this->db->query( $query , array(':us_user' =>  $this->User->user  ));
+			$result = $obj_bd->query( $query , array(':us_user' =>  $this->User->user  ));
 			
 			if ( !$result ){ 
 				$this->set_error( 'An error occured while querying the DB for the token. ', LOG_DB_ERR, 3 );
@@ -200,7 +206,7 @@ class prosaApi extends api{
 			} else {
 				$query = "UPDATE " . PFX_MAIN_DB . "token SET tk_token_apple= :tk_token, tk_timestamp = :tk_timestamp WHERE tk_user = :tk_user " ;
 				$params = array( ':tk_user' => $this->User->user, ':tk_token' => $token, ':tk_timestamp' => (time() + (86400 * 20) ) ); 
-				$result = $this->db->execute($query, $params); 
+				$result = $obj_bd->execute($query, $params); 
 				if ( !$result ) {
 					$this->set_error("An error occured while saving the token. " , LOG_DB_ERR, 3  );
 					return array('success' => FALSE, 'resp' => "A Database Error occurred.");
@@ -213,6 +219,7 @@ class prosaApi extends api{
 	}
 	
 	protected function get_alerts(){
+		global $obj_bd;
 		 if ($this->User->user != ''){
 		 	if ( array_key_exists('id_service', $this->request) && $this->request['id_service'] > 0) {
 	            $id_service = $this->request['id_service'];
@@ -235,7 +242,7 @@ class prosaApi extends api{
 				$params = array( ':id_client' => $id_client, ':id_service' => $id_service ); 
 			}
 			$query = "SELECT * FROM ( " . $query . " )  WHERE rownum <= 50 ";
-			$result = $this->db->query( $query, $params ); 
+			$result = $obj_bd->query( $query, $params ); 
 			if ( $result === FALSE ){  
 				$this->set_error( 'An error occured while querying the DB for the services. ', LOG_DB_ERR, 3 ); 
 				throw new Exception('Database Error.' );
@@ -255,7 +262,8 @@ class prosaApi extends api{
 		}
 	} 
 	
-	protected function get_services(){ 
+	protected function get_services(){
+		global $obj_bd; 
 		if ($this->User->user != ''){
 /*			if ( $this->User->profile == 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "service ORDER BY se_order ";
@@ -267,7 +275,7 @@ class prosaApi extends api{
 					. " WHERE su_user = :su_user ORDER BY se_order ";
 				$params = array( ':su_user' => $this->User->user ); 
 //			}
-			$result = $this->db->query( $query, $params ); 
+			$result = $obj_bd->query( $query, $params ); 
 			
 			if ( $result === FALSE ){  
 				$this->set_error( 'An error occured while querying the DB for the services. ', LOG_DB_ERR, 3 ); 
@@ -288,6 +296,7 @@ class prosaApi extends api{
 	}
 
 	protected function get_indicator(){
+		global $obj_bd;
 		if ( $this->User->user != '' ){
 			if (!array_key_exists('id_service', $this->request) && $this->request['id_service'] > 0) {
 	            $this->set_error('Invalid service.', ERR_VAL_INVALID, 3);
@@ -298,7 +307,7 @@ class prosaApi extends api{
 			if ( $this->User->profile != 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "service_user "
 						. " WHERE su_us_id_user = :user AND su_se_id_service = :id_service ";
-				$resp = $this->db->query( $query, array( ':user' => $this->User->user, ':id_service' => $id_service ) );
+				$resp = $obj_bd->query( $query, array( ':user' => $this->User->user, ':id_service' => $id_service ) );
 				if ( $resp ){
 					$this->set_error('An error occured while querying the DB for permitted services.', LOG_API_ERR, 3);
 	           		throw new Exception('Database Error.');
@@ -381,6 +390,7 @@ class prosaApi extends api{
 	}
 
 	protected function get_clients(){
+		global $obj_bd;
 		if ($this->User->user != ''){
 			if ( $this->User->profile == 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "client ORDER BY id_client ";
@@ -389,7 +399,7 @@ class prosaApi extends api{
 				$this->set_error( 'Restricted action. ', SES_RESTRICTED_ACTION, 3 ); 
 				throw new Exception('Restricted action.'); 
 			}
-			$result = $this->db->query( $query  ); 
+			$result = $obj_bd->query( $query  ); 
 			
 			if ( $result === FALSE ){  
 				$this->set_error( 'An error occured while querying the DB for the clients. ', LOG_DB_ERR, 3 ); 
@@ -429,10 +439,11 @@ class prosaApi extends api{
 	 */ 
 	} 
 	
-	protected function get_user_client( $user ){ 
+	protected function get_user_client( $user ){
+		global $obj_bd; 
 		$fiid = substr($user,0, 4); 
 		$query = "SELECT id_client FROM " . PFX_MAIN_DB . "client WHERE cl_code = :code ";
-		$result = $this->db->query( $query, array(':code' => $fiid ) ); 
+		$result = $obj_bd->query( $query, array(':code' => $fiid ) ); 
 		if ( $result !== FALSE ){
 			return $result[0]['ID_CLIENT'];
 		} else {

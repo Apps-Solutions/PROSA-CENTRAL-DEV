@@ -1,6 +1,4 @@
-<?php 
-	
-?>
+
 <tr>
 	
 		<td> <?php echo $record->code ?></td>

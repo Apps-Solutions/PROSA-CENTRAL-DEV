@@ -63,7 +63,8 @@ class User{
 	}
 	 
 	public function get_client_users_services_table( $id_client, $user )
-	{			
+	{
+		global $obj_bd;			
 		
 		$query = "SELECT id_service, se_service, "
 				. " CASE WHEN NOT su_user IS NULL THEN 1 ELSE 0 END as checked "
@@ -74,7 +75,7 @@ class User{
 				. " ORDER BY se_order ";
 				
 		//$obj_bd = new oracle_db();
-		$obj_bd = new PDOMySQL();
+	//	$obj_bd = new PDOMySQL();
 		$result = $obj_bd->query( $query , array( ':id_client' => $id_client, ':us_user' => $user ) );
 		$response = "";
 		
@@ -115,7 +116,7 @@ class User{
 			
 			$us_user = str_replace("_", ".", $us_user);
 		    //$obj_bd = new oracle_db();
-			$obj_bd = new PDOMySQL();
+			global $obj_bd;
 			
 			if ( $status )
 			{

@@ -72,7 +72,7 @@ class DataTable{
 				
 				case 'lst_threshold':
 				        $this->query = "SELECT * FROM " . PFX_MAIN_DB . "maintenance INNER JOIN " . PFX_MAIN_DB . "service ON id_service = ma_se_id_service WHERE ma_status > 0 ";
-				        $this->sidx = ( $this->sidx != 'id') ? $this->sidx : 'MA_SE_ID_SERVICE';
+				        $this->sidx = ( $this->sidx != 'id') ? $this->sidx : 'ma_se_id_service';
 				        break;
 				case 'lst_alert_history':
 
@@ -80,7 +80,7 @@ class DataTable{
 
 
 						"from ". PFX_MAIN_DB ."alert inner join ".PFX_MAIN_DB."service on id_service = al_se_id_service inner join ".PFX_MAIN_DB."client on id_client = al_cl_id_client";
-						$this->sidx = ( $this->sidx != 'id') ? $this->sidx : 'CL_CLIENT';
+						$this->sidx = ( $this->sidx != 'id') ? $this->sidx : 'cl_client';
 						break;
 			}
 			$this->sort = " ORDER BY " . $this->sidx . " " . $this->sord . " ";
@@ -117,10 +117,10 @@ class DataTable{
 				case 'lst_threshold':
 					$this->title = " Servicios en Mantenimiento ";
 					$this->columns = array(
-						array( 'idx' => 'SE_SERVICE',	'lbl' => 'Servicio', 	'sortable' => TRUE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'STRING'),
-						array( 'idx' => 'MA_START',	'lbl' => 'Inicio',  	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'),  
-						array( 'idx' => 'MA_END',	'lbl' => 'Final', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'),
-						array( 'idx' => 'status',	'lbl' => 'Status', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'),
+						array( 'idx' => 'se_service',	'lbl' => 'Servicio', 	'sortable' => TRUE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'STRING'),
+						array( 'idx' => 'ma_start',	'lbl' => 'Inicio',  	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'),  
+						array( 'idx' => 'ma_end',	'lbl' => 'Final', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'),
+						array( 'idx' => 'ma_status',	'lbl' => 'Status', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'),
 						array( 'idx' => 'actions',	'lbl' => 'Acciones', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => FALSE,	'datatype' => '')				
 								); 
 					$this->template = DIRECTORY_VIEWS . "/lists/lst.maintainance.php";
@@ -136,7 +136,7 @@ class DataTable{
 						array( 'idx' => 'al_timestamp',	'lbl' => 'Fecha', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'  	),
 						array( 'idx' => 'al_timestamp',	'lbl' => 'Hora',  	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME' 	),  
 						array( 'idx' => 'se_servicio',	'lbl' => 'Servicio', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	),
-						array( 'idx' => 'CL_CLIENT',	'lbl' => 'Cliente', 	'sortable' => TRUE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'STRING'	),
+						array( 'idx' => 'cl_client',	'lbl' => 'Cliente', 	'sortable' => TRUE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'STRING'	),
 						array( 'idx' => 'al_text',	'lbl' => 'Notificacion','sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	),
 						array( 'idx' => 'al_user',	'lbl' => 'Usuario', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	)
 								); 

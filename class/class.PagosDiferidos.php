@@ -33,7 +33,7 @@ class PagosDiferidos extends Service {
 	} 
 	
 	private function get_day_total( $day , $grouped = FALSE ){
-		
+		global $obj_bd;
 		$query = " SELECT DIA, SUM(TOTAL) AS TOTAL FROM ( "
 				. "SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " "  
 				. " WHERE KQ6_ID_TOKEN > '00' AND DIA = :dia GROUP BY DIA"
@@ -42,7 +42,7 @@ class PagosDiferidos extends Service {
 				. " WHERE KQ6_ID_TOKEN > '00' AND DIA = :dia GROUP BY DIA"
 			*/	. " ) GROUP BY DIA";
 		 
-		$result = $this->db->query( $query, array( ':dia' => $day ) );
+		$result = $obj_bd->query( $query, array( ':dia' => $day ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
 		} else {
@@ -67,7 +67,7 @@ class PagosDiferidos extends Service {
 	}
 	
 	private function set_service_totals(){
-		
+		global $obj_bd;
 		$this->indicators[0]['total_transactions'] = 0;
 		$this->indicators[0]['total_accepted'] = 0;
 		$this->indicators[0]['total_rejected'] = 0;
@@ -91,7 +91,7 @@ class PagosDiferidos extends Service {
 						. " GROUP BY DIA "
 				*/	. " ) GROUP BY DIA ";
 					
-		$result = $this->db->query( $query, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
+		$result = $obj_bd->query( $query, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		if ( $result !== FALSE ){
 			if ( count($result) > 0 ){
 				
@@ -115,6 +115,7 @@ class PagosDiferidos extends Service {
 	}
 	
 	private function set_top_rejected(){
+		global $obj_bd;
 		$this->indicators[0]['top_rejected'] = array();
 		 
 		
@@ -137,7 +138,7 @@ class PagosDiferidos extends Service {
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 
 		
-		$result = $this->db->query( $query_top,  $params );
+		$result = $obj_bd->query( $query_top,  $params );
 		if ( $result !== FALSE ){
 			if ( count($result) > 0 ){
 				$sum = 0;
