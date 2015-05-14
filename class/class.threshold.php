@@ -179,7 +179,7 @@ class Threshold extends Object {
 			$response = "";  
 			if ( count($this->thresholds) > 0 ){
 				foreach ($this->thresholds as $k => $record) { 
-					$response .= "<option value='" . $record['ID_SERVICE'] . "'>" . utf8_decode($record['SE_SERVICE']) . " </option>"; 
+					$response .= "<option value='" . $record['id_service'] . "'>" . utf8_decode($record['se_service']) . " </option>"; 
 				} 
 			}   
 			return $response;

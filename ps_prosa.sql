@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 12-05-2015 a las 10:10:19
+-- Tiempo de generación: 14-05-2015 a las 18:40:42
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -17,29 +17,29 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de datos: `prosa`
+-- Base de datos: `ps_prosa`
 --
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_ALERT`
+-- Estructura de tabla para la tabla `pra_alert`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_ALERT` (
-`ID_ALERT` int(11) NOT NULL,
-  `AL_CL_ID_CLIENT` int(11) NOT NULL,
-  `AL_TIMESTAMP` int(11) NOT NULL,
-  `AL_SE_ID_SERVICE` int(11) DEFAULT NULL,
-  `AL_TEXT` varchar(250) COLLATE utf8_spanish_ci DEFAULT NULL,
-  `AL_STATUS` int(11) DEFAULT NULL
+CREATE TABLE IF NOT EXISTS `pra_alert` (
+`id_alert` int(11) NOT NULL,
+  `al_cl_id_client` int(11) NOT NULL,
+  `al_timestamp` int(11) NOT NULL,
+  `al_se_id_service` int(11) DEFAULT NULL,
+  `al_text` varchar(250) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `al_status` int(11) DEFAULT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=213 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_ALERT`
+-- Volcado de datos para la tabla `pra_alert`
 --
 
-INSERT INTO `PRA_ALERT` (`ID_ALERT`, `AL_CL_ID_CLIENT`, `AL_TIMESTAMP`, `AL_SE_ID_SERVICE`, `AL_TEXT`, `AL_STATUS`) VALUES
+INSERT INTO `pra_alert` (`id_alert`, `al_cl_id_client`, `al_timestamp`, `al_se_id_service`, `al_text`, `al_status`) VALUES
 (180, 1, 1413821194, 7, 'Test notificacion', 1),
 (181, 1, 1413821196, 7, 'Test notificacion', 1),
 (182, 1, 1413821199, 7, 'Test notificacion', 1),
@@ -54,45 +54,45 @@ INSERT INTO `PRA_ALERT` (`ID_ALERT`, `AL_CL_ID_CLIENT`, `AL_TIMESTAMP`, `AL_SE_I
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_CLIENT`
+-- Estructura de tabla para la tabla `pra_client`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_CLIENT` (
-`ID_CLIENT` int(11) NOT NULL,
-  `CL_CLIENT` varchar(64) COLLATE utf8_spanish_ci NOT NULL,
-  `CL_CODE` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `CL_STATUS` int(11) NOT NULL,
-  `CL_TIMESTAMP` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_client` (
+`id_client` int(11) NOT NULL,
+  `cl_client` varchar(64) COLLATE utf8_spanish_ci NOT NULL,
+  `cl_code` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `cl_status` int(11) NOT NULL,
+  `cl_timestamp` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_CLIENT`
+-- Volcado de datos para la tabla `pra_client`
 --
 
-INSERT INTO `PRA_CLIENT` (`ID_CLIENT`, `CL_CLIENT`, `CL_CODE`, `CL_STATUS`, `CL_TIMESTAMP`) VALUES
+INSERT INTO `pra_client` (`id_client`, `cl_client`, `cl_code`, `cl_status`, `cl_timestamp`) VALUES
 (1, 'SANTANDER', 'B003', 1, 1431368241),
 (2, 'HSBC', 'B021', 1, 1431368241),
 (3, 'SCOTIABANK', 'B044', 1, 1431368241),
-(4, 'BANORTE', 'B072', 1, 1413743865),
+(4, 'BANORTE', 'B072', 0, 1413743865),
 (5, 'PROSA', 'B999', 1, 1413743865);
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_LAST_TOTAL`
+-- Estructura de tabla para la tabla `pra_last_total`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_LAST_TOTAL` (
-  `LT_SE_ID_SERVICE` int(11) NOT NULL,
-  `LT_TOTAL` int(11) NOT NULL,
-  `LT_TIMESTAMP` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_last_total` (
+  `lt_se_id_service` int(11) NOT NULL,
+  `lt_total` int(11) NOT NULL,
+  `lt_timestamp` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_LAST_TOTAL`
+-- Volcado de datos para la tabla `pra_last_total`
 --
 
-INSERT INTO `PRA_LAST_TOTAL` (`LT_SE_ID_SERVICE`, `LT_TOTAL`, `LT_TIMESTAMP`) VALUES
+INSERT INTO `pra_last_total` (`lt_se_id_service`, `lt_total`, `lt_timestamp`) VALUES
 (0, 341898, 1431363586),
 (1, 10458, 1431100304),
 (2, 765119, 1431100445),
@@ -106,23 +106,23 @@ INSERT INTO `PRA_LAST_TOTAL` (`LT_SE_ID_SERVICE`, `LT_TOTAL`, `LT_TIMESTAMP`) VA
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_MAINTENANCE`
+-- Estructura de tabla para la tabla `pra_maintenance`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_MAINTENANCE` (
-  `ID_MAINTENANCE` int(11) NOT NULL,
-  `MA_SE_ID_SERVICE` int(11) NOT NULL,
-  `MA_START` int(11) NOT NULL,
-  `MA_END` int(11) NOT NULL,
-  `MA_TIMESTAMP` int(11) NOT NULL,
-  `MA_STATUS` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_maintenance` (
+  `id_maintenance` int(11) NOT NULL,
+  `ma_se_id_service` int(11) NOT NULL,
+  `ma_start` int(11) NOT NULL,
+  `ma_end` int(11) NOT NULL,
+  `ma_timestamp` int(11) NOT NULL,
+  `ma_status` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_MAINTENANCE`
+-- Volcado de datos para la tabla `pra_maintenance`
 --
 
-INSERT INTO `PRA_MAINTENANCE` (`ID_MAINTENANCE`, `MA_SE_ID_SERVICE`, `MA_START`, `MA_END`, `MA_TIMESTAMP`, `MA_STATUS`) VALUES
+INSERT INTO `pra_maintenance` (`id_maintenance`, `ma_se_id_service`, `ma_start`, `ma_end`, `ma_timestamp`, `ma_status`) VALUES
 (1, 10, 1413726840, 1413727200, 1413726845, 1),
 (2, 10, 1413727500, 1413727800, 1413726916, 1),
 (3, 8, 1414801020, 1414808220, 1414627653, 1),
@@ -132,20 +132,20 @@ INSERT INTO `PRA_MAINTENANCE` (`ID_MAINTENANCE`, `MA_SE_ID_SERVICE`, `MA_START`,
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_NETWORK`
+-- Estructura de tabla para la tabla `pra_network`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_NETWORK` (
-  `ID_NETWORK` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
-  `NETWORK` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
-  `EMITTER` varchar(5) COLLATE utf8_spanish_ci NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_network` (
+  `id_network` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `network` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
+  `emitter` varchar(5) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_NETWORK`
+-- Volcado de datos para la tabla `pra_network`
 --
 
-INSERT INTO `PRA_NETWORK` (`ID_NETWORK`, `NETWORK`, `EMITTER`) VALUES
+INSERT INTO `pra_network` (`id_network`, `network`, `emitter`) VALUES
 ('ARTL', 'ARTELI', 'ADQ'),
 ('BENA', 'FARMACIAS BENAVIDES', 'ADQ'),
 ('BIC2', 'WALMART (TIENDA)', 'ADQ'),
@@ -181,19 +181,19 @@ INSERT INTO `PRA_NETWORK` (`ID_NETWORK`, `NETWORK`, `EMITTER`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_RESPONSE_CODE`
+-- Estructura de tabla para la tabla `pra_response_code`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_RESPONSE_CODE` (
-  `ID_RESPONSE_CODE` int(11) NOT NULL,
-  `RC_RESPONSE_CODE` varchar(45) COLLATE utf8_spanish_ci NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_response_code` (
+  `id_response_code` mediumint(11) NOT NULL,
+  `rc_response_code` varchar(45) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_RESPONSE_CODE`
+-- Volcado de datos para la tabla `pra_response_code`
 --
 
-INSERT INTO `PRA_RESPONSE_CODE` (`ID_RESPONSE_CODE`, `RC_RESPONSE_CODE`) VALUES
+INSERT INTO `pra_response_code` (`id_response_code`, `rc_response_code`) VALUES
 (50, 'Declinada'),
 (51, 'Tarjeta Expirada'),
 (52, 'Intentos de PIN excedidos'),
@@ -258,23 +258,23 @@ INSERT INTO `PRA_RESPONSE_CODE` (`ID_RESPONSE_CODE`, `RC_RESPONSE_CODE`) VALUES
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_SERVICE`
+-- Estructura de tabla para la tabla `pra_service`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_SERVICE` (
-`ID_SERVICE` int(11) NOT NULL,
-  `SE_SERVICE` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
-  `SE_COMMAND` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `SE_STATUS` int(11) NOT NULL,
-  `SE_TIMESTAMP` int(11) NOT NULL,
-  `SE_ORDER` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_service` (
+`id_service` int(11) NOT NULL,
+  `se_service` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
+  `se_command` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `se_status` int(11) NOT NULL,
+  `se_timestamp` int(11) NOT NULL,
+  `se_order` int(11) NOT NULL
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_SERVICE`
+-- Volcado de datos para la tabla `pra_service`
 --
 
-INSERT INTO `PRA_SERVICE` (`ID_SERVICE`, `SE_SERVICE`, `SE_COMMAND`, `SE_STATUS`, `SE_TIMESTAMP`, `SE_ORDER`) VALUES
+INSERT INTO `pra_service` (`id_service`, `se_service`, `se_command`, `se_status`, `se_timestamp`, `se_order`) VALUES
 (1, 'Pagos Diferidos', 's1', 1, 1431376470, 5),
 (2, 'Preautorizador (PREA)', 's2', 1, 1431376470, 7),
 (3, 'Payware Online', 's3', 1, 1431376470, 6),
@@ -289,20 +289,20 @@ INSERT INTO `PRA_SERVICE` (`ID_SERVICE`, `SE_SERVICE`, `SE_COMMAND`, `SE_STATUS`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_SERVICE_CLIENT`
+-- Estructura de tabla para la tabla `pra_service_client`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_SERVICE_CLIENT` (
-  `SC_SE_ID_SERVICE` int(11) NOT NULL,
-  `SC_CL_ID_CLIENT` int(11) NOT NULL,
-  `SC_TIMESTAMP` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_service_client` (
+  `sc_se_id_service` int(11) NOT NULL,
+  `sc_cl_id_client` int(11) NOT NULL,
+  `sc_timestamp` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_SERVICE_CLIENT`
+-- Volcado de datos para la tabla `pra_service_client`
 --
 
-INSERT INTO `PRA_SERVICE_CLIENT` (`SC_SE_ID_SERVICE`, `SC_CL_ID_CLIENT`, `SC_TIMESTAMP`) VALUES
+INSERT INTO `pra_service_client` (`sc_se_id_service`, `sc_cl_id_client`, `sc_timestamp`) VALUES
 (7, 4, 1415233651),
 (9, 4, 1415233652),
 (8, 7, 1429196877),
@@ -317,20 +317,20 @@ INSERT INTO `PRA_SERVICE_CLIENT` (`SC_SE_ID_SERVICE`, `SC_CL_ID_CLIENT`, `SC_TIM
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_SERVICE_USER`
+-- Estructura de tabla para la tabla `pra_service_user`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_SERVICE_USER` (
-  `SU_SE_ID_SERVICE` int(11) NOT NULL,
-  `SU_USER` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
-  `SU_TIMESTAMP` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_service_user` (
+  `su_se_id_service` int(11) NOT NULL,
+  `su_user` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
+  `su_timestamp` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_SERVICE_USER`
+-- Volcado de datos para la tabla `pra_service_user`
 --
 
-INSERT INTO `PRA_SERVICE_USER` (`SU_SE_ID_SERVICE`, `SU_USER`, `SU_TIMESTAMP`) VALUES
+INSERT INTO `pra_service_user` (`su_se_id_service`, `su_user`, `su_timestamp`) VALUES
 (7, 'mxbdcal1', 1420670024),
 (6, 'mxbdcal1', 1420670025),
 (8, 'mxbdcal1', 1420670171),
@@ -345,21 +345,21 @@ INSERT INTO `PRA_SERVICE_USER` (`SU_SE_ID_SERVICE`, `SU_USER`, `SU_TIMESTAMP`) V
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_TBL_APP_PREAUTORIZADOR`
+-- Estructura de tabla para la tabla `pra_tbl_app_preautorizador`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_TBL_APP_PREAUTORIZADOR` (
-  `ID` int(4) NOT NULL,
-  `FIID_TARJ` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
-  `PREFIJO` int(6) NOT NULL,
-  `PREA` varchar(1) COLLATE utf8_spanish_ci NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_tbl_app_preautorizador` (
+  `id` int(4) NOT NULL,
+  `fiid_tarj` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
+  `prefijo` int(6) NOT NULL,
+  `prea` varchar(1) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_TBL_APP_PREAUTORIZADOR`
+-- Volcado de datos para la tabla `pra_tbl_app_preautorizador`
 --
 
-INSERT INTO `PRA_TBL_APP_PREAUTORIZADOR` (`ID`, `FIID_TARJ`, `PREFIJO`, `PREA`) VALUES
+INSERT INTO `pra_tbl_app_preautorizador` (`id`, `fiid_tarj`, `prefijo`, `prea`) VALUES
 (1, 'B003', 272800, '2'),
 (2, 'B003', 454747, '2'),
 (3, 'B003', 456300, '2'),
@@ -374,60 +374,60 @@ INSERT INTO `PRA_TBL_APP_PREAUTORIZADOR` (`ID`, `FIID_TARJ`, `PREFIJO`, `PREA`) 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_TBL_SMS_LOG`
+-- Estructura de tabla para la tabla `pra_tbl_sms_log`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_TBL_SMS_LOG` (
-  `PAN` varchar(19) COLLATE utf8_spanish_ci NOT NULL,
-  `PHONE` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
-  `PHONE_NAME` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
-  `SKY` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
-  `EMAIL` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `AMOUNT` float(26,8) NOT NULL,
-  `PCODE` varchar(6) COLLATE utf8_spanish_ci NOT NULL,
-  `TXN_TYPE` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
-  `LOCAL_DATE` date NOT NULL,
-  `LOCAL_TIME` int(11) NOT NULL,
-  `TRACE` int(11) NOT NULL,
-  `REFNUM` varchar(12) COLLATE utf8_spanish_ci NOT NULL,
-  `AUTHNUM` varchar(6) COLLATE utf8_spanish_ci NOT NULL,
-  `TERMID` varchar(8) COLLATE utf8_spanish_ci NOT NULL,
-  `ACCEPTORNAME` varchar(42) COLLATE utf8_spanish_ci NOT NULL,
-  `STATUS` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
-  `IDMSG` varchar(16) COLLATE utf8_spanish_ci NOT NULL,
-  `TIPOMSG` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
-  `FIID` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
-  `FECH_REG` date NOT NULL,
-  `ID_BROKER` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
-  `TMSG_ENV` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
-  `NMSGS` int(25) NOT NULL,
-  `CVE_TRX` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `NAT_CONT` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `PREFIJO` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
-  `TIPO_TH` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
-  `USER_ID` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
-  `NOMBRE_USUARIO` varchar(45) COLLATE utf8_spanish_ci NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_tbl_sms_log` (
+  `pan` varchar(19) COLLATE utf8_spanish_ci NOT NULL,
+  `phone` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `phone_name` varchar(25) COLLATE utf8_spanish_ci NOT NULL,
+  `sky` varchar(15) COLLATE utf8_spanish_ci NOT NULL,
+  `email` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
+  `amount` float(26,8) NOT NULL,
+  `pcode` varchar(6) COLLATE utf8_spanish_ci NOT NULL,
+  `txn_type` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
+  `local_date` date NOT NULL,
+  `local_time` int(11) NOT NULL,
+  `trace` int(11) NOT NULL,
+  `refnum` varchar(12) COLLATE utf8_spanish_ci NOT NULL,
+  `authnum` varchar(6) COLLATE utf8_spanish_ci NOT NULL,
+  `termid` varchar(8) COLLATE utf8_spanish_ci NOT NULL,
+  `acceptorname` varchar(42) COLLATE utf8_spanish_ci NOT NULL,
+  `status` varchar(5) COLLATE utf8_spanish_ci NOT NULL,
+  `idmsg` varchar(16) COLLATE utf8_spanish_ci NOT NULL,
+  `tipomsg` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
+  `fiid` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
+  `fech_reg` date NOT NULL,
+  `id_broker` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
+  `tmsg_env` varchar(1) COLLATE utf8_spanish_ci NOT NULL,
+  `nmsgs` int(25) NOT NULL,
+  `cve_trx` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `nat_cont` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `pfrefijo` varchar(20) COLLATE utf8_spanish_ci NOT NULL,
+  `tipo_th` varchar(4) COLLATE utf8_spanish_ci NOT NULL,
+  `user_id` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
+  `nombre_usuario` varchar(45) COLLATE utf8_spanish_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_THRESHOLD`
+-- Estructura de tabla para la tabla `pra_threshold`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_THRESHOLD` (
-  `TH_SE_ID_SERVICE` int(11) NOT NULL,
-  `TH_THRESHOLD` float(8,2) NOT NULL,
-  `TH_TIME_PROSA` int(11) NOT NULL,
-  `TH_TIME_CLIENT` int(11) NOT NULL,
-  `TH_TIMESTAMP` int(12) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_threshold` (
+  `th_se_id_service` int(11) NOT NULL,
+  `th_threshold` float(8,2) NOT NULL,
+  `th_time_prosa` int(11) NOT NULL,
+  `th_time_client` int(11) NOT NULL,
+  `th_timestamp` int(12) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_THRESHOLD`
+-- Volcado de datos para la tabla `pra_threshold`
 --
 
-INSERT INTO `PRA_THRESHOLD` (`TH_SE_ID_SERVICE`, `TH_THRESHOLD`, `TH_TIME_PROSA`, `TH_TIME_CLIENT`, `TH_TIMESTAMP`) VALUES
+INSERT INTO `pra_threshold` (`th_se_id_service`, `th_threshold`, `th_time_prosa`, `th_time_client`, `th_timestamp`) VALUES
 (1, 10.00, 2, 0, 1430860250),
 (2, 10.00, 2, 0, 1430860250),
 (3, 14.00, 1, 0, 1430860250),
@@ -442,21 +442,21 @@ INSERT INTO `PRA_THRESHOLD` (`TH_SE_ID_SERVICE`, `TH_THRESHOLD`, `TH_TIME_PROSA`
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `PRA_TOKEN`
+-- Estructura de tabla para la tabla `pra_token`
 --
 
-CREATE TABLE IF NOT EXISTS `PRA_TOKEN` (
-  `TK_USER` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
-  `TK_TOKEN_PROSA` varchar(128) COLLATE utf8_spanish_ci NOT NULL,
-  `TK_TOKEN_APPLE` varchar(128) COLLATE utf8_spanish_ci NOT NULL,
-  `TK_TIMESTAMP` int(11) NOT NULL
+CREATE TABLE IF NOT EXISTS `pra_token` (
+  `tk_user` varchar(45) COLLATE utf8_spanish_ci NOT NULL,
+  `tk_token_prosa` varchar(128) COLLATE utf8_spanish_ci NOT NULL,
+  `tk_token_apple` varchar(128) COLLATE utf8_spanish_ci NOT NULL,
+  `tk_timestamp` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
--- Volcado de datos para la tabla `PRA_TOKEN`
+-- Volcado de datos para la tabla `pra_token`
 --
 
-INSERT INTO `PRA_TOKEN` (`TK_USER`, `TK_TOKEN_PROSA`, `TK_TOKEN_APPLE`, `TK_TIMESTAMP`) VALUES
+INSERT INTO `pra_token` (`tk_user`, `tk_token_prosa`, `tk_token_apple`, `tk_timestamp`) VALUES
 ('mxbdcal1', 'f18dcbcd8bcddc3c591c553ba6bb6a53', '7ae841bee0a9eb356bd318fdf93f8b08b247a2b5c9f88dc7b9e420a01445d10c', 1422398129),
 ('sug', '620e7794b8453c600d468cb2b3c441c5', '92c5346b951f43221ada2a6a63dcd7b9ab55668262be96cf2afbbcd4fb87285a', 0),
 ('dguztysrtsgyf', '9cf2a0657b6141d93e3b3d939c294e1e', 'f4a62ec42ea4fe72e3c5938fee6fd59f9b469dfa31a7f4db11ef8d627adab2bf', 1424727362),
@@ -473,66 +473,66 @@ INSERT INTO `PRA_TOKEN` (`TK_USER`, `TK_TOKEN_PROSA`, `TK_TOKEN_APPLE`, `TK_TIME
 --
 
 --
--- Indices de la tabla `PRA_ALERT`
+-- Indices de la tabla `pra_alert`
 --
-ALTER TABLE `PRA_ALERT`
- ADD PRIMARY KEY (`ID_ALERT`);
+ALTER TABLE `pra_alert`
+ ADD PRIMARY KEY (`id_alert`);
 
 --
--- Indices de la tabla `PRA_CLIENT`
+-- Indices de la tabla `pra_client`
 --
-ALTER TABLE `PRA_CLIENT`
- ADD PRIMARY KEY (`ID_CLIENT`);
+ALTER TABLE `pra_client`
+ ADD PRIMARY KEY (`id_client`);
 
 --
--- Indices de la tabla `PRA_LAST_TOTAL`
+-- Indices de la tabla `pra_last_total`
 --
-ALTER TABLE `PRA_LAST_TOTAL`
- ADD PRIMARY KEY (`LT_SE_ID_SERVICE`);
+ALTER TABLE `pra_last_total`
+ ADD PRIMARY KEY (`lt_se_id_service`);
 
 --
--- Indices de la tabla `PRA_MAINTENANCE`
+-- Indices de la tabla `pra_maintenance`
 --
-ALTER TABLE `PRA_MAINTENANCE`
- ADD PRIMARY KEY (`ID_MAINTENANCE`);
+ALTER TABLE `pra_maintenance`
+ ADD PRIMARY KEY (`id_maintenance`);
 
 --
--- Indices de la tabla `PRA_NETWORK`
+-- Indices de la tabla `pra_network`
 --
-ALTER TABLE `PRA_NETWORK`
- ADD PRIMARY KEY (`ID_NETWORK`);
+ALTER TABLE `pra_network`
+ ADD PRIMARY KEY (`id_network`);
 
 --
--- Indices de la tabla `PRA_RESPONSE_CODE`
+-- Indices de la tabla `pra_response_code`
 --
-ALTER TABLE `PRA_RESPONSE_CODE`
- ADD PRIMARY KEY (`ID_RESPONSE_CODE`);
+ALTER TABLE `pra_response_code`
+ ADD PRIMARY KEY (`id_response_code`);
 
 --
--- Indices de la tabla `PRA_SERVICE`
+-- Indices de la tabla `pra_service`
 --
-ALTER TABLE `PRA_SERVICE`
- ADD PRIMARY KEY (`ID_SERVICE`);
+ALTER TABLE `pra_service`
+ ADD PRIMARY KEY (`id_service`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT de la tabla `PRA_ALERT`
+-- AUTO_INCREMENT de la tabla `pra_alert`
 --
-ALTER TABLE `PRA_ALERT`
-MODIFY `ID_ALERT` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=213;
+ALTER TABLE `pra_alert`
+MODIFY `id_alert` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=213;
 --
--- AUTO_INCREMENT de la tabla `PRA_CLIENT`
+-- AUTO_INCREMENT de la tabla `pra_client`
 --
-ALTER TABLE `PRA_CLIENT`
-MODIFY `ID_CLIENT` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+ALTER TABLE `pra_client`
+MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
 --
--- AUTO_INCREMENT de la tabla `PRA_SERVICE`
+-- AUTO_INCREMENT de la tabla `pra_service`
 --
-ALTER TABLE `PRA_SERVICE`
-MODIFY `ID_SERVICE` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+ALTER TABLE `pra_service`
+MODIFY `id_service` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -20,7 +20,7 @@
 					foreach ($services as $k => $service) {
 					?>
 						<div class="col-xs-1"> &nbsp; </div> 
-						<a href="index.php?command=<?php echo $service['SE_COMMAND'] ?>">
+						<a href="index.php?command=<?php echo $service['se_command'] ?>">
 							<div class="col-xs-11 col-sm-5 col-md-3 col-lg-2 btn-service">
 								<div class="row ">
 									<div class="col-xs-12  ">
