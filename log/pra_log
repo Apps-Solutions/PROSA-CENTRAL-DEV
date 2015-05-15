@@ -22,3 +22,25 @@
 [2015-05-14 18:39:44] cser @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
 [2015-05-14 18:39:49] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
 [2015-05-14 18:39:49] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:16:22] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
+[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-15 09:29:14] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
+[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-15 09:31:23] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:31:23] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:33:34] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:33:34] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:41:25] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:41:25] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:42:06] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-15 09:46:04] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-15 09:54:51] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-15 09:57:09] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
+[2015-05-15 09:57:17] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-15 09:57:17] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 

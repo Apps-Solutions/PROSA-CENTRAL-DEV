@@ -8,7 +8,7 @@ class Alert extends Object{
     {
     	global $obj_bd;
 	//$this->db = new oracle_db();
-	$this->$obj_bd = new PDOMySQL();
+	//$this->$obj_bd = new PDOMySQL();
 	if( $id_alert > 0 )
 	{
 	    //cargar los datos de esa alerta.
@@ -35,12 +35,12 @@ class Alert extends Object{
 		foreach ($resp as $k => $alert)
 		{
 		    $record = array();
-		    $record['id_alert'] 	= $alert['ID_ALERT'];
-		    $record['al_timestamp']	= $alert['AL_TIMESTAMP'];
-		    $record['se_service'] 	= $alert['SE_SERVICE'];
-		    $record['cl_client'] 	= $alert['CL_CLIENT'];
-		    $record['al_text'] 		= $alert['AL_TEXT'];
-		    $record['al_user'] 		= $alert['AL_USER'];
+		    $record['id_alert'] 	= $alert['id_alert'];
+		    $record['al_timestamp']	= $alert['al_timestamp'];
+		    $record['se_service'] 	= $alert['se_service'];
+		    $record['cl_client'] 	= $alert['cl_client'];
+		    $record['al_text'] 		= $alert['al_text'];
+		    $record['al_user'] 		= $alert['al_user'];
 		    
 		    ob_start();
 		    require DIRECTORY_VIEWS . "/lists/lst.alert.php";
