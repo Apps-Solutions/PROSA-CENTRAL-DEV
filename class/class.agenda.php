@@ -56,9 +56,8 @@ class Agenda extends Object {
        * load_clients()
        */
       private function load_clients(){
-      	global $obj_bd;
-          //$db = new oracle_db();
-		 // $db = new PDOMySQL();
+      	global $obj_bd;  //usar para  Mysql
+          //$db = new oracle_db();   //usar para Oracle
           $query = "SELECT * FROM " . PFX_MAIN_DB . "client WHERE cl_status > 0 ";
           $clients = $obj_bd->query($query);
           if ($clients)
@@ -142,11 +141,7 @@ class Agenda extends Object {
       }
 
       /**
-<<<<<<< HEAD
-       * get_users_table()
-=======
        * get_clients_table()
->>>>>>> origin/master
        *
        *
        */
@@ -199,7 +194,7 @@ class Agenda extends Object {
 	  
 	  public function get_services_users_prosa($user)
 	  {
-	  global $obj_bd;
+	  global $obj_bd; //Usar para MySql
 		$qry = 	 "select id_service, se_service, su_user, ".
 				 "CASE WHEN NOT su_user IS NULL THEN 1 ELSE 0 END as checked ".
 				 "from ". PFX_MAIN_DB ."service ".
@@ -207,9 +202,8 @@ class Agenda extends Object {
 				 "WHERE se_status = 1 ORDER BY se_order ";
 				 
 		//$values = array( ":su_user" => $user );
-		//$db = new oracle_db();
-		//$db = new PDOMySQL();
-		
+		//$db = new oracle_db();  //usar para oracle
+			
 		$result = $obj_bd->query($qry);
 		
 		$response = "";
@@ -222,7 +216,7 @@ class Agenda extends Object {
 						$record['service']	= utf8_decode($serv['se_service'] );
 						$record['checked'] 	= $serv['CHECKED'];
 						$record['pfx'] 		= 'serv_user_prosa_'  . str_replace(".","_", strip_tags(trim($user))).'_';
-						$record['function']	= "set_user_prosa_service('" . str_replace(".","_", strip_tags(trim($user))) . "', " . $serv['ID_SERVICE'] . ");";
+						$record['function']	= "set_user_prosa_service('" . str_replace(".","_", strip_tags(trim($user))) . "', " . $serv['id_service'] . ");";
 						
 						ob_start(); 
 						require DIRECTORY_VIEWS . "/lists/lst.service_chk.php"; 

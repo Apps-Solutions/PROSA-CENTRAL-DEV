@@ -95,11 +95,6 @@ class DataTable{
 				$this->where .= " " . $modo . " " . $open . " " . ($col) . " " . $signo . "  " . ($val) . "  " . $close . " ";
 
 
-/*
-				$this->where .= " " . $modo . " " . $open . " " . mysql_real_escape_string($col) . " " . $signo . " '%" . mysql_real_escape_string($val) . "%' " . $close . " ";
-		        elseif( in_array($signo, array('>', '>=', '<', '<=') ) === TRUE )
-				$this->where .= " " . $modo . " " . $open . " " . mysql_real_escape_string($col) . " " . $signo . "  " . mysql_real_escape_string($val) . "  " . $close . " ";
->>>>>>> origin/master  */
 			else
 				$this->where .= " " . $modo . " " . $open . " " . ($col) . " " . $signo . "  '" . ($val) . "'  " . $close . " ";
 		}
@@ -159,32 +154,35 @@ class DataTable{
 			}
 		}
 		
-		public function get_list_html( $ajax = FALSE ){ 
+		public function get_list_html( $ajax = FALSE ){
+			global $obj_bd;  //Usar para Mysql
 			if (count($this->error) == 0 && $this->query != '' && $this->template != ''){ 
-				//global $obj_bd;
-				//$obj_bd = new oracle_db();
-				$obj_bd = new PDOMySQL();
+				
+				//$obj_bd = new oracle_db(); //usar para oracle
+				
 				$query = $this->query 
 							. " " . $this->where 
 							. " " . $this->group
 							. " " . $this->sort; 
 
-
-				$q_cuantos =  "SELECT count(*) as RecordCount FROM (" . $query . ") " ; 
-
-
-			//	echo $query;
-				//$q_cuantos =  "SELECT count(*) as RecordCount FROM (" . $query . ") as cuenta" ;
-				$q_cuantos =  "SELECT count(*) as RecordCount FROM (" . $query . ") " ; 
-
+			
+				$q_cuantos =  "SELECT count(*) as RecordCount FROM (" . $query . ") as cuenta" ;
+			
 				$record = $obj_bd->query( $q_cuantos );
 				
+			
+			
+				print_r($record);
+			
+		
 				if ( $record === FALSE ){
 					$this->set_error( 'Ocurrió un error al contar los registros en la BD. ' , LOG_DB_ERR, 1);
 					return FALSE;
 				}
 				
-				$this->total_records = (int)$record[0]["RECORDCOUNT"];
+				$this->total_records = (int)$record[0]["RecordCount"];
+				echo $this->total_records;
+							
 				
 				$start = (($this->page - 1) * $this->rows);
 				
@@ -199,8 +197,11 @@ class DataTable{
 				//$limit = " LIMIT " . $start . ", " . $this->rows;
 				
 				$fin = $start + $this->rows;
-				
+				/*
 				$queryF = 'select * from (select rownum rn, a.* from (' . $query. ' ) a ) WHERE rn BETWEEN '. $start . ' AND ' . $fin;
+				 * Línea para oracle ****
+				 */
+				 $queryF = "select * from (select count(*) as rownum from (SELECT * FROM pra_maintenance INNER JOIN pra_service ON id_service = ma_se_id_service WHERE ma_status > 0 ORDER BY ma_se_id_service ASC ) a ) as test WHERE rownum BETWEEN 0 AND 25";
 				
 
 				//$result = $obj_bd->query( $query . $limit );
@@ -546,7 +547,7 @@ class DataTable{
 						foreach($this->columns as $k => $cols)
 						{
 								if( $cols['export'] === TRUE )
-										$head_xls[] = utf8_encode($cols['lbl']); //utf8_encode()
+										$head_xls[] = $cols['lbl']; 
 						}
 						
 						if ( $result !== FALSE )
@@ -581,7 +582,6 @@ class DataTable{
 												require $this->template_xls; 
 												$resp = ob_get_clean();
 												$row = array();
-												$resp=utf8_decode($resp); //utf8_decode(); 
 												$row = explode('|', $resp);
 												
 												$xls->insert_row( $row );

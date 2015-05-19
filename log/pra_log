@@ -1,46 +1,20 @@
-[2015-05-14 18:29:48] cser @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
-[2015-05-14 18:29:48] cser @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
-[2015-05-14 18:29:48] cser @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
-[2015-05-14 18:29:48] cser @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
-[2015-05-14 18:31:02] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:31:02] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:09] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:09] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:12] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:12] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:13] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:13] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:14] cser @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-14 18:39:17] cser @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-14 18:39:22] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:22] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:27] cser @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
-[2015-05-14 18:39:27] cser @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
-[2015-05-14 18:39:27] cser @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
-[2015-05-14 18:39:27] cser @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
-[2015-05-14 18:39:33] cser @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-14 18:39:44] cser @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-14 18:39:49] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-14 18:39:49] cser @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:16:22] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
-[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
-[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
-[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
-[2015-05-15 09:16:25] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
-[2015-05-15 09:29:14] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
-[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
-[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
-[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
-[2015-05-15 09:30:15] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
-[2015-05-15 09:31:23] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:31:23] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:33:34] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:33:34] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:41:25] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:41:25] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:42:06] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-15 09:46:04] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-15 09:54:51] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-15 09:57:09] carlos @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al contar los registros en la BD. 
-[2015-05-15 09:57:17] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
-[2015-05-15 09:57:17] carlos @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-19 14:15:58] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 14:15:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 14:15:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 14:37:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 14:37:09] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:39:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:44:33] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:44:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:44:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:56:03] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:57:14] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:57:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:58:48] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 15:59:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 16:04:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 16:04:26] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 16:04:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 16:05:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 16:05:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 16:08:21] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD

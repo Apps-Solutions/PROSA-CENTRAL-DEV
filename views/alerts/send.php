@@ -93,12 +93,12 @@
                                   foreach ($services as $k => $service)
                                   {
                                       $record = array();
-                                      $record['id_service'] = $service['ID_SERVICE'];
-                                      $record['service'] = utf8_decode($service['SE_SERVICE']);
+                                      $record['id_service'] = $service['id_service'];
+                                      $record['service'] = utf8_decode($service['se_service']);
 
                                       $record['checked'] = FALSE;
                                       $record['pfx'] = 'notif_user_';
-                                      $record['function'] = "service_row('" . $service['ID_SERVICE'] . "','service_client')";
+                                      $record['function'] = "service_row('" . $service['id_service'] . "','service_client')";
 
                                       ob_start();
                                       require DIRECTORY_VIEWS . "/lists/lst.service_chk.php";
@@ -128,7 +128,9 @@
                                 <input type='text' id='inp_cli_search' name='cli_search' class="form-control" onkeyup="search_notificatios('cli_search', 'clientes_table');"  />
                             </div>
                             <div class='col-xs-4 text-center' >
-                                <input type='button' id='inp_cli_srch_submit' name='cli_search_submit' value ='Buscar' class="btn" onclick=""/>
+                                <!--<input type='button' id='inp_cli_srch_submit' name='cli_search_submit' value ='Buscar' class="btn" onclick=""/>-->
+                                <button class='btn' id='inp_cli_srch_submit' name='cli_search_submit' style="background: #990D17; color: #FFFFFF; "
+							onclick=""/> Buscar</button>
                             </div>
                         </div>
                     </div>
@@ -162,7 +164,9 @@
                                 <input type='text' id='inp_cli_search_us' name='cli_search_us' class="form-control" onkeyup="search_notificatios('cli_search_us', 'table_users');" />
                             </div>
                             <div class='col-xs-4 text-center' >
-                                <input type='button' id='inp_cli_srch_submit' name='cli_search_submit' value ='Buscar' class="btn" />
+                                <!--<input type='button' id='inp_cli_srch_submit' name='cli_search_submit' value ='Buscar' class="btn" />-->
+                                <button class='btn' id='inp_cli_srch_submit' name='cli_search_submit' style="background: #990D17; color: #FFFFFF; "
+							onclick=""/> Buscar</button>
                             </div>
                         </div>
                     </div>

@@ -15,16 +15,19 @@ class XlsMngr
     
     protected function xlsBOF()
     {
+		//$this->content .= pack("ssssss", 0x809, 0x8, 0x0, 0x10, 0x0, 0x0);
 		$this->content .= pack("ssssss", 0x809, 0x8, 0x0, 0x10, 0x0, 0x0);
     }
 	
     protected function xlsEOF()
     {
+		//$this->content .= pack("ss", 0x0A, 0x00);
 		$this->content .= pack("ss", 0x0A, 0x00);
     }
     
     public function xlsWriteNumber($Row, $Col, $Value)
     {
+		//$this->content .= pack("sssss", 0x203, 14, $Row, $Col, 0x0);
 		$this->content .= pack("sssss", 0x203, 14, $Row, $Col, 0x0);
 		$this->content .= pack("d", $Value);
     }

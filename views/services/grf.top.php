@@ -1,8 +1,8 @@
 
 		<div class="col-xs-12 col-md-6" id='grf-top-0' style=''>
-			<div class="row">
+			<div class="row" style="overflow-x: auto; background: #FFFFFF; max-width: 430px; height: 100%;">
 				<div class="col-xs-12   indicator-graf">
-					 <div style=" height:230px; width: 100%;  position: relative;" id="chart_bar_<?php echo $k ?>"> </div> 
+					 <div style=" height:230px; width: 100%;  position: relative; " id="chart_bar_<?php echo $k ?>"> </div> 
 					 <div class="chart-table " style="width:100%;"> 
 					 	<table class="table table-striped table-bordered datatable clearfix">
 					 		<?php 

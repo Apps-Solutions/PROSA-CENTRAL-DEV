@@ -41,13 +41,15 @@ if ( !IS_ADMIN ){
 						<div class='col-xs-8' >
 							<input type='text' id='inp_cli_search' name='cli_search' class="form-control" />
 						</div>
-						<div class='col-xs-4 text-center' >
-							<input type='button' id='inp_cli_srch_submit' name='cli_search_submit' value ='Buscar' class="btn" style=""
-							onclick="search_client();"/>
+						<div class='col-xs-2 text-center' >
+							<!--<input type='button' id='inp_cli_srch_submit' name='cli_search_submit' value ='Buscar' class="btn" style=""
+							onclick="search_client();"/>-->
+							<button class='btn' id='inp_cli_srch_submit' name='cli_search_submit' style="background: #990D17; color: #FFFFFF; "
+							onclick="search_client();"/> Buscar</button>
 						</div>
 					</div>
 				</div> 
-				<div class='col-xs-12'>					
+				<div class='col-xs-12'>				
 					<table class="table table-striped table-bordered clearfix" id="clients_table"> 
 						<thead>
 							<tr><td>FIID</td><td>Banco</td><td align="center">Acciones</td></tr>

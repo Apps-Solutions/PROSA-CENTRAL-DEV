@@ -15,7 +15,7 @@
       {
           $this->tk_apple = '';
           //$this->db = new oracle_db();
-          $this->db = new PDOMySQL();
+         // $this->db = new PDOMySQL();
       }
 
       /* @function get_TokenApple
@@ -28,7 +28,7 @@
       	global $obj_bd;
           $query = "SELECT tk_token_apple FROM " . PFX_MAIN_DB . "token WHERE tk_timestamp > 0 AND tk_user = :tk_user ";
 
-          $result = $$obj_bd->query($query, array(':tk_user' => $user));
+          $result = $obj_bd->query($query, array(':tk_user' => $user));
           
           if (count($result) > 0)
           {
@@ -46,7 +46,7 @@
           else
           {
               return FALSE;;
-          }
+          }       
       }
 
       /*
@@ -121,42 +121,43 @@
       {
           global $Session;
 
-          if (IS_ADMIN)
-          {
+          if (IS_ADMIN){
                 if (count($users) > 0 && $mesage != '') { 
-				      foreach ($users as $user)
-				      { 
-				          if (!empty($user))
-				          {
+				      foreach ($users as $user){ 
+				          if (!empty($user)){
 				              $tk = $this->get_TokenApple(($user)); 
 				              if ($tk == true) {
-				                  if ($this->tk_apple != '') 
-				                  {
-				                  		$tokens[] = $this->tk_apple; 
+				                  if ($this->tk_apple != '') {
+				                  		$token[] = $this->tk_apple; 
 				                  }
-				              }
-				              else
-				              {
+				              }else{
 				                  $this->error[] = "Error al consultar el token del usuario $user";
 				                  $token = FALSE;
 				              }			  
 							  
+							
 				          }
-				          $i++;
+				         // $i++; //???
+
 				      }
 				 
-					  	$service_url = 'http://187.237.42.162:8880/prosa/send_api.php';
-						$curl = curl_init($service_url);
+				$value=array(':cliente'=> $cliente);
+				$sql_banco="SELECT * FROM " . PFX_MAIN_DB . "client WHERE id_client=:cliente";
+				$result = $obj_bd->execute($query, $value);  
+				$bank=$result[0]['id_client'];
+							  
+				 
+				$service_url = 'http://187.237.42.162:8880/prosa/send_api.php';
+				$curl = curl_init($service_url);
 						
-				
-						$curl_post_data = array(  'request' => 'send_alert', 'token' => $tokens, 'message' => $mesage, 'id_service' => $servicio );
-						$curl_post_data = http_build_query($curl_post_data); 
+				$curl_post_data = array(  'request' => 'send_alert', 'token' => $token, 'message' => $mesage. " ".$bank, 'id_service' => $servicio );
+				$curl_post_data = http_build_query($curl_post_data); 
 						
-						curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-						curl_setopt($curl, CURLOPT_POST, true);
-						curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
-						$curl_response = curl_exec($curl);
-						$code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+				curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+				curl_setopt($curl, CURLOPT_POST, true);
+				curl_setopt($curl, CURLOPT_POSTFIELDS, $curl_post_data);
+				$curl_response = curl_exec($curl);
+				$code = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 						
 						$this->set_msg( "INFO", print_r( $curl_response , TRUE) );
 						
@@ -164,6 +165,7 @@
 						
 						try {
 							$response = json_decode( $curl_response );
+							print_r($response);
 							if ($code == 200 && $response->success !== FALSE) {
 								$result = $this->save_Alert($cliente, $servicio, $mesage, $Session->get_user()); 
 								return TRUE;

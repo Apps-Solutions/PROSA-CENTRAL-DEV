@@ -95,7 +95,7 @@ function service_client(id, tipo)
             {
                 var services = data.services;
 
-                var id_service = '';
+           		 var id_service = '';
 
                 if (services.length > 0)
                 {
@@ -105,7 +105,7 @@ function service_client(id, tipo)
                         $(id_service).prop('checked', $("#inp_client_" + id).prop('checked'));
                     }
                 }
-
+				
                 $('#ajax-load').removeAttr('src');
 
                 return true;

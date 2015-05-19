@@ -244,17 +244,17 @@ abstract class Service extends Object{
 			$header = array();
 			$header[] = $data['source'];
 			$header[] = $data['name'];
-			$header[] = '';
-			$header[] = '';
+			$header[] = '|';
+			$header[] = '|';
 			$header[] = 'Top 5 Rechazadas';
 			$xls->set_header($header, $rowIni);
 			$rowIni++;
 			
 			$header = array();
-			$header[] = '';
+			$header[] = '|';
 			$header[] = '%';
 			$header[] = 'Total';
-			$header[] = '';
+			$header[] = '|';
 			$header[] = 'Motivo';
 			$header[] = '%';
 			$header[] = 'Total';
@@ -271,7 +271,7 @@ abstract class Service extends Object{
 			
 			foreach ($data['top_rejected'] as $j => $top )
 			{
-				$xls->xlsWriteLabel($rowIni + $j, 4, $top['code'] . " - " . $top['motive'] );
+				$xls->xlsWriteLabel($rowIni + $j, 4, $top['code'] . " - " . utf8_encode($top['motive']));
 				$xls->xlsWriteLabel($rowIni + $j, 5, ( $data['total_rejected'] > 0 ? number_format ($top['total'] * 100 / $data['total_rejected'] , 2 ) :  0 ) );
 				$xls->xlsWriteLabel($rowIni + $j, 6, number_format($top['total'], 0, '.', ',') );
 				//$sum += $top['total'];
