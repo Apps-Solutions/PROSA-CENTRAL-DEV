@@ -250,7 +250,7 @@ class Agenda extends Object {
        */
       public function save($data = FALSE)
       {
-      	global $obj_bd;
+      	global $obj_bd; //
           if (IS_ADMIN)
           {
               if ($data && is_array($data))

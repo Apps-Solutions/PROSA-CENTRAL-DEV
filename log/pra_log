@@ -18,3 +18,61 @@
 [2015-05-19 16:05:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
 [2015-05-19 16:05:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
 [2015-05-19 16:08:21] mxbdcal1 @ 127.0.0.1:  ERROR @ Class Listado : Ocurrió un error al obtener los registros de la BD
+[2015-05-19 18:15:09] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-19 18:15:09] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-19 18:15:09] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-19 18:15:09] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-19 21:36:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-19 21:36:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-19 21:36:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-19 21:36:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 08:14:07] asd @ 127.0.0.1:  MSG @ Class Session: Login successful user asd.
+[2015-05-20 08:16:50] asd @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 08:16:50] asd @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 09:07:32] abs @ 127.0.0.1:  MSG @ Class Session: Login successful user abs.
+[2015-05-20 09:07:36] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 09:07:36] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 09:07:43] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 09:07:43] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 09:17:56] mxbdcal1 @ 127.0.0.1:  MSG @ Class Session: Login successful user mxbdcal1.
+[2015-05-20 09:18:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 09:18:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 10:51:44] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 10:51:44] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:09:33] mxbdcal1 @ 127.0.0.1:  MSG @ Class Session: Login successful user mxbdcal1.
+[2015-05-20 12:12:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:12:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:16:30] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:16:30] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:17:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:17:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:17:20] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:17:21] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:21:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:21:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:22:35] mxbdcal1 @ 127.0.0.1: INFO @ Class  
+[2015-05-20 12:22:35] mxbdcal1 @ 127.0.0.1:  ERROR @ Class  Failed connect to 187.237.42.162:8880; Connection refused
+[2015-05-20 12:22:35] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:22:35] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:23:50] mxbdcal1 @ 127.0.0.1: INFO @ Class  
+[2015-05-20 12:23:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class  Failed connect to 187.237.42.162:8880; Connection refused
+[2015-05-20 12:23:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:23:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:23:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:23:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:24:18] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:24:18] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:25:46] mxbdcal1 @ 127.0.0.1: INFO @ Class  
+[2015-05-20 12:25:46] mxbdcal1 @ 127.0.0.1:  ERROR @ Class  Failed connect to 187.237.42.162:8880; Connection refused
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1: INFO @ Class  
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class  Failed connect to 187.237.42.162:8880; Connection refused
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:28:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:30:08] mxbdcal1 @ 127.0.0.1: INFO @ Class  
+[2015-05-20 12:30:08] mxbdcal1 @ 127.0.0.1:  ERROR @ Class  Failed connect to 187.237.42.162:8880; Connection refused
+[2015-05-20 12:46:20] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:46:20] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 

@@ -29,7 +29,7 @@ $agenda = new Agenda();
 								<div class='col-xs-12'>
 									<table id="users_table" class="table table-striped table-bordered clearfix" >
 										<?php //echo $agenda->get_prosa_users_list(); 
-												//Activar en 
+												//si se deja se conecta al ldap, Para prueba mysql  se comenta
 										?>
 										<!-- Remover rn central---> 	
 											<tr> 

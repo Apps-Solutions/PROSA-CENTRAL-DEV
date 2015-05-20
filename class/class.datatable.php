@@ -77,8 +77,6 @@ class DataTable{
 				case 'lst_alert_history':
 
 						$this->query = 	"select id_alert, al_timestamp, se_service, cl_client, al_text " . //, al_user ".
-
-
 						"from ". PFX_MAIN_DB ."alert inner join ".PFX_MAIN_DB."service on id_service = al_se_id_service inner join ".PFX_MAIN_DB."client on id_client = al_cl_id_client";
 						$this->sidx = ( $this->sidx != 'id') ? $this->sidx : 'cl_client';
 						break;
@@ -93,8 +91,6 @@ class DataTable{
 				$this->where .= " " . $modo . " " . $open . " " . ($col) . " " . $signo . " '%" . ($val) . "%' " . $close . " ";
 			elseif( in_array($signo, array('>', '>=', '<', '<=') ) === TRUE )
 				$this->where .= " " . $modo . " " . $open . " " . ($col) . " " . $signo . "  " . ($val) . "  " . $close . " ";
-
-
 			else
 				$this->where .= " " . $modo . " " . $open . " " . ($col) . " " . $signo . "  '" . ($val) . "'  " . $close . " ";
 		}
@@ -116,7 +112,8 @@ class DataTable{
 						array( 'idx' => 'ma_start',	'lbl' => 'Inicio',  	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'),  
 						array( 'idx' => 'ma_end',	'lbl' => 'Final', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'),
 						array( 'idx' => 'ma_status',	'lbl' => 'Status', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'),
-						array( 'idx' => 'actions',	'lbl' => 'Acciones', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => FALSE,	'datatype' => '')				
+						array( 'idx' => 'actions',	'lbl' => 'Acciones', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => FALSE,	'datatype' => '')
+										
 								); 
 					$this->template = DIRECTORY_VIEWS . "/lists/lst.maintainance.php";
 					$this->template_xls = DIRECTORY_VIEWS . "/xls/xls.maintainance.php";
@@ -128,12 +125,12 @@ class DataTable{
 				case 'lst_alert_history':
 					$this->title = " Historial de Notificaciones ";//select id_alert, al_timestamp, se_service, cl_client, al_text, al_user
 					$this->columns = array(
-						array( 'idx' => 'al_timestamp',	'lbl' => 'Fecha', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME'  	),
-						array( 'idx' => 'al_timestamp',	'lbl' => 'Hora',  	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'DATETIME' 	),  
-						array( 'idx' => 'se_servicio',	'lbl' => 'Servicio', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	),
-						array( 'idx' => 'cl_client',	'lbl' => 'Cliente', 	'sortable' => TRUE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'STRING'	),
-						array( 'idx' => 'al_text',	'lbl' => 'Notificacion','sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	),
-						array( 'idx' => 'al_user',	'lbl' => 'Usuario', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	)
+						array( 'idx' => 'se_service',	'lbl' => 'Servicio', 	'sortable' => TRUE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'STRING'  	),
+						array( 'idx' => 'cl_client',	'lbl' => 'Cliente',  	'sortable' => TRUE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING' 	),  
+						array( 'idx' => 'al_text',	'lbl' => 'Notificacion', 	'sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	),
+						array( 'idx' => 'al_timestamp',	'lbl' => 'Fecha', 	'sortable' => FALSE, 	'searchable' => TRUE,	'export' => TRUE,	'datatype' => 'DATETIME', 'srch_label'=>'Envio', 'mask'=>array('lbl'=>'Que se', 'lbl_ini'=>'entre', 'lbl_bet'=>'y')	),
+						array( 'idx' => 'al_user',	'lbl' => 'Usuario','sortable' => FALSE, 	'searchable' => FALSE,	'export' => TRUE,	'datatype' => 'STRING'	),
+						
 								); 
 					$this->template = DIRECTORY_VIEWS . "/lists/lst.alert.php";
 					$this->template_xls = DIRECTORY_VIEWS . "/xls/xls.alert.php";
@@ -169,19 +166,14 @@ class DataTable{
 				$q_cuantos =  "SELECT count(*) as RecordCount FROM (" . $query . ") as cuenta" ;
 			
 				$record = $obj_bd->query( $q_cuantos );
-				
-			
-			
-				print_r($record);
-			
-		
+
 				if ( $record === FALSE ){
 					$this->set_error( 'Ocurrió un error al contar los registros en la BD. ' , LOG_DB_ERR, 1);
 					return FALSE;
 				}
 				
 				$this->total_records = (int)$record[0]["RecordCount"];
-				echo $this->total_records;
+				
 							
 				
 				$start = (($this->page - 1) * $this->rows);
@@ -280,26 +272,41 @@ class DataTable{
 			<?php
 		}
 		
-		protected function get_html_date_search()
-		{
-				if( $this->date_fcn )
-				{
-						
+		protected function get_html_date_search(){
+				if( $this->date_fcn ){
+						$total=0;
+						$id_col=0;
+						foreach ($this->columns as $K=> $col) {
+							if($col['datatype']=='DateTime'){
+								$total++;
+								$id_col=$k;
+							}
+						}
 						?>
-						
+						Que se&nbsp;
+						<?php 
+						if($total>1){
+						?>
 						<select id="inp_<?php echo $this->table_id ?>_date_srch_idx">
 						<?php 
 							foreach ($this->columns as $k => $col)
 							{
 								if ($col['datatype'] == 'DATETIME')
 								{
-									echo "<option value='" . $col['idx'] . "'>" . $col['lbl'] . "</option>";
+									echo "<option value='" . $col['idx'] . "'>" . $col['srch_label'] . "</option>";
 								}
 							}
 						?>
 						</select>
-						<input type="text" placeholder="Desde" id="inp_<?php echo $this->table_id ?>_date_srch_start" data-validation="required" data-date-format="YYYY/MM/DD HH:mm" type="datetime">
-						<input type="text" placeholder="Hasta" id="inp_<?php echo $this->table_id ?>_date_srch_end" data-validation="required" data-date-format="YYYY/MM/DD HH:mm" type="datetime">
+						<?php
+						}else{
+						echo $this->columns[$id_col]['srch_label'];
+						?>
+						<input type="hidden" id="inp_<?php echo $this->table_id ?>_date_srch_idx" value="<?php echo $this->columns[$id_col]['idx'] ?>" />
+						<?php } ?>
+                        &nbsp;entre&nbsp;
+						<input type="text" placeholder="Digitar fecha y hora" id="inp_<?php echo $this->table_id ?>_date_srch_start" data-validation="required" data-date-format="YYYY/MM/DD HH:mm" type="datetime">
+						<input type="text" placeholder="Digitar fecha y hora" id="inp_<?php echo $this->table_id ?>_date_srch_end" data-validation="required" data-date-format="YYYY/MM/DD HH:mm" type="datetime">
 						
 						<script>
 							$('#inp_<?php echo $this->table_id ?>_date_srch_start, #inp_<?php echo $this->table_id ?>_date_srch_end').datetimepicker({ pick12HourFormat: false, 

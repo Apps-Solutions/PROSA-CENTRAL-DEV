@@ -57,6 +57,8 @@ switch ( $resource ){
                     $response['error'] = "Restricted access";
             break;
         case 'notification':
+			 require_once DIRECTORY_AJAX.'ajax.notification.php';
+			/*
                 if(IS_ADMIN)
                 {
                         require_once DIRECTORY_AJAX.'ajax.notification.php';
@@ -65,6 +67,8 @@ switch ( $resource ){
                 {
                         $response['error'] = "Restricted access";
                 }
+			 * 
+			 */
                 break;
 } 
 echo json_encode( $response );

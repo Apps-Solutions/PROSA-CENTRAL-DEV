@@ -173,7 +173,38 @@
                     <div class='col-xs-12'>
                         <table class="table table-striped table-bordered clearfix" id="table_users" >
                             <tr> <td> Seleccionar Todos </td> 	<td align="center"> <input type="checkbox" id='inp_usr_all' value='0' class='.inp_usuario' /></td></tr>
-                            <tbody><?php echo $agenda->get_users_table(); ?></tbody>
+                            <!--<tbody><?php echo $agenda->get_users_table(); ?></tbody>  Para prueba mysql si se deja se conecta al ldap-->
+                            <tr> 
+	<td> Alvaro Ontiveros H.  7725 (alvaro.ontiveros@prosa.com.mx) </td> 
+	<td align="center"> 
+		<input type="checkbox" id='inp_usr_aontiver' name='users[]' value='aontiver' class='inp_user_chk' />
+	</td> 
+</tr><tr> 
+	<td> Beatriz Elena Huesca Guevara (beatriz.huesca@prosa.com.mx) </td> 
+	<td align="center"> 
+		<input type="checkbox" id='inp_usr_bhguevar' name='users[]' value='bhguevar' class='inp_user_chk' />
+	</td> 
+</tr><tr> 
+	<td> Claudio Copernico Avila Luna  7774 (claudio.avila@prosa.com.mx) </td> 
+	<td align="center"> 
+		<input type="checkbox" id='inp_usr_cavila' name='users[]' value='cavila' class='inp_user_chk' />
+	</td> 
+</tr><tr> 
+	<td> Hector Daniel Cedillo Garibay (hector.cedillo@prosa.com.mx) </td> 
+	<td align="center"> 
+		<input type="checkbox" id='inp_usr_hcgariba' name='users[]' value='hcgariba' class='inp_user_chk' />
+	</td> 
+</tr><tr> 
+	<td> Jesus Urbina Alcantara (jesus.urbina@prosa.com.mx) </td> 
+	<td align="center"> 
+		<input type="checkbox" id='inp_usr_jualcant' name='users[]' value='jualcant' class='inp_user_chk' />
+	</td> 
+</tr><tr> 
+	<td> Alfonso Altamirano Plasencia (alfonso.altamirano@prosa.com.mx) </td> 
+	<td align="center"> 
+		<input type="checkbox" id='inp_usr_aaplasen' name='users[]' value='aaplasen' class='inp_user_chk' />
+	</td> 
+</tr>
                         </table>
                     </div>
                 </div>

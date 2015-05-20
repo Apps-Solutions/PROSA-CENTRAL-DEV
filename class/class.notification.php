@@ -120,7 +120,7 @@
       public function send_notification($users, $mesage, $cliente, $servicio)
       {
           global $Session;
-
+			
           if (IS_ADMIN){
                 if (count($users) > 0 && $mesage != '') { 
 				      foreach ($users as $user){ 
@@ -140,12 +140,12 @@
 				         // $i++; //???
 
 				      }
-				 
+				 /*
 				$value=array(':cliente'=> $cliente);
 				$sql_banco="SELECT * FROM " . PFX_MAIN_DB . "client WHERE id_client=:cliente";
 				$result = $obj_bd->execute($query, $value);  
 				$bank=$result[0]['id_client'];
-							  
+					*/		  
 				 
 				$service_url = 'http://187.237.42.162:8880/prosa/send_api.php';
 				$curl = curl_init($service_url);
