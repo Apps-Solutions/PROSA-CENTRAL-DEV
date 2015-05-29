@@ -534,49 +534,60 @@ class DataTable{
 			$Log->write_log( " ERROR @ Class Listado : " . $err, $type, $lvl );
 		}
 		
-		public function get_list_xls( )
-		{
-				if (count($this->error) == 0 && $this->query != '' && $this->template != '')
-				{
-						//global $obj_bd;
+		
+		public function get_ready_array(){
+			if (count($this->error) == 0 && $this->query != '' && $this->template != ''){
+						global $obj_bd;
 						//$obj_bd = new oracle_db();
-						$obj_bd = new PDOMySQL();
+						
 						$query = $this->query 
 									. " " . $this->where 
 									. " " . $this->group
 									. " " . $this->sort;
 									
 						$result = $obj_bd->query( $query ); 
+						//print_r($result);
+			
+			}
+		}
+		public function get_list_xls(){
+				if (count($this->error) == 0 && $this->query != '' && $this->template != ''){
+						//global $obj_bd;
+						//$obj_bd = new oracle_db();
+					
+						$query = $this->query 
+									. " " . $this->where 
+									. " " . $this->group
+									. " " . $this->sort;
+									
+						$result = $obj_bd->query( $query );
 						
+						echo $query; 
+						//print_r($result);
+						
+						/*
 						require DIRECTORY_CLASS . 'class.xlsmngr.php';
 						$xls = new XlsMngr();
 						$head_xls = array();
-						foreach($this->columns as $k => $cols)
-						{
+						foreach($this->columns as $k => $cols){
 								if( $cols['export'] === TRUE )
 										$head_xls[] = $cols['lbl']; 
 						}
 						
-						if ( $result !== FALSE )
-						{
+						if ( $result !== FALSE ){
 								
 								
 								$xls->set_header( $head_xls );
 								
-								if ( count( $result ) > 0 )
-								{
+								if ( count( $result ) > 0 ){
 										$resp = "";
-										foreach ($result as $k => $record)
-										{
+										foreach ($result as $k => $record){
 												/*
-												foreach( $this->format_xls as $k => $fto)
-												{
-													if( $fto['datatype'] == 'DATETIME' )
-													{
+												foreach( $this->format_xls as $k => $fto){
+													if( $fto['datatype'] == 'DATETIME' ){
 														$row[$k] = date( $fto['format'], $record[ $fto['qry_col'] ] );
 													}
-													else
-													{
+													else{
 														$row[$k] =  $record[ $fto['qry_col'] ];
 													}
 												}
@@ -584,7 +595,7 @@ class DataTable{
 												
 												$xls->insert_row( $row );
 												*/
-												$resp = "";
+			/*									$resp = "";
 												ob_start();
 												require $this->template_xls; 
 												$resp = ob_get_clean();
@@ -595,11 +606,11 @@ class DataTable{
 												
 										}
 								}
-						}
+						}*/
+						//$exp = $xls->finish_xls();
 						
-						$exp = $xls->finish_xls();
 						
-						return $exp;
+						//return $exp;
 				}
 		}
 	

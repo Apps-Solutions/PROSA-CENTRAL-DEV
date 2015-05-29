@@ -49,10 +49,10 @@ class POS extends Service {
 			*/	
 		//de mysql
 		$query = " SELECT z.DIA, SUM(z.TOTAL) AS TOTAL FROM ( "
-					. " SELECT x.DIA, SUM(x.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " AS x "  
+					. " SELECT x.DIA, SUM(x.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS x "  
 					. " WHERE x.DIA = :dia AND NOT x.KQ2_ID_MEDIO_ACCESO = '02' GROUP BY x.DIA "
 					. " UNION "
-					. " SELECT y.DIA, SUM(y.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT_" . date('Ym') . " As y "  
+					. " SELECT y.DIA, SUM(y.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS y "  
 					. " WHERE y.DIA = :dia AND NOT y.KQ2_ID_MEDIO_ACCESO = '02' GROUP BY y.DIA " 
 				. " ) AS z GROUP BY z.DIA ";
 				
@@ -122,7 +122,7 @@ class POS extends Service {
 						. " SELECT x.DIA, SUM(x.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN x.CODIGO_RESPUESTA < 11 THEN x.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN x.CODIGO_RESPUESTA > 10 THEN x.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " AS x"
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS x"
 						. " WHERE DIA = :dia AND NOT x.KQ2_ID_MEDIO_ACCESO = '02' "  
 							. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 						. " GROUP BY x.DIA "
@@ -130,7 +130,7 @@ class POS extends Service {
 						. " SELECT y.DIA, SUM(y.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN y.CODIGO_RESPUESTA < 11 THEN y.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN y.CODIGO_RESPUESTA > 10 THEN y.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT_" . date('Ym') . " AS y "
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS y "
 						. " WHERE y.DIA = :dia AND NOT y.KQ2_ID_MEDIO_ACCESO = '02' "  
 							. (( $this->id_client > 0 ) ? " AND y.FIID_TARJ = :id_client " : '')
 						. " GROUP BY y.DIA "
@@ -162,7 +162,7 @@ class POS extends Service {
 						. " SELECT DIA, SUM(x.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN x.CODIGO_RESPUESTA < 11 THEN x.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN x.CODIGO_RESPUESTA > 10 THEN x.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " AS x"
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS x"
 						. " WHERE x.DIA = :dia  AND NOT x.KQ2_ID_MEDIO_ACCESO = '02' " 
 							. (( $this->id_client > 0 ) ? " AND FIID_COMER = :id_client " : '')
 						. " GROUP BY x.DIA "
@@ -170,7 +170,7 @@ class POS extends Service {
 						. " SELECT y.DIA, SUM(y.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN y.CODIGO_RESPUESTA < 11 THEN y.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN y.CODIGO_RESPUESTA > 10 THEN y.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT_" . date('Ym') . " AS y "
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS y "
 						. " WHERE y.DIA = :dia AND NOT y.KQ2_ID_MEDIO_ACCESO = '02' "  
 							. (( $this->id_client > 0 ) ? " AND y.FIID_COMER = :id_client " : '')
 						. " GROUP BY y.DIA "
@@ -222,12 +222,12 @@ class POS extends Service {
 		$this->indicators[$idx]['top_rejected'] = array(); 
 		
 		$query =  " SELECT z.CODIGO_RESPUESTA, SUM(z.TOTAL) AS TOTAL FROM ( "
-					. " SELECT x.CODIGO_RESPUESTA, SUM(x.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') 
+					. " SELECT x.CODIGO_RESPUESTA, SUM(x.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC" 
 						. " AS x WHERE x.CODIGO_RESPUESTA > 10 AND DIA = :dia AND NOT x.KQ2_ID_MEDIO_ACCESO = '02' "
 		 					. (( $this->id_client > 0 ) ? " AND $fiid = :id_client " : '')
 			 			. " GROUP BY x.CODIGO_RESPUESTA "
 			 		. " UNION "
-			 		. " SELECT y.CODIGO_RESPUESTA, SUM(y.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT_" . date('Ym') 
+			 		. " SELECT y.CODIGO_RESPUESTA, SUM(y.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT" 
 			 			. " AS y WHERE y.CODIGO_RESPUESTA > 10 AND DIA = :dia AND NOT y.KQ2_ID_MEDIO_ACCESO = '02'  "
 		 					. (( $this->id_client > 0 ) ? " AND $fiid = :id_client " : '')
 			 			. " GROUP BY y.CODIGO_RESPUESTA "		

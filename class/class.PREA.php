@@ -54,16 +54,16 @@ class PREA extends Service {
 				. " ) GROUP BY DIA "; 
 		*/
 		$query = " SELECT h.DIA, SUM(h.TOTAL) AS TOTAL FROM ( "
-					. " SELECT a.DIA, SUM(a.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_NAC_" . date('Ym') . " AS a "  
+					. " SELECT a.DIA, SUM(a.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_NAC AS a "  
 					. " WHERE a.BIN IN ( SELECT b.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador AS b) AND a.DIA = :dia GROUP BY a.DIA "
 					. " UNION "
-					. " SELECT c.DIA, SUM(c.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_INT_" . date('Ym') . " AS c "  
+					. " SELECT c.DIA, SUM(c.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_INT AS c "  
 					. " WHERE c.BIN IN ( SELECT PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador AS d) AND c.DIA = :dia GROUP BY c.DIA "
 					. " UNION "
-					. " SELECT d.DIA, SUM(d.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_NAC_" . date('Ym') . " AS d "  
+					. " SELECT d.DIA, SUM(d.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_NAC AS d "  
 					. " WHERE d.BIN IN ( SELECT e.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador AS e) AND DIA = :dia GROUP BY d.DIA "
 					. " UNION "
-					. " SELECT f.DIA, SUM(f.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT_" . date('Ym') . " AS f"  
+					. " SELECT f.DIA, SUM(f.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT AS f"  
 					. " WHERE f.BIN IN ( SELECT g.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador AS g) AND f.DIA = :dia GROUP BY f.DIA "
 				. " ) AS h GROUP BY h.DIA "; 
 		//echo $query ;
@@ -130,7 +130,7 @@ class PREA extends Service {
 						. " SELECT b.DIA, SUM(b.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN b.CODIGO_RESPUESTA < 11 THEN b.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN b.CODIGO_RESPUESTA > 10 THEN b.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_NAC_" . date('Ym') . " AS b"
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_NAC AS b"
 						. " WHERE b.BIN IN ( SELECT c.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador AS c" .  (( $this->id_client > 0 ) ? " WHERE FIID_TARJ = :id_client " : '') . ") AND b.DIA = :dia " 
 		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 						. " GROUP BY b.DIA "
@@ -138,7 +138,7 @@ class PREA extends Service {
 						. " SELECT d.DIA, SUM(d.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN d.CODIGO_RESPUESTA < 11 THEN d.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN d.CODIGO_RESPUESTA > 10 THEN d.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_INT_" . date('Ym') . " AS d "
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_INT AS d "
 						. " WHERE d.BIN IN ( SELECT e.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador AS e " .  (( $this->id_client > 0 ) ? " WHERE FIID_TARJ = :id_client " : '') . ") AND d.DIA = :dia "
 		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 						. " GROUP BY d.DIA "
@@ -170,7 +170,7 @@ class PREA extends Service {
 						. " SELECT b.DIA, SUM(b.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN b.CODIGO_RESPUESTA < 11 THEN b.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN b.CODIGO_RESPUESTA > 10 THEN b.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_NAC_" . date('Ym') . " AS b"
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_NAC AS b"
 						. " WHERE b.BIN IN ( SELECT c.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador " .  (( $this->id_client > 0 ) ? " WHERE FIID_TARJ = :id_client " : '') . " AS c) AND b.DIA = :dia "
 		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 						. " GROUP BY b.DIA "
@@ -178,7 +178,7 @@ class PREA extends Service {
 						. " SELECT d.DIA, SUM(d.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN d.CODIGO_RESPUESTA < 11 THEN d.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN d.CODIGO_RESPUESTA > 10 THEN d.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT_" . date('Ym') . " AS d"
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT AS d"
 						. " WHERE BIN IN ( SELECT e.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador " .  (( $this->id_client > 0 ) ? " WHERE FIID_TARJ = :id_client " : '') . " AS e) AND d.DIA = :dia "
 		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 						. " GROUP BY d.DIA "
@@ -245,13 +245,13 @@ class PREA extends Service {
 				. " ) GROUP BY CODIGO_RESPUESTA ORDER BY TOTAL DESC ";*/
 		
 		$query =  " SELECT a.CODIGO_RESPUESTA, SUM(a.TOTAL) AS TOTAL FROM ( "
-					  . " SELECT SUM(b.TOTAL) AS TOTAL, b.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_BIN_" . $srv . "_NAC_" . date('Ym') 
+					  . " SELECT SUM(b.TOTAL) AS TOTAL, b.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_BIN_" . $srv . "_NAC" 
 						. " AS b WHERE b.BIN IN ( SELECT c.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador " .  (( $this->id_client > 0 ) ? " WHERE FIID_TARJ = :id_client " : '') . "AS c) AND b.DIA = :dia "
 							. " AND b.CODIGO_RESPUESTA > 10 "
 		 					. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 			 			. " GROUP BY b.CODIGO_RESPUESTA "
 			 		. " UNION "
-			 		. " SELECT SUM(d.TOTAL) AS TOTAL, d.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_BIN_" . $srv . "_INT_" . date('Ym') 
+			 		. " SELECT SUM(d.TOTAL) AS TOTAL, d.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_BIN_" . $srv . "_INT" 
 			 			. " AS d WHERE d.BIN IN ( SELECT e.PREFIJO FROM " . PFX_MAIN_DB . "tbl_app_preautorizador " .  (( $this->id_client > 0 ) ? " WHERE FIID_TARJ = :id_client " : '') . " AS e) AND d.DIA = :dia "
 			 			. " AND CODIGO_RESPUESTA > 10 "
 		 					. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')

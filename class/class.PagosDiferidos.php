@@ -44,13 +44,13 @@ class PagosDiferidos extends Service {
 			*//*	. " ) GROUP BY DIA";*/
 			
 		$query = " SELECT x.DIA, SUM(x.TOTAL) AS TOTAL FROM ( "
-				. "SELECT y.DIA, SUM(y.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " AS y "  
+				. "SELECT y.DIA, SUM(y.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS y "  
 				. " WHERE y.KQ6_ID_TOKEN > '00' AND y.DIA = :dia GROUP BY y.DIA"
 			/*	. " UNION "
 				."SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT_" . date('Ym') . " "  
 				. " WHERE KQ6_ID_TOKEN > '00' AND DIA = :dia GROUP BY DIA"
 			*/	. " )AS x GROUP BY x.DIA";
-			
+		//echo $query;	
 		$result = $obj_bd->query( $query, array( ':dia' => $day ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
@@ -105,9 +105,9 @@ class PagosDiferidos extends Service {
 						. " SELECT x.DIA, SUM(x.TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN x.CODIGO_RESPUESTA < 11 THEN x.TOTAL ELSE 0 END ) AS ACCEPTED, "
 							. " SUM(CASE WHEN x.CODIGO_RESPUESTA > 10 THEN x.TOTAL ELSE 0 END ) AS REJECTED " 
-						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " AS x"
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS x"
 						. " WHERE x.KQ6_ID_TOKEN > '00'  AND x.DIA = :dia "
-		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
+		 				. (( $this->id_client > 0 ) ? " AND x.FIID_TARJ = :id_client " : '')
 						. " GROUP BY x.DIA "
 				/*		. " UNION  "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
@@ -119,8 +119,12 @@ class PagosDiferidos extends Service {
 						. " GROUP BY DIA "
 				*/	. " ) AS y GROUP BY y.DIA ";
 				//echo $query;	
-		$result = $obj_bd->query( $query, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
+		/* ORACLE
+		$result = $obj_bd->query( $query, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );*/
+		$result = $obj_bd->query( $query, array( ":dia" => date('d')) );
+		//print_r($result);
 		if ( $result !== FALSE ){
+		
 			if ( count($result) > 0 ){
 				
 				$totals = $result[0];
@@ -161,7 +165,7 @@ class PagosDiferidos extends Service {
 				. " ) GROUP BY CODIGO_RESPUESTA ORDER BY TOTAL DESC ";
 		*/
 		$query =  " SELECT y.CODIGO_RESPUESTA, SUM(y.TOTAL) AS TOTAL FROM ( "
-					  . " SELECT SUM(x.TOTAL) AS TOTAL, x.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') 
+					  . " SELECT SUM(x.TOTAL) AS TOTAL, x.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC"
 						. " AS x WHERE x.CODIGO_RESPUESTA > 10 AND x.KQ6_ID_TOKEN > '00' AND x.DIA = :dia "
 		 					. (( $this->id_client > 0 ) ? " AND x.FIID_TARJ = :id_client " : '')
 			 			. " GROUP BY x.CODIGO_RESPUESTA "
@@ -177,6 +181,7 @@ class PagosDiferidos extends Service {
 		$query_top = ' SELECT CODIGO_RESPUESTA, TOTAL FROM ( ' . $query . ' ) WHERE rownum <= 5 ' ;*/
 		$query_top = ' SELECT z.CODIGO_RESPUESTA, z.TOTAL FROM ( ' . $query . ' ) AS z LIMIT 0,5 ' ;
 		
+		//echo $query_top;
 		
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 

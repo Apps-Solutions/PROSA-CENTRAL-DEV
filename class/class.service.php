@@ -127,9 +127,9 @@ abstract class Service extends Object{
 				. " WHERE se_command = :code "; 
 			$info = $obj_bd->query( $query, array( ':code' => $this->code ) );
 			if ( $info && count($info) > 0 ){
-				$this->threshold  = $info[0]['TH_THRESHOLD'];
-				$this->time_prosa = $info[0]['TH_TIME_PROSA'];
-				$this->time_client= $info[0]['TH_TIME_CLIENT'];
+				$this->threshold  = $info[0]['th_threshold'];
+				$this->time_prosa = $info[0]['th_time_prosa'];
+				$this->time_client= $info[0]['th_time_client'];
 			} else {
 				$this->set_error("Threshold info not found (" . $this->code . ")", ERR_DB_QRY );
 			}
@@ -143,8 +143,8 @@ abstract class Service extends Object{
 		if ( $result !== FALSE ){
 			$resp = array();
 			if ( count($result) > 0 ){ 
-				$resp['total']	 	= $result[0]['LT_TOTAL'];
-				$resp['timestamp'] 	= $result[0]['LT_TIMESTAMP'];
+				$resp['total']	 	= $result[0]['lt_total'];
+				$resp['timestamp'] 	= $result[0]['lt_timestamp'];
 			} else {
 				$resp['total']	 	= 0;
 				$resp['timestamp'] 	= 0;
@@ -323,5 +323,76 @@ abstract class Service extends Object{
 			}
 		}
 	}	
+	
+	
+	
+
+	public function return_indicators_xls(){
+		 /**/
+	
+		$per_acep=array();
+		$tot_acep=array();
+		$per_rech=array();
+		$tot_rech=array();
+		/*$top_code=array(array());
+		$top_data=array(array());
+		$top_total=array(array());*/
+		    $top_code=array();
+			$top_data=array();
+			$top_total=array();
+			
+		foreach($this->indicators as $k => $data){
+		print_r($data);
+			
+			//Aceptadas
+		  	
+			$per_acep[$k]=number_format(( $data['total_transactions'] > 0 ?  ($data['total_accepted'] * 100 / $data['total_transactions'])   : 0) , 2 );
+			$tot_acep[$k]=number_format($data['total_accepted']) ;
+			
+		  	
+			//Rechazadas
+			$per_rech[$k]=number_format(( $data['total_transactions'] > 0 ?  ($data['total_rejected'] * 100 / $data['total_transactions'])   : 0) , 2 );
+			$tot_rech[$k]=number_format($data['total_rejected']) ;
+			
+    		// Top 5
+			/**/foreach ($data['top_rejected'] as $j => $top ){
+				
+				$top_code[$k][$j]=$top['code'] . " - " . utf8_encode($top['motive']);
+				$top_data[$k][$j]=( $data['total_rejected'] > 0 ? number_format ($top['total'] * 100 / $data['total_rejected'] , 2 ) :  0 );
+				$top_total[$k][$j]=number_format($top['total'], 0, '.', ',') ;
+				
+							
+			}
+			
+		}
+		
+	///return $this->indicators['total_transactions'];	
+
+$data = array(
+    array("A" => $this->service, "B" => " ", 				"C" =>"Estado del Servicio",  "D"=>($this->state ? 'UP' : 'DOWN' ), "E"=>" ", "F"=>"Última actualización", "G"=>date('Y:m:d H:i:s', $this->last_timestamp)),
+    array("A" => " ", 			 "B" => " ", 				"C" =>" ",  "D"=>" ", 												"E"=>" ", "F"=>" ", "G"=>" "),
+    array("A" => " ", 			 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>" ", "F"=>" ", "G"=>" "),
+    array("A" => "Emisor", 		 "B" => $this->service, 	"C" =>" ",  "D"=>" ", "E"=>"Top 5 Rechazadas", "F"=>" ", "G"=>" "),
+    array("A" => " ", 	 		 "B" => "%", 				"C" =>"Total",  "D"=>" ", "E"=>"Motivo", "F"=>"%", "G"=>"Total"),
+    array("A" => "Aceptadas", 	 "B" => $per_acep[0], 		"C" =>$tot_acep[0],  "D"=>" ", "E"=>$top_code[0][0], "F"=>$top_data[0][0], "G"=>$top_total[0][0]),
+    array("A" => "Rechazadas", 	 "B" => $per_rech[0], 		"C" =>$tot_rech[0],  "D"=>" ", "E"=>$top_code[0][1], "F"=>$top_data[0][1], "G"=>$top_total[0][1]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[0][2], "F"=>$top_data[0][2], "G"=>$top_total[0][2]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[0][3], "F"=>$top_data[0][3], "G"=>$top_total[0][3]),
+    array("A" => " ", 			 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[0][4], "F"=>$top_data[0][4], "G"=>$top_total[0][4]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[0][5], "F"=>$top_data[0][5], "G"=>$top_total[0][5]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>" ", "F"=>" ", "G"=>" "),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>" ", "F"=>" ", "G"=>" "),
+    array("A" => "Adquirente", 	 "B" => $this->service, 	"C" =>" ",  "D"=>" ", "E"=>"Top 5 Rechazadas", "F"=>" ", "G"=>" "),
+    array("A" => " ", 	 		 "B" => "%", 				"C" =>"Total",  "D"=>" ", "E"=>"Motivo", "F"=>"%", "G"=>"Total"),
+    array("A" => "Aceptadas", 	 "B" => $per_acep[1], 		"C" =>$tot_acep[1],  "D"=>" ", "E"=>$top_code[1][0], "F"=>$top_data[1][0], "G"=>$top_total[1][0]),
+    array("A" => "Rechazadas", 	 "B" => $per_rech[1], 		"C" =>$tot_rech[1],  "D"=>" ", "E"=>$top_code[1][1], "F"=>$top_data[1][1], "G"=>$top_total[1][1]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[1][2], "F"=>$top_data[1][2], "G"=>$top_total[1][2]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[1][3], "F"=>$top_data[1][3], "G"=>$top_total[1][3]),
+    array("A" => " ", 			 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[1][4], "F"=>$top_data[1][4], "G"=>$top_total[1][4]),
+    array("A" => " ", 	 		 "B" => " ", 				"C" =>" ",  "D"=>" ", "E"=>$top_code[1][5], "F"=>$top_data[1][5], "G"=>$top_total[1][5]),
+  );		
+   return $data;
+  
+	}
 }
 ?>
