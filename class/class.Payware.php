@@ -101,13 +101,13 @@ class Payware extends Service {
 						. " AND e.BIN IN (SELECT f.BIN FROM " . PFX_SRV_DB . "TBL_APP_PAYWARE AS f) "
 					. " GROUP BY e.DIA "
 					. " UNION "
-					. " SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT "  
-					. " WHERE DIA = :dia "
-						. " AND BIN IN (SELECT BIN FROM " . PFX_SRV_DB . "TBL_APP_PAYWARE ) "
+					. " SELECT f.DIA, SUM(f.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT AS f"  
+					. " WHERE f.DIA = :dia "
+						. " AND f.BIN IN (SELECT g.BIN FROM " . PFX_SRV_DB . "TBL_APP_PAYWARE AS g ) "
 
-					. " GROUP BY DIA " 
-				. " ) GROUP BY DIA ";
-				echo $query2;
+					. " GROUP BY f.DIA " 
+				. " ) AS h GROUP BY h.DIA ";
+				//echo $query2;
 		$result = $obj_bd->query( $query, array( ':dia' => $day ) ); 
 		$result2= $obj_bd->query( $query2, array( ':dia' => $day ) );
 		
@@ -151,7 +151,8 @@ class Payware extends Service {
 	
 	private function set_service_totals(){
 		 global $obj_bd;
-		$query0 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
+		/*oracle 
+		 * $query0 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
 							. " SUM(CASE WHEN CODIGO_RESPUESTA < 11 THEN TOTAL ELSE 0 END ) AS ACCEPTED, "
@@ -187,7 +188,45 @@ class Payware extends Service {
 		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
 						. " GROUP BY DIA " 
 					. " ) GROUP BY DIA ";
-		
+		 */
+		$query0 =  " SELECT a.DIA, SUM(a.ACCEPTED) AS ACCEPTED, SUM(a.REJECTED) AS REJECTED, SUM(a.TOTAL) AS TOTAL "
+					. "  FROM ( "
+						. " SELECT b.DIA, SUM(b.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA < 11 THEN b.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA > 10 THEN b.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS b"
+						. " WHERE b.LN_TARJ = 'PEMI' AND b.DIA = :dia " 
+		 				. (( $this->id_client > 0 ) ? " AND b.FIID_TARJ = :id_client " : '')
+						. " GROUP BY b.DIA "
+						. " UNION  "
+						. " SELECT c.DIA, SUM(c.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA < 11 THEN c.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA > 10 THEN c.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS c"
+						. " WHERE c.LN_TARJ = 'PEMI'  AND c.DIA = :dia " 
+		 				. (( $this->id_client > 0 ) ? " AND c.FIID_TARJ = :id_client " : '')
+						. " GROUP BY c.DIA "
+						. " UNION "
+						. " SELECT d.DIA, SUM(d.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN d.CODIGO_RESPUESTA < 11 THEN d.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN d.CODIGO_RESPUESTA > 10 THEN d.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_NAC AS d"
+						. " WHERE d.DIA = :dia "
+							. " AND d.BIN IN (SELECT e.BIN FROM " . PFX_SRV_DB . "BINES_EMISOR_PROSA AS e" . (( $this->id_client > 0 ) ? " WHERE e.FIID_TARJ = :id_client " : '') . ") "
+		 				. (( $this->id_client > 0 ) ? " AND d.FIID_TARJ = :id_client " : '')
+						. " GROUP BY d.DIA "
+						. " UNION  "
+						. " SELECT f.DIA, SUM(f.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN f.CODIGO_RESPUESTA < 11 THEN f.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN f.CODIGO_RESPUESTA > 10 THEN f.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_POS_INT AS f"
+						. " WHERE f.DIA = :dia "
+							. " AND f.BIN IN (SELECT g.BIN FROM " . PFX_SRV_DB . "BINES_EMISOR_PROSA AS g" . (( $this->id_client > 0 ) ? " WHERE g.FIID_TARJ = :id_client " : '') . ") "
+		 				. (( $this->id_client > 0 ) ? " AND g.FIID_TARJ = :id_client " : '')
+						. " GROUP BY f.DIA " 
+					. " ) AS a GROUP BY a.DIA ";
+		//echo $query0;
+		/*Oracle
 		$query1 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 					
@@ -232,7 +271,53 @@ class Payware extends Service {
 						. " GROUP BY DIA " 
 						
 					. " ) GROUP BY DIA ";
+					*/
+				
+			$query1 =  " SELECT a.DIA, SUM(a.ACCEPTED) AS ACCEPTED, SUM(a.REJECTED) AS REJECTED, SUM(a.TOTAL) AS TOTAL "
+					. "  FROM ( "
 					
+						. " SELECT b.DIA, SUM(b.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA < 11 THEN b.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA > 10 THEN b.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_ATM_NAC AS b "
+						. " WHERE b.LN_TARJ = 'PEMI' AND b.DIA = :dia " 
+		 				. (( $this->id_client > 0 ) ? " AND b.FIID_TARJ = :id_client " : '')
+						. " GROUP BY b.DIA "
+						
+						. " UNION  "
+						
+						. " SELECT c.DIA, SUM(c.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA < 11 THEN c.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA > 10 THEN c.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_ATM_INT AS c"
+						. " WHERE c.LN_TARJ = 'PEMI'  AND c.DIA = :dia " 
+		 				. (( $this->id_client > 0 ) ? " AND c.FIID_TARJ = :id_client " : '') 
+						. " GROUP BY c.DIA "
+						
+						. " UNION "
+						
+						. " SELECT d.DIA, SUM(d.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN CODIGO_RESPUESTA < 11 THEN TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN d.CODIGO_RESPUESTA > 10 THEN d.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_NAC AS d "
+						. " WHERE d.DIA = :dia "
+							. " AND d.BIN IN (SELECT e.BIN FROM " . PFX_SRV_DB . "BINES_EMISOR_PROSA AS e" . (( $this->id_client > 0 ) ? " WHERE e.FIID_TARJ = :id_client " : '') . ") "
+		 				. (( $this->id_client > 0 ) ? " AND FIID_TARJ = :id_client " : '')
+						. " GROUP BY d.DIA "
+						
+						. " UNION  "
+						
+						. " SELECT f.DIA, SUM(f.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN f.CODIGO_RESPUESTA < 11 THEN f.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN f.CODIGO_RESPUESTA > 10 THEN f.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_BIN_ATM_INT AS f"
+						. " WHERE f.DIA = :dia "
+							. " AND f.BIN IN (SELECT g.BIN FROM " . PFX_SRV_DB . "BINES_EMISOR_PROSA AS g" . (( $this->id_client > 0 ) ? " WHERE g.FIID_TARJ = :id_client " : '') . ") "
+		 				. (( $this->id_client > 0 ) ? " AND g.FIID_TARJ = :id_client " : '')
+						. " GROUP BY f.DIA " 
+						
+					. " ) AS a  GROUP BY a.DIA ";	
+			
 		$result0 = $obj_bd->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		
 		$result1 = $obj_bd->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
@@ -281,8 +366,8 @@ class Payware extends Service {
 	private function set_top_rejected_POSATM( $srv, $idx){
 		global $obj_bd;
 		$this->indicators[$idx]['top_rejected'] = array(); 
-		
-		$query =  " SELECT CODIGO_RESPUESTA, SUM(TOTAL) AS TOTAL FROM ( "
+		/* Oracle
+		 * $query =  " SELECT CODIGO_RESPUESTA, SUM(TOTAL) AS TOTAL FROM ( "
 					  . " SELECT SUM(TOTAL) AS TOTAL, CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_" . $srv . "_NAC"  
 						. " WHERE CODIGO_RESPUESTA > 10 AND LN_TARJ = 'PEMI' AND DIA = :dia "
 		 					. (( $this->id_client > 0 ) ? " AND FIID_TARJ= :id_client " : '')
@@ -305,8 +390,35 @@ class Payware extends Service {
 			 					. (( $this->id_client > 0 ) ? " AND FIID_TARJ= :id_client " : '')
 				 			. " GROUP BY CODIGO_RESPUESTA "
 					. " ) GROUP BY CODIGO_RESPUESTA ORDER BY TOTAL DESC ";
+		 */
 		
-		$query_top = ' SELECT CODIGO_RESPUESTA, TOTAL FROM ( ' . $query . ' ) WHERE rownum <= 5 ' ;
+		$query =  " SELECT a.CODIGO_RESPUESTA, SUM(a.TOTAL) AS TOTAL FROM ( "
+					  . " SELECT SUM(b.TOTAL) AS TOTAL, b.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_" . $srv . "_NAC AS b "  
+						. " WHERE b.CODIGO_RESPUESTA > 10 AND b.LN_TARJ = 'PEMI' AND b.DIA = :dia "
+		 					. (( $this->id_client > 0 ) ? " AND b.FIID_TARJ= :id_client " : '')
+			 			. " GROUP BY b.CODIGO_RESPUESTA "
+				 		. " UNION "
+				 		. " SELECT SUM(c.TOTAL) AS TOTAL, c.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_" . $srv . "_INT AS c " 
+				 			. " WHERE c.CODIGO_RESPUESTA > 10 AND c.LN_TARJ = 'PEMI' AND c.DIA = :dia " 
+			 					. (( $this->id_client > 0 ) ? " AND c.FIID_TARJ= :id_client " : '')
+				 			. " GROUP BY c.CODIGO_RESPUESTA " 
+				 		. " UNION "
+						  . " SELECT SUM(d.TOTAL) AS TOTAL, d.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_BIN_" . $srv . "_NAC AS d " 
+							. " WHERE d.CODIGO_RESPUESTA > 10 AND d.DIA = :dia "
+								. " AND d.BIN IN (SELECT f.BIN FROM " . PFX_SRV_DB . "BINES_EMISOR_PROSA AS f" . (( $this->id_client > 0 ) ? " WHERE f.FIID_TARJ = :id_client " : '') . ") "
+			 					. (( $this->id_client > 0 ) ? " AND d.FIID_TARJ= :id_client " : '')
+				 			. " GROUP BY d.CODIGO_RESPUESTA "
+				 		. " UNION "
+				 		. " SELECT SUM(e.TOTAL) AS TOTAL, e.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_BIN_" . $srv . "_INT AS e " 
+				 			. " WHERE e.CODIGO_RESPUESTA > 10 AND e.DIA = :dia "
+								. " AND e.BIN IN (SELECT g.BIN FROM " . PFX_SRV_DB . "BINES_EMISOR_PROSA AS g " . (( $this->id_client > 0 ) ? " WHERE g.FIID_TARJ = :id_client " : '') . ") "
+			 					. (( $this->id_client > 0 ) ? " AND g.FIID_TARJ= :id_client " : '')
+				 			. " GROUP BY e.CODIGO_RESPUESTA "
+					. " ) AS a GROUP BY a.CODIGO_RESPUESTA ORDER BY a.TOTAL DESC ";
+		/*oracle 
+		$query_top = ' SELECT f.CODIGO_RESPUESTA, f.TOTAL FROM ( ' . $query . ' ) WHERE rownum <= 5 ' ;
+		*/
+		$query_top = ' SELECT f.CODIGO_RESPUESTA, f.TOTAL FROM ( ' . $query . ' ) AS f LIMIT 0,5 ' ;
 		
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 

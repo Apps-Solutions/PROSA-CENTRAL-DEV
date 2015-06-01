@@ -121,8 +121,8 @@ class prosaApi extends api{
 		if ( !$record ){ 
 			return FALSE;
 		} 
-		if ($record['TK_TIMESTAMP'] > 0 && $record['TK_TIMESTAMP'] > time() ){
-			return $this->set_user_info( $record['TK_USER'] ); 
+		if ($record['tk_timestamp'] > 0 && $record['tk_timestamp'] > time() ){
+			return $this->set_user_info( $record['tk_user'] ); 
 		} else { 
             throw new Exception('Session has expired.');
 		}
@@ -250,11 +250,11 @@ class prosaApi extends api{
 				$alerts = array();
 				foreach ($result as $k => $se) {
 					$ale = array(); 
-					$ale['id_alert'] 	= $se['ID_ALERT'];
-					$ale['id_service'] 	= $se['AL_SE_ID_SERVICE']; 
-					$ale['text']		= $se['AL_TEXT'];
-					$ale['date']		= date('d/m/Y',$se['AL_TIMESTAMP']);
-					$ale['time']		= date('H:i:s',$se['AL_TIMESTAMP']); 
+					$ale['id_alert'] 	= $se['id_alert'];
+					$ale['id_service'] 	= $se['al_se_id_service']; 
+					$ale['text']		= $se['al_text'];
+					$ale['date']		= date('d/m/Y',$se['al_timestamp']);
+					$ale['time']		= date('H:i:s',$se['al_timestamp']); 
 					$alerts[] = $ale;
 				}
 				return array('success' => TRUE, 'resp' => "OK", 'alerts' => $alerts );
@@ -284,10 +284,10 @@ class prosaApi extends api{
 				$services = array();
 				foreach ($result as $k => $se) {
 					$srv = array();
-					$srv['id_service'] 	= $se['ID_SERVICE'];
-					$srv['service'] 	= utf8_decode($se['SE_SERVICE']);
-					$srv['command']		= $se['SE_COMMAND'];
-					$srv['order']		= $se['SE_ORDER'];
+					$srv['id_service'] 	= $se['id_service'];
+					$srv['service'] 	= utf8_decode($se['se_service']);
+					$srv['command']		= $se['se_command'];
+					$srv['order']		= $se['se_order'];
 					$services[] = $srv;
 				}
 				return array('success' => TRUE, 'resp' => "OK", 'services' => $services );
@@ -302,9 +302,9 @@ class prosaApi extends api{
 	            $this->set_error('Invalid service.', ERR_VAL_INVALID, 3);
 	            throw new Exception('Invalid service.');
 	        }
-			
+			$id_client = 1;
 			$id_service = $this->request['id_service'];
-			if ( $this->User->profile != 1 ){
+			/**/if ( $this->User->profile != 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "service_user "
 						. " WHERE su_us_id_user = :user AND su_se_id_service = :id_service ";
 				$resp = $obj_bd->query( $query, array( ':user' => $this->User->user, ':id_service' => $id_service ) );
@@ -408,9 +408,9 @@ class prosaApi extends api{
 				$clients = array();
 				foreach ($result as $k => $se) {
 					$srv = array();
-					$srv['id_client'] 	= $se['ID_CLIENT'];
-					$srv['client'] 		= $se['CL_CLIENT'];
-					$srv['code'] 		= $se['CL_CODE'];
+					$srv['id_client'] 	= $se['id_client'];
+					$srv['client'] 		= $se['cl_client'];
+					$srv['code'] 		= $se['cl_code'];
 					$clients[] = $srv;
 				}
 				return array('success' => TRUE, 'resp' => "OK", 'clients' => $clients );
@@ -445,7 +445,7 @@ class prosaApi extends api{
 		$query = "SELECT id_client FROM " . PFX_MAIN_DB . "client WHERE cl_code = :code ";
 		$result = $obj_bd->query( $query, array(':code' => $fiid ) ); 
 		if ( $result !== FALSE ){
-			return $result[0]['ID_CLIENT'];
+			return $result[0]['id_client'];
 		} else {
 			$this->set_error("Ocurrió un error al obtener el ID del Cliente del usuario ( " . $this->user . " ).", ERR_DB_QRY);
 			return FALSE;

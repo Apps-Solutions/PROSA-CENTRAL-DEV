@@ -64,8 +64,8 @@ class ATM extends Service {
 		$this->indicators[0]['total_rejected'] = 0;
 		
 		$this->indicators[1]['name'] = "ATM";
-		$this->indicators[1]['title'] = "Adquiriente";
-		$this->indicators[1]['source'] = "Adquiriente"; 
+		$this->indicators[1]['title'] = "Adquirente";
+		$this->indicators[1]['source'] = "Adquirente"; 
 		
 		$this->indicators[1]['total_transactions'] = 0;
 		$this->indicators[1]['total_accepted'] = 0;
