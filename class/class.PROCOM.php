@@ -35,6 +35,7 @@ if ( !class_exists('Service')){
 	
 	private function get_day_total( $day , $grouped = FALSE ){
 		global $obj_bd;
+		/* ORACLE
 		$query = " SELECT DIA, SUM(TOTAL) AS TOTAL FROM ( "
 				. "SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') . " "  
 				. " WHERE (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE') AND DIA = :dia GROUP BY DIA"
@@ -42,7 +43,16 @@ if ( !class_exists('Service')){
 				."SELECT DIA, SUM(TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT_" . date('Ym') . " "  
 				. " WHERE (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE') AND DIA = :dia GROUP BY DIA"
 				. " ) GROUP BY DIA";
-				
+			*/
+			
+			$query = " SELECT a.DIA, SUM(a.TOTAL) AS TOTAL FROM ( "
+				. "SELECT b.DIA, SUM(b.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS b" 
+				. " WHERE (b.KQ2_ID_MEDIO_ACCESO = '9' OR b.LN_COMER = 'PROE') AND b.DIA = :dia GROUP BY b.DIA"
+				. " UNION "
+				."SELECT c.DIA, SUM(c.TOTAL) AS TOTAL FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS c"   
+				. " WHERE (c.KQ2_ID_MEDIO_ACCESO = '9' OR c.LN_COMER = 'PROE') AND c.DIA = :dia GROUP BY c.DIA"
+				. " ) AS a GROUP BY a.DIA";
+				//echo $query;
 		$result = $obj_bd->query( $query, array( ':dia' => $day ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
@@ -79,6 +89,7 @@ if ( !class_exists('Service')){
 	
 	private function set_service_totals(){
 		 global $obj_bd;
+		/*ORACLE
 		$query0 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
@@ -99,8 +110,29 @@ if ( !class_exists('Service')){
 			 				. (( $this->id_client > 0 ) ? " AND FIID_COMER = :id_client " : '')
 						. " GROUP BY DIA "
 					. " ) GROUP BY DIA "; 
-		
-		
+		*/
+		$query0 =  " SELECT a.DIA, SUM(a.ACCEPTED) AS ACCEPTED, SUM(a.REJECTED) AS REJECTED, SUM(a.TOTAL) AS TOTAL "
+					. "  FROM ( "
+						. " SELECT b.DIA, SUM(b.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA < 11 THEN b.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA > 10 THEN b.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS b" 
+						. " WHERE (b.KQ2_ID_MEDIO_ACCESO = '9' OR b.LN_COMER = 'PROE')  AND b.DIA = :dia "
+							. " AND b.KC0_INDICADOR_DE_COMERCIO_ELEC IN ('5','6') "
+		 					. (( $this->id_client > 0 ) ? " AND b.FIID_COMER = :id_client " : '')
+						. " GROUP BY b.DIA "
+						. " UNION  "
+						. " SELECT c.DIA, SUM(c.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA < 11 THEN c.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA > 10 THEN c.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS c"
+						. " WHERE (c.KQ2_ID_MEDIO_ACCESO = '9' OR c.LN_COMER = 'PROE')  AND c.DIA = :dia "
+							. " AND KC0_INDICADOR_DE_COMERCIO_ELEC IN ('5','6') "
+			 				. (( $this->id_client > 0 ) ? " AND c.FIID_COMER = :id_client " : '')
+						. " GROUP BY c.DIA "
+					. " ) AS a GROUP BY a.DIA "; 
+		//echo $query0;	
+		/* ORACLE		
 		$query1 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "
 						. " SELECT DIA, SUM(TOTAL) AS TOTAL, " 
@@ -121,7 +153,28 @@ if ( !class_exists('Service')){
 		 					. (( $this->id_client > 0 ) ? " AND FIID_COMER = :id_client " : '')
 						. " GROUP BY DIA "
 					. " ) GROUP BY DIA "; 
-					
+					*/
+					$query1 =  " SELECT a.DIA, SUM(a.ACCEPTED) AS ACCEPTED, SUM(a.REJECTED) AS REJECTED, SUM(a.TOTAL) AS TOTAL "
+					. "  FROM ( "
+						. " SELECT b.DIA, SUM(b.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA < 11 THEN b.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN b.CODIGO_RESPUESTA > 10 THEN b.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS b " 
+						. " WHERE (b.KQ2_ID_MEDIO_ACCESO = '9' OR b.LN_COMER = 'PROE')  AND b.DIA = :dia "
+							. " AND b.KC0_INDICADOR_DE_COMERCIO_ELEC = '7' "
+		 					. (( $this->id_client > 0 ) ? " AND b.FIID_COMER = :id_client " : '')
+						. " GROUP BY DIA "
+						. " UNION  "
+						. " SELECT c.DIA, SUM(c.TOTAL) AS TOTAL, " 
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA < 11 THEN c.TOTAL ELSE 0 END ) AS ACCEPTED, "
+							. " SUM(CASE WHEN c.CODIGO_RESPUESTA > 10 THEN c.TOTAL ELSE 0 END ) AS REJECTED " 
+						. " FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS c"
+						. " WHERE (c.KQ2_ID_MEDIO_ACCESO = '9' OR c.LN_COMER = 'PROE')  AND c.DIA = :dia "
+							. " AND c.KC0_INDICADOR_DE_COMERCIO_ELEC = '7' "
+		 					. (( $this->id_client > 0 ) ? " AND c.FIID_COMER = :id_client " : '')
+						. " GROUP BY c.DIA "
+					. " ) AS a GROUP BY a.DIA "; 
+					//echo $query1; 
 		$result0 = $obj_bd->query( $query0, array( ":dia" => date('d'), ":id_client" => $this->client_code ) ); 
 		$result1 = $obj_bd->query( $query1, array( ":dia" => date('d'), ":id_client" => $this->client_code ) );
 		if ( $result0 !== FALSE && $result1 !== FALSE){
@@ -165,7 +218,8 @@ if ( !class_exists('Service')){
 	
 	private function set_top_rejected_3DSSL($srv, $idx){
 		global $obj_bd;
-		$this->indicators[$idx]['top_rejected'] = array();  
+		$this->indicators[$idx]['top_rejected'] = array(); 
+		/* ORACLE
 		$query =  " SELECT CODIGO_RESPUESTA, SUM(TOTAL) AS TOTAL FROM ( "
 					  . " SELECT SUM(TOTAL) AS TOTAL, CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC_" . date('Ym') 
 						. " WHERE CODIGO_RESPUESTA > 10 AND (KQ2_ID_MEDIO_ACCESO = '9' OR LN_COMER = 'PROE') AND DIA = :dia "
@@ -180,9 +234,26 @@ if ( !class_exists('Service')){
 			 			. " GROUP BY CODIGO_RESPUESTA "
 			 		. " ORDER BY CODIGO_RESPUESTA "
 				. " ) GROUP BY CODIGO_RESPUESTA ORDER BY TOTAL DESC ";
-		
+		*/
+		$query =  " SELECT a.CODIGO_RESPUESTA, SUM(a.TOTAL) AS TOTAL FROM ( "
+					  . " SELECT SUM(b.TOTAL) AS TOTAL, b.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_NAC AS b"  
+						. " WHERE b.CODIGO_RESPUESTA > 10 AND (b.KQ2_ID_MEDIO_ACCESO = '9' OR b.LN_COMER = 'PROE') AND b.DIA = :dia "
+							. " AND b.KC0_INDICADOR_DE_COMERCIO_ELEC " . ( $srv == '3D' ? " IN ('5','6') " : " = '7' " )
+		 					. (( $this->id_client > 0 ) ? " AND b.FIID_COMER = :id_client " : '')
+			 			. " GROUP BY b.CODIGO_RESPUESTA "
+			 		. " UNION "
+			 		. " SELECT SUM(c.TOTAL) AS TOTAL, c.CODIGO_RESPUESTA FROM " . PFX_SRV_DB . "TBL_MON_HORA_POS_INT AS c" 
+			 			. " WHERE c.CODIGO_RESPUESTA > 10 AND (c.KQ2_ID_MEDIO_ACCESO = '9' OR c.LN_COMER = 'PROE') AND c.DIA = :dia "
+		 					. (( $this->id_client > 0 ) ? " AND c.FIID_COMER = :id_client " : '')
+							. " AND c.KC0_INDICADOR_DE_COMERCIO_ELEC " . ( $srv == '3D' ? " IN ('5','6') " : " = '7' " )
+			 			. " GROUP BY c.CODIGO_RESPUESTA "
+			 		. " ORDER BY CODIGO_RESPUESTA "
+				. " ) AS a GROUP BY a.CODIGO_RESPUESTA ORDER BY a.TOTAL DESC ";
+		/* QUERY
 		$query_top = ' SELECT CODIGO_RESPUESTA, TOTAL FROM ( ' . $query . ' ) WHERE rownum <= 5 ' ;
-		
+		 * */
+		$query_top = ' SELECT d.CODIGO_RESPUESTA, d.TOTAL FROM ( ' . $query . ' ) AS d LIMIT 0,5' ;
+		echo $query_top;
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 
 		

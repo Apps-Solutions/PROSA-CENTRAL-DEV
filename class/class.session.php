@@ -241,7 +241,7 @@ class Session {
 		$permit = array();
 		$serv = $this->get_services();
 		foreach ($serv as $k => $s) {
-			$permit[] = $s['ID_SERVICE'];
+			$permit[] = $s['id_service'];
 		}
 		
 		if ( in_array(7, $permit) )

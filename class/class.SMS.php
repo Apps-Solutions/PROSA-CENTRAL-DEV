@@ -35,6 +35,7 @@ class SMS extends Service {
 		global $obj_bd;
 		$query =  "SELECT COUNT(*) AS TOTAL FROM " . PFX_SMS_DB . "TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS "  
 				. " WHERE ID_BROKER = 'P' AND LOCAL_DATE > TO_DATE(:lcl_date, 'yyyy-mm-dd hh24:mi') " ;
+		echo $query;		
 		$result = $obj_bd->query( $query, array( ':lcl_date' => date('Y-m-d 00:00') ) );
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
