@@ -228,20 +228,34 @@ class prosaApi extends api{
 	        }
 			
 			if ( $this->User->profile == 1 ){
-				$query = "SELECT * FROM " . PFX_MAIN_DB . "alert " 
+				/*ORACLE
+				 * $query = "SELECT * FROM " . PFX_MAIN_DB . "alert " 
 						. ( $id_service  > 0 ?  " WHERE al_se_id_service = :id_service " : "") 
 						. " ORDER BY al_timestamp DESC ";
-				$parmas = array( ':id_service' => $id_service ) ;
+				$params = array( ':id_service' => $id_service ) ;*/
+				$query = "SELECT b.* FROM " . PFX_MAIN_DB . "alert AS b" 
+						. ( $id_service  > 0 ?  " WHERE b.al_se_id_service = :id_service " : "") 
+						. " ORDER BY b.al_timestamp DESC ";
+				$params = array( ':id_service' => $id_service ) ;
 			}
 			else{ 
 				$id_client = $this->get_user_client($this->User->user); 
+				/*
 				$query  = "SELECT * FROM " . PFX_MAIN_DB . "alert "    
 					. " WHERE al_cl_id_client = :id_client "
 						. ( $id_service  > 0 ? " AND al_se_id_service = :id_service " : "") 
 					. " ORDER BY al_timestamp DESC ";
-				$params = array( ':id_client' => $id_client, ':id_service' => $id_service ); 
+				$params = array( ':id_client' => $id_client, ':id_service' => $id_service );
+				 */
+				 $query  = "SELECT b.* FROM " . PFX_MAIN_DB . "alert AS b"    
+					. " WHERE b.al_cl_id_client = :id_client "
+						. ( $id_service  > 0 ? " AND b.al_se_id_service = :id_service " : "") 
+					. " ORDER BY b.al_timestamp DESC ";
+				$params = array( ':id_client' => $id_client, ':id_service' => $id_service );  
 			}
-			$query = "SELECT * FROM ( " . $query . " )  WHERE rownum <= 50 ";
+				
+			//$query = "SELECT * FROM ( " . $query . " )  WHERE rownum <= 50 "; //oracle
+			$query = "SELECT * FROM ( " . $query . " )  LIMIT 0, 50";
 			$result = $obj_bd->query( $query, $params ); 
 			if ( $result === FALSE ){  
 				$this->set_error( 'An error occured while querying the DB for the services. ', LOG_DB_ERR, 3 ); 
@@ -265,16 +279,16 @@ class prosaApi extends api{
 	protected function get_services(){
 		global $obj_bd; 
 		if ($this->User->user != ''){
-/*			if ( $this->User->profile == 1 ){
+			if ( $this->User->profile == 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "service ORDER BY se_order ";
-/*				$parmas = FALSE;
+				$params = FALSE;
 			}
 			else{
-*/				$query  = "SELECT * FROM " . PFX_MAIN_DB . "service_user " 
+				$query  = "SELECT * FROM " . PFX_MAIN_DB . "service_user " 
 						. " INNER JOIN " . PFX_MAIN_DB . "service ON id_service = su_se_id_service "  
 					. " WHERE su_user = :su_user ORDER BY se_order ";
 				$params = array( ':su_user' => $this->User->user ); 
-//			}
+			}
 			$result = $obj_bd->query( $query, $params ); 
 			
 			if ( $result === FALSE ){  
@@ -296,7 +310,7 @@ class prosaApi extends api{
 	}
 
 	protected function get_indicator(){
-		global $obj_bd;
+		global $obj_bd;		
 		if ( $this->User->user != '' ){
 			if (!array_key_exists('id_service', $this->request) && $this->request['id_service'] > 0) {
 	            $this->set_error('Invalid service.', ERR_VAL_INVALID, 3);
@@ -304,9 +318,11 @@ class prosaApi extends api{
 	        }
 			$id_client = 1;
 			$id_service = $this->request['id_service'];
+			
 			/**/if ( $this->User->profile != 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "service_user "
 						. " WHERE su_us_id_user = :user AND su_se_id_service = :id_service ";
+				echo $query;		
 				$resp = $obj_bd->query( $query, array( ':user' => $this->User->user, ':id_service' => $id_service ) );
 				if ( $resp ){
 					$this->set_error('An error occured while querying the DB for permitted services.', LOG_API_ERR, 3);

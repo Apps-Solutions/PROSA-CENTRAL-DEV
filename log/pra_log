@@ -76,3 +76,1205 @@
 [2015-05-20 12:30:08] mxbdcal1 @ 127.0.0.1:  ERROR @ Class  Failed connect to 187.237.42.162:8880; Connection refused
 [2015-05-20 12:46:20] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
 [2015-05-20 12:46:20] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 12:51:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 12:51:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 12:51:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 12:51:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:14:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:14:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:14:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:14:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:15:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:15:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:15:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:15:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:19:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:19:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:19:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:19:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:19:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:19:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:19:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:19:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:20:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:20:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:20:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:20:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:21:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:21:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:21:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:21:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:22:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:22:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:22:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:22:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:22:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:22:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:22:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:22:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:22:33] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:22:33] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:22:33] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:22:33] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:22:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:22:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:22:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:22:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:23:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:23:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:23:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:23:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:23:14] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:23:14] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:23:14] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:23:14] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:24:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:24:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:24:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:24:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:25:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:25:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:25:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:25:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:25:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:25:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:25:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:25:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:36:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:36:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:36:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:36:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:36:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:36:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:36:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:36:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:36:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:36:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:36:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:36:36] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:36:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:36:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:36:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:36:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:37:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:37:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:37:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:37:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:37:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:37:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:37:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:37:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:37:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:37:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:37:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:37:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:38:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:38:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:38:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:38:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:38:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:38:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:38:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:38:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:38:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:38:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:38:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:38:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:38:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:40:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:40:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:40:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:40:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:40:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 13:51:06] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 13:51:06] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 13:51:06] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 13:51:06] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 14:05:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 14:05:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 14:05:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 14:05:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 14:06:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 14:06:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 14:06:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 14:06:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 14:07:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 14:07:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 14:07:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 14:07:38] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 14:08:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 14:08:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 14:08:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 14:08:01] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 14:08:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 14:08:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-05-20 14:08:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 14:08:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 14:08:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 15:10:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:10:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 15:10:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 15:10:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:10:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 15:10:04] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 15:29:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:29:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 15:29:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 15:29:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:29:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 15:29:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 15:41:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:41:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:41:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:41:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 15:46:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:46:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:46:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:46:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 15:47:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:47:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:47:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:47:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 15:47:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:47:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:47:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:47:34] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 15:47:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:47:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:47:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:47:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 15:54:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:54:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:54:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:54:49] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 15:56:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 15:56:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 15:56:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 15:56:17] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:00:03] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:00:03] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:00:03] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:00:03] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:07:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:07:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:07:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:07:39] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:13:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:13:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:13:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:13:07] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:19:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:19:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:19:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:19:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:23:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:23:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:23:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:23:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:24:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:24:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:24:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:24:37] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:24:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:24:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:24:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:24:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:56:08] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:56:08] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:56:08] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:56:08] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:58:27] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:58:27] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:58:27] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:58:27] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:58:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 16:58:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:58:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 16:58:43] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 16:58:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:58:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 16:58:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 16:58:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:58:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 16:58:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 16:58:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:58:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 16:58:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 16:59:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 16:59:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-05-20 16:59:02] mxbdcal1 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-05-20 17:00:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:00:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:00:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:00:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:05:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:05:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:05:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:05:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:07:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:07:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:07:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:07:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:14:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:14:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:14:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:14:57] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:16:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:16:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:16:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:16:47] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:17:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:17:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:17:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:17:12] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:17:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:17:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:17:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:17:19] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:17:26] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:17:26] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:17:26] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:17:26] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:17:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:17:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:17:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:17:32] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:18:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:18:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:18:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:18:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:18:25] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:18:25] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:18:25] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:18:25] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:18:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:18:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:18:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:18:42] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:20:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:20:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:20:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:20:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:22:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:22:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:22:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:22:13] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:22:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:22:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:22:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:22:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 17:57:53] mxbdcal1 @ 127.0.0.1:  MSG @ Class Session: Login successful user mxbdcal1.
+[2015-05-20 17:57:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 17:57:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 17:57:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 17:57:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-20 18:16:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-20 18:16:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-20 18:16:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-20 18:16:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 09:27:01]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 09:27:01]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 09:27:01]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 09:27:01]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:38:27]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:38:27]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:38:27]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:38:27]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:38:53]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:38:53]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:38:53]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:38:53]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:39:43]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:39:43]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:39:43]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:39:43]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:42:56]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:42:56]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:42:56]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:42:56]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:43:25]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:43:25]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:43:25]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:43:25]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:44:20]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:44:20]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:44:20]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:44:20]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:45:19]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:45:19]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:45:19]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:45:19]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 10:48:29]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 10:48:29]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 10:48:29]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 10:48:29]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:23:00]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:23:00]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:23:00]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:23:00]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:25:08]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:25:08]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:25:08]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:25:08]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:25:34]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:25:34]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:25:34]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:25:34]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:26:05]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:26:05]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:26:05]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:26:05]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:27:13]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:27:13]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:27:13]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:27:13]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:28:00]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:28:00]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:28:00]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:28:00]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:28:23]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:28:23]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:28:23]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:28:23]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:28:47]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:28:47]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:28:47]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:28:47]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:29:09]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:29:09]  @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:29:09]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:29:09]  @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:33:14] mxbdcal1 @ 127.0.0.1:  MSG @ Class Session: Login successful user mxbdcal1.
+[2015-05-21 11:33:54] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:33:54] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:33:54] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:33:54] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:35:50] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:36:30] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:36:30] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:36:30] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:36:30] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:36:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:36:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:36:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:36:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:37:00] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:37:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:37:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:37:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:37:16] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:37:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:37:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:37:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:37:22] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:37:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:37:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:37:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:37:31] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:37:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:37:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:37:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:37:59] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:39:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:39:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:39:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:39:15] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:40:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:40:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:40:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:40:11] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:40:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:40:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:40:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:40:28] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:40:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:40:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:40:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:40:55] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:40:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:40:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:40:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:40:56] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-21 11:41:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-21 11:41:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-21 11:41:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-21 11:41:52] mxbdcal1 @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-25 09:12:14] carlos@hola.com @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos@hola.com.
+[2015-05-25 09:12:16] carlos@hola.com @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-25 09:12:16] carlos@hola.com @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-25 09:12:16] carlos@hola.com @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-25 09:12:16] carlos@hola.com @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-26 16:31:28] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
+[2015-05-26 16:31:30] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-26 16:31:30] carlos @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-26 16:31:30] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-26 16:31:30] carlos @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-26 18:12:38] abs @ 127.0.0.1:  MSG @ Class Session: Login successful user abs.
+[2015-05-26 18:12:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-26 18:12:40] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-26 18:12:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-26 18:12:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 10:02:53] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 10:02:53] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 10:02:53] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 10:02:53] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:00:00] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:00:00] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:00:00] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:00:00] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:01:29] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:01:29] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:01:29] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:01:29] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:02:11] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:02:11] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:02:11] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:02:11] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:11:41] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:11:41] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:11:41] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:11:41] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:33:03] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:33:03] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:33:03] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:33:03] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:39:38] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:39:38] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:39:38] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:39:38] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:44:00] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:44:00] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:44:00] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:44:00] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:44:55] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:44:55] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:44:55] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:44:55] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 11:46:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 11:46:18] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 11:46:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 11:46:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:23:29] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:23:29] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:23:29] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:23:29] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:25:14] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:25:14] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:25:14] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:25:14] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:27:08] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:27:08] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:27:08] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:27:08] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:35:31] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:35:31] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:35:31] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:35:31] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:37:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:37:40] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:37:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:37:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:39:04] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:39:04] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:39:04] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:39:04] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:41:24] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:41:24] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:41:24] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:41:24] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:43:12] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:43:12] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:43:12] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:43:12] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:43:16] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:43:16] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:43:16] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:43:16] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:43:21] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:43:21] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:43:21] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:43:21] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:44:09] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:44:09] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:44:09] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:44:09] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:44:56] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:44:56] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:44:56] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:44:56] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:47:26] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:47:26] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:47:26] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:47:26] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:52:28] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-05-27 12:52:28] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:52:28] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:52:28] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:52:49] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:52:49] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:52:49] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:53:40] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:53:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:53:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 12:54:18] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 12:54:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 12:54:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 13:33:15] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 13:33:15] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 13:33:15] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 15:56:39] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 15:56:39] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 15:56:39] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 15:57:58] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 15:57:58] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 15:57:58] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 16:02:36] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 16:02:36] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 16:02:36] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 16:03:18] abs @ 127.0.0.1:  ERROR @ Class POS  Ocurrió un error al obtener los totales del servicio .
+[2015-05-27 16:03:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 16:03:18] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 16:30:27] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 16:30:27] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 16:35:46] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 16:35:46] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 16:37:38] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 16:37:38] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 17:54:45] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 17:54:45] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 17:55:04] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 17:55:04] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 17:56:05] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 17:56:05] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 17:56:17] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 17:56:17] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 17:57:24] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 17:57:24] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 17:59:39] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 17:59:39] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 18:00:15] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 18:00:15] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 18:03:43] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 18:03:43] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados ADQ .
+[2015-05-27 18:06:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 18:07:46] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 18:08:21] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-27 18:16:40] abs @ 127.0.0.1:  ERROR @ Class POS Ocurrió un error al obtener los totales del servicio para top rechazados EMI .
+[2015-05-28 08:02:13] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-05-28 08:02:13] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-05-28 08:02:13] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-05-28 08:13:35] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-05-28 08:13:35] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-05-28 08:13:35] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-05-28 08:13:39] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-05-28 08:13:39] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-05-28 08:13:39] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-05-28 09:28:30] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener la última actualización.
+[2015-05-28 09:28:30] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:28:30] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 09:32:26] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener la última actualización.
+[2015-05-28 09:32:26] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:32:26] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 09:36:17] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener la última actualización.
+[2015-05-28 09:36:17] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:36:17] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 09:52:04] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener la última actualización.
+[2015-05-28 09:52:04] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:52:04] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 09:55:35] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:55:35] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 09:57:01] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:57:01] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 09:57:05] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 09:57:05] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:06:17] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:06:17] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:08:00] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:08:00] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:13:29] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:13:29] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:16:54] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:16:54] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:22:22] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:22:22] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:24:42] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:24:42] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:32:13] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:32:13] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:33:13] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:33:13] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-28 10:36:49] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:40:09] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:41:39] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:43:59] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:47:03] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:47:36] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:59:10] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 10:59:20] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 11:01:18] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 11:02:27] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 11:10:22] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-28 11:23:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener la última actualización.
+[2015-05-28 11:23:16] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 11:23:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 11:23:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 11:29:58] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener la última actualización.
+[2015-05-28 11:29:58] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 11:29:58] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 11:29:58] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 12:46:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener la última actualización.
+[2015-05-28 12:46:50] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 12:46:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 12:46:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 12:51:40] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener la última actualización.
+[2015-05-28 12:51:40] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 12:51:40] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 12:51:40] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 12:54:48] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 12:54:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 12:54:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 13:00:56] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 13:00:56] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 13:00:56] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 13:01:16] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 13:01:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 13:01:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 13:17:39] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 13:17:39] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 13:17:39] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 13:24:43] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 13:24:43] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 13:24:43] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 13:33:30] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 13:33:30] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 13:33:30] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 14:00:34] abs @ 127.0.0.1:  ERROR @ Class PREA  No se obtunvieron valores del servicio ATM .
+[2015-05-28 14:00:34] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 14:00:34] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:15:50] abs @ 127.0.0.1:  ERROR @ Class PREA  No se obtunvieron valores del servicio ATM .
+[2015-05-28 15:15:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:15:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:41:54] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:41:55] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:43:32] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:43:32] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:43:53] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:43:53] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:44:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:44:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:45:42] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:45:42] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 15:59:29] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 15:59:29] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:35:34] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:35:34] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:40:46] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:40:46] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:42:26] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:42:26] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:47:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:47:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:51:37] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:51:37] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:55:57] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:55:57] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 16:57:46] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 16:57:46] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 17:01:13] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 17:01:13] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 17:01:37] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-28 17:01:37] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-28 17:09:44] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 17:09:44] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 17:09:44] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 17:09:44] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-28 17:27:26] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 17:27:26] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 17:27:26] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 17:27:26] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-28 17:30:17] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 17:30:17] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 17:30:17] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 17:30:17] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-28 17:31:40] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 17:31:40] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 17:31:40] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 17:31:40] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-28 17:53:07] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 17:53:07] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 17:53:07] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 17:53:07] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-28 18:00:29] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 18:00:29] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 18:00:29] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 18:00:29] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-28 18:01:24] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-28 18:01:24] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-28 18:01:24] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-28 18:01:24] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 07:35:06] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 07:35:06] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 07:35:06] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 07:35:06] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 10:02:22] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 10:02:52] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 10:02:52] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 10:02:52] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 10:02:52] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 10:02:58] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 10:08:48] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 10:08:48] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 10:08:48] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 10:08:48] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 11:14:27] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 12:29:45] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener la última actualización.
+[2015-05-29 12:29:45] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 12:29:45] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-29 12:30:09] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener la última actualización.
+[2015-05-29 12:30:09] abs @ 127.0.0.1:  ERROR @ Class PREA  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 12:30:09] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 12:30:09] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 13:11:59] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 13:11:59] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 13:12:07] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener la última actualización.
+[2015-05-29 13:12:07] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:12:07] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-05-29 13:13:24] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:22:32] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:24:02] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:27:57] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:29:14] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:41:10] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:43:06] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:45:50] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:47:01] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:56:21] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener los totales del servicio .
+[2015-05-29 13:58:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 13:58:16] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:00:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 14:00:50] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:04:59] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 14:04:59] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:07:21] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 14:07:21] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:07:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 14:07:48] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:08:06] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 14:08:06] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:09:44] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados POS .
+[2015-05-29 14:09:44] abs @ 127.0.0.1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio para top rechazados ATM .
+[2015-05-29 14:11:29] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 14:11:29] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 14:11:29] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 14:11:29] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 14:16:00] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 14:16:00] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 14:16:00] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 14:16:00] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 14:17:10] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 14:17:10] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 14:17:10] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 14:17:10] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 14:25:12] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 14:25:12] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 14:25:12] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 14:25:12] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-29 14:27:59] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-29 14:27:59] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-29 14:27:59] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-29 14:27:59] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-05-31 15:27:30] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener la última actualización.
+[2015-05-31 15:27:30] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-05-31 15:27:30] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-05-31 15:27:30] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 09:14:12] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 09:14:12] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 09:14:12] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 09:20:25] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 09:20:25] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 09:20:25] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 09:30:05] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 09:30:05] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 09:30:05] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 09:36:54] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 09:36:54] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 09:36:54] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 09:44:37] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 09:44:37] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 09:44:37] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 09:48:03] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 09:48:03] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 09:48:03] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 11:58:52] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 11:58:52] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 11:58:52] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 12:47:28] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 12:47:28] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 12:47:28] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 12:51:33] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 12:51:33] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 12:51:33] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 13:06:47] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 13:06:47] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 13:06:47] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 13:12:49] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 13:12:49] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 13:12:49] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 13:19:42] abs @ 127.0.0.1:  ERROR @ Class Payware  Ocurrió un error al obtener los totales del servicio.
+[2015-06-01 13:19:42] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 13:19:42] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 13:21:45] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 13:21:45] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 13:34:17] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 13:34:17] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 15:26:40] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados POS  .
+[2015-06-01 15:26:40] abs @ 127.0.0.1:  ERROR @ Class Payware Ocurrió un error al obtener los totales del servicio para top rechazados ATM  .
+[2015-06-01 15:30:19] abs @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-01 15:31:48] abs @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-01 15:31:52] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener la última actualización.
+[2015-06-01 15:31:52] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 15:31:52] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 15:35:30] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener la última actualización.
+[2015-06-01 15:35:30] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 15:35:30] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 15:41:48] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 15:41:48] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 15:45:31] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio .
+[2015-06-01 15:45:31] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 15:52:42] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio .
+[2015-06-01 15:52:42] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 15:52:54] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio .
+[2015-06-01 15:52:54] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 15:56:30] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio .
+[2015-06-01 15:56:30] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:28:33] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:29:29] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:30:30] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-01 16:30:30] abs @ 127.0.0.1:  ERROR @ Class PROCOM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 16:30:30] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-01 16:30:30] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-01 16:30:59] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener la última actualización.
+[2015-06-01 16:30:59] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 16:30:59] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:38:42] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 16:38:42] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:41:46] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 16:41:46] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:46:32] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 16:49:29] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:01:43] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:01:54] abs @ 127.0.0.1:  ERROR @ Class CargosAutomaticos Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:04:49] abs @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 17:04:49] abs @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-01 17:04:49] abs @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-01 17:04:56] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener la última actualización.
+[2015-06-01 17:04:56] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 17:04:56] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:12:14] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 17:12:14] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:14:07] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 17:14:07] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:19:04] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:20:37] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:47:33] abs @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-01 17:47:33] abs @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-01 17:47:33] abs @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-01 17:47:45] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-01 17:48:15] abs @ 127.0.0.1:  ERROR @ Class Multiserv Ocurrió un error al obtener los totales del servicio para top rechazados .
+[2015-06-02 08:05:05] abs @ 127.0.0.1:  ERROR @ Class Multiserv No se obtuvieron valores totales del servicio .
+[2015-06-02 08:05:05] abs @ 127.0.0.1:  ERROR @ Class Multiserv No se obtuvieron valores del servicio para top rechazados .
+[2015-06-02 09:04:44] abs @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-02 09:04:57] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 09:04:57] abs @ 127.0.0.1:  ERROR @ Class PROCOM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-02 09:04:57] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 09:04:57] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 09:33:42] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 09:33:42] abs @ 127.0.0.1:  ERROR @ Class PROCOM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-02 09:33:42] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 09:33:42] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 09:34:10] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 09:34:10] abs @ 127.0.0.1:  ERROR @ Class PROCOM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-02 09:34:10] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 09:34:10] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 09:46:31] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 09:46:31] abs @ 127.0.0.1:  ERROR @ Class PROCOM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-02 09:46:31] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 09:46:31] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 09:46:54] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 09:46:54] abs @ 127.0.0.1:  ERROR @ Class PROCOM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-02 09:46:54] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 09:46:54] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 10:57:03] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-02 11:01:29] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-02 11:01:55] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-02 11:02:11] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-02 13:27:05] abs @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-02 13:29:46] abs @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-02 13:29:56] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 13:29:56] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-02 13:29:56] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-02 13:29:56] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 13:29:56] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 13:31:01] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrio un error al obtener la ultima actualizacion
+[2015-06-02 13:31:01] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-02 13:31:01] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-02 13:31:01] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 13:31:01] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 13:39:08] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-02 13:39:08] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-02 13:39:08] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 13:39:08] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 13:42:04] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-02 13:42:04] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-02 13:42:04] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 13:42:04] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 13:43:17] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-02 13:43:17] abs @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-02 13:43:17] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados 3D .
+[2015-06-02 13:43:17] abs @ 127.0.0.1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio para top rechazados SSL .
+[2015-06-02 13:48:28] abs @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-02 15:40:48] abs @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-02 16:39:18] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-06-02 16:39:18] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-06-02 16:53:47] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-06-02 16:53:47] abs @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-06-03 08:59:41] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio .
+[2015-06-03 08:59:41] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio para top rechazados .
+[2015-06-03 09:38:08] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio .
+[2015-06-03 09:38:08] abs @ 127.0.0.1:  ERROR @ Class SwitchAbierto No se obtunvieron valores del servicio para top rechazados .
+[2015-06-03 09:38:24] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 09:38:24] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 09:38:24] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 09:38:24] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:01:44] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:01:44] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:01:44] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:01:44] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:29:03] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:29:03] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:29:03] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:29:03] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:30:20] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:30:20] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:30:20] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:30:20] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:30:38] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:30:38] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:30:38] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:30:38] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:31:03] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:31:03] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:31:03] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:31:03] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:31:21] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:31:21] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:31:22] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:31:22] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:31:50] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:31:50] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:31:50] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:31:50] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:35:09] abs @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-03 10:35:09] abs @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-03 10:35:09] abs @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-03 10:35:10] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:35:10] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:35:10] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:35:10] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:52:18] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:52:18] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:52:18] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:52:18] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 10:52:54] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtunvieron valores del servicio POS .
+[2015-06-03 10:52:54] abs @ 127.0.0.1:  ERROR @ Class POS  No se obtuvieron valores del servicio ATM .
+[2015-06-03 10:52:54] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados EMI .
+[2015-06-03 10:52:54] abs @ 127.0.0.1:  ERROR @ Class POS No se obtunvieron valores del servicio para top rechazados ADQ .
+[2015-06-03 13:05:37] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:06:42] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:06:46] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:07:32] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:07:35] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:08:03] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:14:05] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:22:54] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:33:33] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos No se obtuvieron valores totales del servicio .
+[2015-06-03 13:33:33] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos No se obtuvieron valores del servicio para top rechazados .
+[2015-06-03 13:38:33] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos No se obtuvieron valores totales del servicio .
+[2015-06-03 13:38:33] abs @ 127.0.0.1:  ERROR @ Class PagosDiferidos No se obtuvieron valores del servicio para top rechazados .
+[2015-06-03 13:47:54] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:50:12] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:51:12] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:51:12] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:51:12] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:51:37] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:52:46] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:53:13] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:53:23] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:54:03] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 13:55:57] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 14:01:09] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:13:44] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:18:24] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:25:30] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:25:45] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:25:52] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:26:16] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:26:30] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:26:41] 2 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:41:34] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:42:35] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:42:47] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:44:39] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:45:36] 1 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:47:58] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:34] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:35] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:35] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:36] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:36] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:36] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:37] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:37] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:39] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:52:45] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:32] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:39] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:56] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:56] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:57] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:58] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:53:58] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:54:40] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:55:16] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:55:17] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:55:17] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:56:14] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:57:50] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 15:58:55] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 16:33:55] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 16:44:54] 3 @ 127.0.0.1: 127.0.0.1
+[2015-06-03 17:21:56] fsd @ 127.0.0.1:  MSG @ Class Session: Login successful user fsd.
+[2015-06-05 10:13:40] 234 @ 127.0.0.1:  MSG @ Class Session: Login successful user 234.
+[2015-06-05 10:13:47] 234 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-05 10:13:47] 234 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 10:13:47] 234 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 10:32:51] 234 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-06-05 10:32:51] 234 @ 127.0.0.1:  ERROR @ Class LDAP:  Could not bind to server. 
+[2015-06-05 11:13:55] 234 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-05 11:13:55] 234 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 11:13:55] 234 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 11:13:59] 234 @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-05 11:13:59] 234 @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-05 11:14:01] 234 @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 11:14:09] 234 @ 127.0.0.1:  ERROR @ Class ATM  Ocurrió un error al obtener los totales del servicio .
+[2015-06-05 11:14:09] 234 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 11:14:09] 234 @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:10:56] carlos @ 127.0.0.1:  MSG @ Class Session: Login successful user carlos.
+[2015-06-05 12:10:59] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:10:59] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:11:21] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:11:21] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:15:38] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:15:38] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:16:23] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:16:23] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:18:59] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:18:59] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:20:39] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:20:39] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:21:02] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:21:02] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:23:49] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:23:49] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:24:52] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:24:52] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:24:56] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:24:56] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:32:39] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:32:39] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:33:32] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:33:32] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:34:22] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:34:22] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:35:19] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:35:19] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:38:58] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados EMI  .
+[2015-06-05 12:38:58] carlos @ 127.0.0.1:  ERROR @ Class ATM Ocurrió un error al obtener los totales del servicio para top rechazados ADQ  .
+[2015-06-05 12:40:10] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-05 12:40:10] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-05 12:43:22] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-05 12:43:22] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-05 12:45:17] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-05 12:45:17] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-05 12:49:21] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-05 12:49:21] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-05 12:50:46] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-05 12:50:46] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-05 12:52:58] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 12:52:59] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-05 12:52:59] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-05 12:52:59] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-05 12:52:59] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-05 12:59:08] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-05 12:59:08] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-05 12:59:08] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-05 12:59:08] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-05 13:06:51] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-05 13:06:51] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-05 13:07:55] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:08:04] carlos @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-05 13:08:10] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-05 13:08:10] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-05 13:09:13] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:09:44] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-05 13:09:44] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-05 13:09:47] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-05 13:09:47] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-05 13:09:58] carlos @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-05 13:10:00] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-05 13:10:00] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-05 13:10:05] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:18:06] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:20:12] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:20:38] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:31:46] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:32:59] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:35:15] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-05 13:48:16] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-05 13:48:16] carlos @ 127.0.0.1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-05 13:49:44] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-05 13:49:44] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-05 13:59:33] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-05 13:59:33] carlos @ 127.0.0.1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-05 13:59:47] carlos @ 127.0.0.1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-05 13:59:55] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-05 13:59:55] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-05 14:00:00] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.

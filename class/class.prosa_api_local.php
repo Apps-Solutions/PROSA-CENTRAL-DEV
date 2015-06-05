@@ -22,7 +22,7 @@ class prosaApi extends api{
 		//$this->db = new oracle_db();
 		$this->db = new PDOMySQL();  
 		if ($this->request['request'] != 'login'){ 
-			if (array_key_exists('token', $this->request) && !$this->check_token()){
+			if (array_key_exists('token', $this->request) && $this->check_token()){
 				$this->set_error( 'Invalid User Token. ', LOG_SESS_ERR, 1 );
 	            throw new Exception('Invalid User Token');
 	        }
@@ -46,12 +46,11 @@ class prosaApi extends api{
 			$pwd	= $this->request['password']; 
 		//	$login = $this->ldap->login($user, $pwd); 
 			$login = TRUE;
-			if ( !$login ){
+		if ( !$login ){
 		//		return array('success' => FALSE, 'resp' => $this->ldap->error[0]);
-			} 
-			else { 
+			} else { 
 				$resp = $this->set_user_info($user); 
-				if ( $resp ){ 
+				//if ( $resp ){ 
 					$token = $this->set_token();
 					if ($token !== FALSE)
 						return array('success' => TRUE, 'resp' => 'OK', 'token' => $token);
@@ -59,10 +58,12 @@ class prosaApi extends api{
 						$this->set_error( "ERROR: An error occured while generating a Token.", LOG_SESS_ERR, 3); 
 						return array('success' => FALSE, 'resp' => "ERROR: An error occured while generating a Token.");
 				 	} 
-				} else {
+				//}
+				/* 
+				else {
 					$this->set_error( "ERROR: User doesn't have App Priviledges.", LOG_SESS_ERR, 2); 
 					return array('success' => FALSE, 'resp' => "ERROR: User doesn't have App Priviledges.");
-				} 
+				} */
 			
 			}
 	 	} else {
@@ -222,6 +223,7 @@ class prosaApi extends api{
 	protected function get_alerts(){
 		global $obj_bd;
 		 if ($this->User->user != ''){
+		 	
 		 	if ( array_key_exists('id_service', $this->request) && $this->request['id_service'] > 0) {
 	            $id_service = $this->request['id_service'];
 	        } else {
@@ -229,20 +231,24 @@ class prosaApi extends api{
 	        }
 			
 			if ( $this->User->profile == 1 ){
-				$query = "SELECT * FROM " . PFX_MAIN_DB . "alert " 
-						. ( $id_service  > 0 ?  " WHERE al_se_id_service = :id_service " : "") 
-						. " ORDER BY al_timestamp DESC ";
-				$parmas = array( ':id_service' => $id_service ) ;
+				$query = "SELECT b.* FROM " . PFX_MAIN_DB . "alert AS b" 
+						. ( $id_service  > 0 ?  " WHERE b.al_se_id_service = :id_service":"") 
+						. " ORDER BY b.al_timestamp DESC ";
+				$params = array( ':id_service' => $id_service ) ;
 			}
 			else{ 
 				$id_client = $this->get_user_client($this->User->user); 
-				$query  = "SELECT * FROM " . PFX_MAIN_DB . "alert "    
-					. " WHERE al_cl_id_client = :id_client "
-						. ( $id_service  > 0 ? " AND al_se_id_service = :id_service " : "") 
-					. " ORDER BY al_timestamp DESC ";
+				$query  = "SELECT b.* FROM " . PFX_MAIN_DB . "alert AS b"    
+					. " WHERE b.al_cl_id_client = :id_client "
+						. ( $id_service  > 0 ? " AND b.al_se_id_service = :id_service " : "") 
+					. " ORDER BY b.al_timestamp DESC ";
 				$params = array( ':id_client' => $id_client, ':id_service' => $id_service ); 
 			}
-			$query = "SELECT * FROM ( " . $query . " )  WHERE rownum <= 50 ";
+
+			/*ORacle
+			 * $query = "SELECT * FROM ( " . $query . " )  WHERE rownum <= 50 ";*/
+			$query = "SELECT a.* FROM (" . $query .") AS a  LIMIT 0, 50";
+			
 			$result = $obj_bd->query( $query, $params ); 
 			if ( $result === FALSE ){  
 				$this->set_error( 'An error occured while querying the DB for the services. ', LOG_DB_ERR, 3 ); 
@@ -266,16 +272,15 @@ class prosaApi extends api{
 	protected function get_services(){
 		global $obj_bd; 
 		if ($this->User->user != ''){
-/*			if ( $this->User->profile == 1 ){
-				$query = "SELECT * FROM " . PFX_MAIN_DB . "service ORDER BY se_order ";
-/*				$parmas = FALSE;
+			if ( $this->User->profile == 1 ){
+				$query = "SELECT * FROM " . PFX_MAIN_DB . "service ORDER BY se_order ";				$params = FALSE;
 			}
 			else{
-*/				$query  = "SELECT * FROM " . PFX_MAIN_DB . "service_user " 
+				$query  = "SELECT * FROM " . PFX_MAIN_DB . "service_user " 
 						. " INNER JOIN " . PFX_MAIN_DB . "service ON id_service = su_se_id_service "  
 					. " WHERE su_user = :su_user ORDER BY se_order ";
 				$params = array( ':su_user' => $this->User->user ); 
-//			}
+			}
 			$result = $obj_bd->query( $query, $params ); 
 			
 			if ( $result === FALSE ){  
@@ -392,8 +397,8 @@ class prosaApi extends api{
 
 	protected function get_clients(){
 		global $obj_bd;
-		//echo "Aqui--";
-		//if ($this->User->user != ''){
+		
+		if ($this->User->user != ''){
 			if ( $this->User->profile == 1 ){
 				$query = "SELECT * FROM " . PFX_MAIN_DB . "client ORDER BY id_client ";
 			}
@@ -417,7 +422,7 @@ class prosaApi extends api{
 				}
 				return array('success' => TRUE, 'resp' => "OK", 'clients' => $clients );
 			}
-		//} 
+		} 
 	}
 	 
 	protected function set_user_info( $user ){
@@ -443,7 +448,7 @@ class prosaApi extends api{
 	protected function get_user_client( $user ){
 		global $obj_bd; 
 		$fiid = substr($user,0, 4); 
-		$query = "SELECT id_client FROM " . PFX_MAIN_DB . "client WHERE cl_code = :code ";
+		$query = "SELECT id_client FROM " . PFX_MAIN_DB . "client WHERE cl_code = :code ";		
 		$result = $obj_bd->query( $query, array(':code' => $fiid ) ); 
 		if ( $result !== FALSE ){
 			return $result[0]['id_client'];

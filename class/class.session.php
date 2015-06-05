@@ -315,7 +315,7 @@ class Session {
 		
 		$services = $this->get_services();
 		foreach ($services as $k => $s){
-			if ( $id_service == $s['ID_SERVICE'] )
+			if ( $id_service == $s['id_service'] )
 				return TRUE;
 		}
 		return FALSE;

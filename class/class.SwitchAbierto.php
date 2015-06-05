@@ -71,7 +71,7 @@ class SwitchAbierto extends Service {
 		
 		$this->indicators[0]['title'] = "POS";
 		$this->indicators[0]['name'] = "POS";
-		$this->indicators[0]['source'] = "Adquiriente";
+		$this->indicators[0]['source'] = "Adquirente";
 		
 		$resp = $this->set_service_totals();
 		

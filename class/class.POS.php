@@ -58,7 +58,7 @@ class POS extends Service {
 				
 		//$result = $this->db->query( $query, array( ':dia' => $day ) ); //oracle
 		$result = $obj_bd->query( $query, array( ':dia' => $day ) ); // solo my sql
-	
+	//echo $query;
 		if ( $result !== FALSE ){
 			return count( $result[0] ) > 0 ? $result[0]['TOTAL'] : 0;
 		} else {
@@ -135,7 +135,7 @@ class POS extends Service {
 							. (( $this->id_client > 0 ) ? " AND y.FIID_TARJ = :id_client " : '')
 						. " GROUP BY y.DIA "
 					. " ) as z GROUP BY z.DIA ";
-	
+		
 		//Oracle
 		/*$query1 =  " SELECT DIA, SUM(ACCEPTED) AS ACCEPTED, SUM(REJECTED) AS REJECTED, SUM(TOTAL) AS TOTAL "
 					. "  FROM ( "

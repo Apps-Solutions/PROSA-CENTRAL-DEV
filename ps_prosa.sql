@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-05-2015 a las 18:40:42
+-- Tiempo de generación: 02-06-2015 a las 17:34:08
 -- Versión del servidor: 5.6.21
 -- Versión de PHP: 5.6.3
 
@@ -23,6 +23,227 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `PFX_SRV_DBBINES_EMISOR_PROSA`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBBINES_EMISOR_PROSA` (
+`idbinemisorprosa` int(11) NOT NULL,
+  `BIN` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_APP_PAYWARE`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_APP_PAYWARE` (
+`idapppayware` int(11) NOT NULL,
+  `BIN` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_APP_PAYWARE`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_APP_PAYWARE` (`idapppayware`, `BIN`) VALUES
+(1, '454747'),
+(2, '456300'),
+(3, '272800'),
+(4, '493135');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_INT`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_BIN_ATM_INT` (
+`id_ATM_INT_201505` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `CODIGO_RESPUESTA` varchar(2) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `BIN` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_NAC`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_BIN_ATM_NAC` (
+`id_BIN_ATM_NAC_201505` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `CODIGO_RESPUESTA` varchar(2) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `BIN` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_NAC`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_BIN_ATM_NAC` (`id_BIN_ATM_NAC_201505`, `DIA`, `TOTAL`, `CODIGO_RESPUESTA`, `BIN`) VALUES
+(1, 2, '42342', '15', '493135'),
+(2, 2, '234233', '10', '493135');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_BIN_POS_INT`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_BIN_POS_INT` (
+`idpostint` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `CODIGO_RESPUESTA` varchar(2) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `BIN` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_BIN_POS_INT`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_BIN_POS_INT` (`idpostint`, `DIA`, `TOTAL`, `CODIGO_RESPUESTA`, `BIN`) VALUES
+(1, 2, 131399, '12', '272800'),
+(2, 2, 123132, '11', '456300');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_BIN_POS_NAC`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_BIN_POS_NAC` (
+`id_bin_pos_nac` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `CODIGO_RESPUESTA` varchar(2) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `BIN` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_BIN_POS_NAC`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_BIN_POS_NAC` (`id_bin_pos_nac`, `DIA`, `TOTAL`, `CODIGO_RESPUESTA`, `BIN`) VALUES
+(1, 2, 21312, '25', '454747'),
+(2, 2, 42342344, '10', '454747');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_INT`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_HORA_ATM_INT` (
+`idhora_atm_nac` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `LN_TARJ` varchar(8) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `CODIGO_RESPUESTA` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_INT`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_HORA_ATM_INT` (`idhora_atm_nac`, `DIA`, `TOTAL`, `LN_TARJ`, `CODIGO_RESPUESTA`) VALUES
+(1, 2, 4534534, 'PEMI', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_NAC`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_HORA_ATM_NAC` (
+`idhora_atm_nac` int(11) NOT NULL,
+  `DIA` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `LN_TARJ` varchar(8) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `CODIGO_RESPUESTA` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_NAC`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_HORA_ATM_NAC` (`idhora_atm_nac`, `DIA`, `TOTAL`, `LN_TARJ`, `CODIGO_RESPUESTA`) VALUES
+(1, '2', 534534, 'PEMI', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_HORA_POS_INT`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_HORA_POS_INT` (
+`idposint` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `CODIGO_RESPUESTA` int(11) DEFAULT NULL,
+  `KQ2_ID_MEDIO_ACCESO` varchar(5) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `LN_TARJ` varchar(8) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `LN_COMER` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `KC0_INDICADOR_DE_COMERCIO_ELEC` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_HORA_POS_INT`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_HORA_POS_INT` (`idposint`, `DIA`, `TOTAL`, `CODIGO_RESPUESTA`, `KQ2_ID_MEDIO_ACCESO`, `LN_TARJ`, `LN_COMER`, `KC0_INDICADOR_DE_COMERCIO_ELEC`) VALUES
+(1, 2, 724687236, 8, '01', NULL, NULL, NULL),
+(2, 2, 3453, 7, '01', NULL, NULL, NULL),
+(3, 2, 34234, 6, '01', NULL, NULL, NULL),
+(4, 2, 111, 5, '01', NULL, NULL, NULL),
+(5, 2, 2234, 9, '01', 'PEMI', NULL, NULL),
+(6, 2, 342423, 9, '02', NULL, NULL, NULL),
+(7, 2, 234234, 12, '02', NULL, NULL, NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `PFX_SRV_DBTBL_MON_HORA_POS_NAC`
+--
+
+CREATE TABLE IF NOT EXISTS `PFX_SRV_DBTBL_MON_HORA_POS_NAC` (
+`idposnac` int(11) NOT NULL,
+  `DIA` int(11) DEFAULT NULL,
+  `TOTAL` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `CODIGO_RESPUESTA` int(11) DEFAULT NULL,
+  `KQ2_ID_MEDIO_ACCESO` varchar(2) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `KQ6_ID_TOKEN` varchar(2) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `LN_TARJ` varchar(8) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `LN_COMER` varchar(8) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `KC0_INDICADOR_DE_COMERCIO_ELEC` int(11) DEFAULT NULL
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `PFX_SRV_DBTBL_MON_HORA_POS_NAC`
+--
+
+INSERT INTO `PFX_SRV_DBTBL_MON_HORA_POS_NAC` (`idposnac`, `DIA`, `TOTAL`, `CODIGO_RESPUESTA`, `KQ2_ID_MEDIO_ACCESO`, `KQ6_ID_TOKEN`, `LN_TARJ`, `LN_COMER`, `KC0_INDICADOR_DE_COMERCIO_ELEC`) VALUES
+(1, 2, '23423', 12, '01', '01', NULL, NULL, NULL),
+(2, 2, '323', 11, '01', '01', NULL, NULL, NULL),
+(3, 2, '23123', 12, '01', '01', NULL, NULL, NULL),
+(4, 2, '322', 13, '01', '01', NULL, NULL, NULL),
+(5, 2, '1112', 14, '01', '01', NULL, NULL, NULL),
+(6, 2, '1231231', 10, '01', '01', NULL, NULL, NULL),
+(7, 2, '312312', 11, '01', '01', 'PEMI', NULL, NULL),
+(8, 2, '423423', 11, '01', '01', NULL, 'PRSA', NULL),
+(9, 2, '213123', 8, '02', '01', NULL, NULL, NULL),
+(10, 2, '3223', 12, '02', NULL, NULL, NULL, NULL),
+(11, 2, '423423', 8, '02', NULL, NULL, 'PROI', NULL),
+(12, 2, '3213', 12, NULL, NULL, NULL, 'PROI', NULL),
+(13, 2, '12323', NULL, '9', NULL, NULL, 'PROE', NULL);
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `pra_alert`
 --
 
@@ -33,7 +254,7 @@ CREATE TABLE IF NOT EXISTS `pra_alert` (
   `al_se_id_service` int(11) DEFAULT NULL,
   `al_text` varchar(250) COLLATE utf8_spanish_ci DEFAULT NULL,
   `al_status` int(11) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=213 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `pra_alert`
@@ -63,7 +284,7 @@ CREATE TABLE IF NOT EXISTS `pra_client` (
   `cl_code` varchar(10) COLLATE utf8_spanish_ci NOT NULL,
   `cl_status` int(11) NOT NULL,
   `cl_timestamp` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `pra_client`
@@ -73,7 +294,7 @@ INSERT INTO `pra_client` (`id_client`, `cl_client`, `cl_code`, `cl_status`, `cl_
 (1, 'SANTANDER', 'B003', 1, 1431368241),
 (2, 'HSBC', 'B021', 1, 1431368241),
 (3, 'SCOTIABANK', 'B044', 1, 1431368241),
-(4, 'BANORTE', 'B072', 0, 1413743865),
+(4, 'BANORTE', 'B072', 1, 1413743865),
 (5, 'PROSA', 'B999', 1, 1413743865);
 
 -- --------------------------------------------------------
@@ -94,14 +315,15 @@ CREATE TABLE IF NOT EXISTS `pra_last_total` (
 
 INSERT INTO `pra_last_total` (`lt_se_id_service`, `lt_total`, `lt_timestamp`) VALUES
 (0, 341898, 1431363586),
-(1, 10458, 1431100304),
-(2, 765119, 1431100445),
-(3, 38388, 1431100311),
-(4, 1270, 1431100567),
-(5, 560, 1431097518),
-(7, 2677252, 1431383701),
+(1, 2228392, 1433269780),
+(2, 42894762, 1433269783),
+(3, 4849080, 1433269786),
+(4, 423423, 1433282839),
+(5, 0, 1433270597),
+(6, 1216426, 1433198857),
+(7, 1453509720, 1433282835),
 (8, 192608, 1431096527),
-(9, 2270, 1431100291);
+(9, 426636, 1433269614);
 
 -- --------------------------------------------------------
 
@@ -268,7 +490,7 @@ CREATE TABLE IF NOT EXISTS `pra_service` (
   `se_status` int(11) NOT NULL,
   `se_timestamp` int(11) NOT NULL,
   `se_order` int(11) NOT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
 -- Volcado de datos para la tabla `pra_service`
@@ -312,7 +534,17 @@ INSERT INTO `pra_service_client` (`sc_se_id_service`, `sc_cl_id_client`, `sc_tim
 (6, 2, 1418689333),
 (7, 7, 1427329905),
 (6, 7, 1430848035),
-(7, 8, 1430853116);
+(7, 8, 1430853116),
+(1, 5, 4324234),
+(2, 5, 1430853116),
+(3, 5, 1430853116),
+(4, 5, 1430853116),
+(5, 5, 1430853116),
+(6, 5, 1430853116),
+(7, 8, 1430853116),
+(8, 5, 1430853116),
+(9, 5, 1430853116),
+(10, 5, 1430853116);
 
 -- --------------------------------------------------------
 
@@ -340,7 +572,8 @@ INSERT INTO `pra_service_user` (`su_se_id_service`, `su_user`, `su_timestamp`) V
 (5, 'mxbdcal1', 1420670177),
 (10, 'mxbdcal1', 1420670178),
 (4, 'mxbdcal1', 1420670180),
-(1, 'mxbdcal1', 1413827612);
+(1, 'mxbdcal1', 1413827612),
+(7, 'hcgariba', 1432144264);
 
 -- --------------------------------------------------------
 
@@ -468,9 +701,82 @@ INSERT INTO `pra_token` (`tk_user`, `tk_token_prosa`, `tk_token_apple`, `tk_time
 ('hbguevar', '4c01c3edc93cbcb98e7cad0aa9e42025', 'ebd345021f5ef663b58d7cd05ee6c92dd2646a02042df5eded4167e4eccf0ccd', 0),
 ('cavila', 'e0b92984d4db0ca9d9ed1865b5a6c24e', '6606a2aae5699e71615fe2688eb56c45e2005c904cd8d3e918593d0e941508c6', 1432074226);
 
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS`
+--
+
+CREATE TABLE IF NOT EXISTS `TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS` (
+`idSMS_SMS` int(11) NOT NULL,
+  `TOTAL` int(11) DEFAULT NULL,
+  `ID_BROKER` varchar(45) COLLATE utf8_spanish_ci DEFAULT NULL,
+  `TO_DATE` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
 --
 -- Índices para tablas volcadas
 --
+
+--
+-- Indices de la tabla `PFX_SRV_DBBINES_EMISOR_PROSA`
+--
+ALTER TABLE `PFX_SRV_DBBINES_EMISOR_PROSA`
+ ADD PRIMARY KEY (`idbinemisorprosa`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_APP_PAYWARE`
+--
+ALTER TABLE `PFX_SRV_DBTBL_APP_PAYWARE`
+ ADD PRIMARY KEY (`idapppayware`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_ATM_INT`
+ ADD PRIMARY KEY (`id_ATM_INT_201505`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_ATM_NAC`
+ ADD PRIMARY KEY (`id_BIN_ATM_NAC_201505`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_BIN_POS_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_POS_INT`
+ ADD PRIMARY KEY (`idpostint`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_BIN_POS_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_POS_NAC`
+ ADD PRIMARY KEY (`id_bin_pos_nac`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_ATM_INT`
+ ADD PRIMARY KEY (`idhora_atm_nac`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_ATM_NAC`
+ ADD PRIMARY KEY (`idhora_atm_nac`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_HORA_POS_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_POS_INT`
+ ADD PRIMARY KEY (`idposint`);
+
+--
+-- Indices de la tabla `PFX_SRV_DBTBL_MON_HORA_POS_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_POS_NAC`
+ ADD PRIMARY KEY (`idposnac`);
 
 --
 -- Indices de la tabla `pra_alert`
@@ -515,24 +821,85 @@ ALTER TABLE `pra_service`
  ADD PRIMARY KEY (`id_service`);
 
 --
+-- Indices de la tabla `TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS`
+--
+ALTER TABLE `TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS`
+ ADD PRIMARY KEY (`idSMS_SMS`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBBINES_EMISOR_PROSA`
+--
+ALTER TABLE `PFX_SRV_DBBINES_EMISOR_PROSA`
+MODIFY `idbinemisorprosa` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_APP_PAYWARE`
+--
+ALTER TABLE `PFX_SRV_DBTBL_APP_PAYWARE`
+MODIFY `idapppayware` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_ATM_INT`
+MODIFY `id_ATM_INT_201505` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_BIN_ATM_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_ATM_NAC`
+MODIFY `id_BIN_ATM_NAC_201505` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_BIN_POS_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_POS_INT`
+MODIFY `idpostint` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_BIN_POS_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_BIN_POS_NAC`
+MODIFY `id_bin_pos_nac` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_ATM_INT`
+MODIFY `idhora_atm_nac` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_HORA_ATM_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_ATM_NAC`
+MODIFY `idhora_atm_nac` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_HORA_POS_INT`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_POS_INT`
+MODIFY `idposint` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+--
+-- AUTO_INCREMENT de la tabla `PFX_SRV_DBTBL_MON_HORA_POS_NAC`
+--
+ALTER TABLE `PFX_SRV_DBTBL_MON_HORA_POS_NAC`
+MODIFY `idposnac` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=14;
+--
 -- AUTO_INCREMENT de la tabla `pra_alert`
 --
 ALTER TABLE `pra_alert`
-MODIFY `id_alert` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=213;
+MODIFY `id_alert` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `pra_client`
 --
 ALTER TABLE `pra_client`
-MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `id_client` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `pra_service`
 --
 ALTER TABLE `pra_service`
-MODIFY `id_service` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
+MODIFY `id_service` int(11) NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS`
+--
+ALTER TABLE `TBL_SMS_LOG@LG_ROP_APPWEB_SMS_SMS`
+MODIFY `idSMS_SMS` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

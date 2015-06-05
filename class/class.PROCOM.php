@@ -68,7 +68,7 @@ if ( !class_exists('Service')){
 		 
 		$this->indicators[0]['title'] = "3D";
 		$this->indicators[0]['name'] = "3D";
-		$this->indicators[0]['source'] = "Adquiriente";
+		$this->indicators[0]['source'] = "Adquirente";
 		
 		$this->indicators[0]['total_transactions'] = 0;
 		$this->indicators[0]['total_accepted'] = 0;
@@ -76,7 +76,7 @@ if ( !class_exists('Service')){
 		
 		$this->indicators[1]['title'] = "SSL";
 		$this->indicators[1]['name'] = "SSL";
-		$this->indicators[1]['source'] = "Adquiriente"; 
+		$this->indicators[1]['source'] = "Adquirente"; 
 		
 		$this->indicators[1]['total_transactions'] = 0;
 		$this->indicators[1]['total_accepted'] = 0;
@@ -253,7 +253,7 @@ if ( !class_exists('Service')){
 		$query_top = ' SELECT CODIGO_RESPUESTA, TOTAL FROM ( ' . $query . ' ) WHERE rownum <= 5 ' ;
 		 * */
 		$query_top = ' SELECT d.CODIGO_RESPUESTA, d.TOTAL FROM ( ' . $query . ' ) AS d LIMIT 0,5' ;
-		echo $query_top;
+		//echo $query_top;
 		$params[':dia'] = date('d');
 		if ( $this->id_client > 0 )  $params[':id_client'] =  $this->client_code ; 
 		

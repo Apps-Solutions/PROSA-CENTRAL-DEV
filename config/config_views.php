@@ -49,7 +49,7 @@ $uiCommand[ERR_404]		= array( 	array(1,2,3),	  	"Not Found", 				DIRECTORY_VIEWS
 $uiCommand[LOGIN]		= array( 	array(1,2,3),	 	"Iniciar Sesion", 			"frm.login.php",									"",						"",				""		);
 $uiCommand[HOME]		= array( 	array(1,2,3),	  	"Inicio", 					DIRECTORY_VIEWS.DIRECTORY_BASE."dashboard.php", 	"",						"",				""		);
 
-$uiCommand[LST_USER]	= array( 	array( 2 ),			"Usuarios", 				DIRECTORY_VIEWS."base/lst.user.php",  			array("user.js"),			"",				""		); 
+$uiCommand[LST_USER]	= array( 	array( 1 ),			"Usuarios", 				DIRECTORY_VIEWS."base/lst.user.php",  			array("user.js"),			"",				""		); 
 $uiCommand[LST_ADM_USER]= array( 	array( 1 ),			"Usuarios PROSA", 			DIRECTORY_VIEWS."admin/lst.user.php",  			array("admin.user.js"),		"",				""		); 
 $uiCommand[LST_CLIENT]	= array( 	array( 1 ),			"Clientes", 				DIRECTORY_VIEWS."admin/lst.client.php",  		array("admin.client.js"),	"",				""		);
 /*** Notificaciones ***/

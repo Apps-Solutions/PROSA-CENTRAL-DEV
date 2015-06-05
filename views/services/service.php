@@ -141,7 +141,7 @@ echo "</pre>";
 	<div class="row"> &nbsp; </div>
 	<div class="row"> 
 		<div class="col-xs-12 text-right">
-			<span> <?php echo "&Utilde;ltima actualizaci&otilde;n  " . date('Y:m:d H:i:s', $Service->last_timestamp) ?> </span>
+			<span> <?php echo "Última actualización  " . date('Y:m:d H:i:s', $Service->last_timestamp) ?> </span>
 		</div>
 	 </div>
 	<div class="row"> &nbsp; </div> 
