@@ -124,7 +124,7 @@ abstract class Service extends Object{
 		if ( $this->code != '' ){
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "service "
 				. " INNER JOIN " . PFX_MAIN_DB . "threshold ON th_se_id_service = id_service "
-				. " WHERE se_command = :code "; 
+				. " WHERE se_command = :code "; 			
 			$info = $obj_bd->query( $query, array( ':code' => $this->code ) );
 			if ( $info && count($info) > 0 ){
 				$this->threshold  = $info[0]['th_threshold'];
@@ -307,6 +307,7 @@ abstract class Service extends Object{
 		global $obj_bd;
 		if ( $this->id_client > 0 ){
 			$query = "SELECT * FROM " . PFX_MAIN_DB . "client WHERE id_client = :id_client ";
+		
 			$result = $obj_bd->query( $query, array( ':id_client' => $this->id_client ) );
 			if ( $result !== FALSE){ 
 				if ( count($result) > 0 ){
