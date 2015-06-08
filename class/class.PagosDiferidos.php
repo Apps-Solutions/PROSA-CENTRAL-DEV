@@ -133,7 +133,7 @@ class PagosDiferidos extends Service {
 				$this->indicators[0]['total_accepted'] = $totals['ACCEPTED'];
 				$this->indicators[0]['total_rejected'] = $totals['REJECTED'];
 				
-				$this->set_last_total( $totals['TOTAL'] ); 
+				//$this->set_last_total( $totals['TOTAL'] ); 
 				return TRUE;
 			} else {
 				
@@ -229,17 +229,19 @@ class PagosDiferidos extends Service {
 	public function is_up(){
 		
 		$this->last_total = $this->get_last_total();
+
 		if ( $this->last_total ){
 			
-			if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
-				return TRUE;
+			//if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) );
+				//return TRUE;
 			
-			if ( date('H') == 1 && date('i') < TIME_DB_UPDATE){
+			/*if ( date('H') == 1 && date('i') < TIME_DB_UPDATE){
 				if ( date('d') == 1 ) {
 					if ( $this->last_total['timestamp'] < time() - ( $this->time_prosa * 60 ) ){
 						return FALSE;
 					} else {
 						$this->set_last_total( 0 );
+
 						return TRUE;
 					} 
 				} else {
@@ -249,20 +251,20 @@ class PagosDiferidos extends Service {
 			}else{
 				$flag = FALSE;
 				$when = time();
-			} 
+			} */
 			
-			$day_total = $this->get_day_total( date('d', $when) );
-			if ( $day_total ){
-				if ( $day_total > $this->last_total['total'] ){
-					$this->set_last_total( $day_total );
+			//$day_total = $this->get_day_total( date('d', $when) );
+			//if ( $day_total ){
+				if ( /*$day_total > $this->last_total['total']*/ $this->last_total['total'] > $this->last_total['pre_total']){
+					//$this->set_last_total( $day_total );
 					return TRUE;
 				} else{ 
-					$this->set_last_total( $day_total );
+					//$this->set_last_total( $day_total );
 					return FALSE;
 				}
-			} else {
+			/*} else {
 				return FALSE;
-			}
+			}*/
 		} else {
 			return FALSE;
 		}

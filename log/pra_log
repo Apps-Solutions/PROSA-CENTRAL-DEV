@@ -1278,3 +1278,87 @@
 [2015-06-05 13:59:55] carlos @ 127.0.0.1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
 [2015-06-05 13:59:55] carlos @ 127.0.0.1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
 [2015-06-05 14:00:00] carlos @ 127.0.0.1:  ERROR @ Class SMS Ocurrió un error al obtener la última actualización SMS.
+[2015-06-08 12:47:06] lalala @ ::1:  MSG @ Class Session: Login successful user lalala.
+[2015-06-08 12:49:28] lala @ ::1:  MSG @ Class Session: Login successful user lala.
+[2015-06-08 12:54:24] lala @ ::1:  ERROR @ Class LDAP: No LDAP Support on server.
+[2015-06-08 13:02:22] lalal @ ::1:  MSG @ Class Session: Login successful user lalal.
+[2015-06-08 13:04:32] kaka @ ::1:  MSG @ Class Session: Login successful user kaka.
+[2015-06-08 13:10:05] lalal @ ::1:  MSG @ Class Session: Login successful user lalal.
+[2015-06-08 13:10:43] lalal @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 13:10:52] lalal @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 13:25:35] lalal @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-08 13:25:35] lalal @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-08 13:28:49] lalal @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 13:44:30] lalal @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 13:48:17] lalal @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 13:48:19] lalal @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-08 13:48:19] lalal @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-08 13:48:30] lalal @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-08 13:48:30] lalal @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-08 13:50:33] gdfg @ ::1:  MSG @ Class Session: Login successful user gdfg.
+[2015-06-08 15:38:22] gdfg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al actualizar el último total.
+[2015-06-08 15:38:22] gdfg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al actualizar el último total.
+[2015-06-08 15:38:25] gdfg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al actualizar el último total.
+[2015-06-08 15:38:25] gdfg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al actualizar el último total.
+[2015-06-08 15:38:29] gdfg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al actualizar el último total.
+[2015-06-08 15:38:29] gdfg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al actualizar el último total.
+[2015-06-08 16:26:14] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:26:23] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:26:40] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:26:56] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:29:39] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:29:58] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:30:10] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:34:05] gdfg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:34:36] jaja @ ::1:  MSG @ Class Session: Login successful user jaja.
+[2015-06-08 16:35:03] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:36:25] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:36:56] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:37:02] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:37:35] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:38:33] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:39:00] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:41:09] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:41:27] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:41:42] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:02] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:02] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:02] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:02] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:02] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:03] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:03] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:03] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:03] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:03] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:37] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:46:57] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-08 16:46:57] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-08 16:46:57] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-08 16:46:57] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-08 16:47:20] jaja @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-08 16:47:20] jaja @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-08 16:47:50] jaja @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-08 16:47:50] jaja @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-08 16:56:16] jaja @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-08 16:56:16] jaja @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-08 16:56:19] jaja @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-08 16:56:19] jaja @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-08 16:56:31] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 16:56:45] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-08 16:56:45] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-08 16:56:45] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-08 16:56:45] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-08 17:02:41] jaja @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-08 17:02:41] jaja @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-08 17:02:45] jaja @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-08 17:02:45] jaja @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-08 17:03:21] jaja @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-08 17:03:34] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-08 17:03:34] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-08 17:03:34] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-08 17:03:34] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 

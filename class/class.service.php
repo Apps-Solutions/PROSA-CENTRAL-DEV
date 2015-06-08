@@ -86,7 +86,8 @@ abstract class Service extends Object{
      * 
      */
     public $last_total = FALSE;
-	
+	public $pre_total = 0;
+	public $date;
 	 /**
      * Property: db
      * 
@@ -138,20 +139,26 @@ abstract class Service extends Object{
 	
 	protected function get_last_total(){
 		global $obj_bd;
-		$query = "SELECT lt_total, lt_timestamp FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service = :id_service ";
+		$query = "SELECT lt_total, lt_pre_total, lt_fecha, lt_timestamp FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service = :id_service ";
 		$result = $obj_bd->query( $query, array( ':id_service' => $this->id_service) );
 		if ( $result !== FALSE ){
 			$resp = array();
 			if ( count($result) > 0 ){ 
 				$resp['total']	 	= $result[0]['lt_total'];
 				$resp['timestamp'] 	= $result[0]['lt_timestamp'];
+				$resp['pre_total']  = $result[0]['lt_pre_total'];
+				$resp['date'] 		= $result[0]['lt_fecha'];
 			} else {
 				$resp['total']	 	= 0;
 				$resp['timestamp'] 	= 0;
+				$resp['pre_total']  = 0;
+				$resp['date']		= '';
 			}
 			
 			$this->last_total 		= $resp['total'];
 			$this->last_timestamp 	= $resp['timestamp'];
+			$this->pre_total 		= $resp['pre_total'];
+			$this->date 			= $resp['date'];
 			
 			return $resp;
 		} else {

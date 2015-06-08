@@ -213,7 +213,7 @@ class PREA extends Service {
 			} else { 
 				$this->set_error(" No se obtunvieron valores del servicio ATM " . ( $this->client_code != '' ? "(" . $this->client_code . ")" : "" ) . ".", ERR_DB_QRY ); 
 			}
-			$this->set_last_total( $t0 + $t1 ); 
+			//$this->set_last_total( $t0 + $t1 ); 
 		} else {
 			$this->set_error(" Ocurrió un error al obtener los totales del servicio.", ERR_DB_QRY );
 			return FALSE;
@@ -308,8 +308,8 @@ class PREA extends Service {
                 $this->last_total = $this->get_last_total();
                 if ( $this->last_total ){
 
-                        if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
-                                return TRUE;
+                        //if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
+                              /*  return TRUE;
 
                         if ( date('H') == 1 && date('i') < TIME_DB_UPDATE){
                                 if ( date('d') == 1 ) {
@@ -327,19 +327,19 @@ class PREA extends Service {
                                 $flag = FALSE;
                                 $when = time();
                         }
-
-                        $day_total = $this->get_day_total( date('d', $when) );
-                        if ( $day_total ){
-                                if ( $day_total > $this->last_total['total'] ){
-                                        $this->set_last_total( $day_total );
+*/
+                        //$day_total = $this->get_day_total( date('d', $when) );
+                        //if ( $day_total ){
+                                if ( /*$day_total > $this->last_total['total']*/ $this->last_total['total'] > $this->last_total['pre_total']){
+                                        //$this->set_last_total( $day_total );
                                         return TRUE;
                                 } else{
-                                        $this->set_last_total( $day_total );
+                                        //$this->set_last_total( $day_total );
                                         return FALSE;
                                 }
-                        } else {
+                        /*} else {
                                 return FALSE;
-                        }
+                        }*/
                 } else {
                         return FALSE;
                 }

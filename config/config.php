@@ -21,7 +21,7 @@ define ("PFX_SMS_DB", 			'SMS.');*/
 define("DB_HOST", 				'localhost');
 define("DB_USERNAME", 			'root');
 define("DB_PASSWORD", 			'root');
-define("DB_NAME", 				'ps_prosa');
+define("DB_NAME", 				'prosa_dev');
 define("PFX_MAIN_DB", 			'pra_');
 
 /****************** Time intervals Configuration ******************/ 
