@@ -268,7 +268,6 @@ class POS extends Service {
 			return FALSE;
 		} 
 	}
-
 	 public function is_up(){
  		
         $this->last_total = $this->get_last_total(); 
@@ -296,7 +295,8 @@ class POS extends Service {
 
                 $day_total = $this->get_day_total( date('d', $when) );
                 if ( $day_total ){
-                    if ( $day_total > $this->last_total['total'] ){
+                   //if ( $day_total > $this->last_total['total'] ){
+                    if (($this->last_total['total']) > ($this->last_total['pre_total']) ){
                             $this->set_last_total( $day_total );
                             return TRUE;
                     } else{
@@ -310,6 +310,7 @@ class POS extends Service {
                 return FALSE;
         }
     }
+
 
 	public function get_array(){
 		
