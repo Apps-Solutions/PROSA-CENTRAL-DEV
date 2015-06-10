@@ -1362,3 +1362,44 @@
 [2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
 [2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
 [2015-06-08 17:03:44] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-08 18:28:07] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-08 18:28:07] jaja @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-08 18:28:07] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-08 18:28:07] jaja @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-09 12:16:35] hghg @ ::1:  MSG @ Class Session: Login successful user hghg.
+[2015-06-09 17:02:41] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:03:50] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:04:57] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:05:49] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:07:51] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:08:12] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:09:14] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:09:56] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:10:14] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-09 17:10:49] hghg @ ::1:  ERROR @ Class PagosDiferidos Ocurrió un error al obtener el id del servicio 
+[2015-06-10 13:46:13] hghg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-10 13:48:15] hghg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-10 14:04:35] hghg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-10 15:29:53] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-10 15:29:53] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-10 15:36:29] hghg @ ::1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 15:37:27] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-10 15:37:27] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-10 15:37:33] hghg @ ::1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 15:39:55] hghg @ ::1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 15:40:40] hghg @ ::1:  ERROR @ Class PREA Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 15:43:00] hghg @ ::1:  ERROR @ Class Payware Ocurrió un error al obtener el id del servicio 
+[2015-06-10 15:52:03] hghg @ ::1:  ERROR @ Class Payware No se obtunvieron valores del servicio para top rechazados ATM  .
+[2015-06-10 16:03:43] hghg @ ::1:  ERROR @ Class SwitchAbierto Ocurrió un error al obtener el id del servicio 
+[2015-06-10 16:14:16] hghg @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio POS .
+[2015-06-10 16:14:16] hghg @ ::1:  ERROR @ Class PROCOM  No se obtunvieron valores del servicio ATM .
+[2015-06-10 16:14:16] hghg @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados 3D . 
+[2015-06-10 16:14:16] hghg @ ::1:  ERROR @ Class PROCOM No se obtuvieron valores del servicio para top rechazados SSL . 
+[2015-06-10 16:22:08] hghg @ ::1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 16:23:04] hghg @ ::1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 16:24:13] hghg @ ::1:  ERROR @ Class PROCOM Ocurrió un error al obtener los totales del servicio 
+[2015-06-10 16:36:38] hghg @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
+[2015-06-10 16:36:38] hghg @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-10 17:01:44] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
+[2015-06-10 17:01:44] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
+[2015-06-10 17:17:12] hghg @ ::1:  ERROR @ Class Multiserv Ocurrió un error al obtener el id del servicio 

@@ -10,6 +10,7 @@ abstract class Service extends Object{
      * Service ID
      */
     public $id_service = '';
+    public $id_service2 = '';
 	 /**
      * Property: id_service
      * Service ID
@@ -203,7 +204,7 @@ abstract class Service extends Object{
 	} 
 	
 	public function get_indicators_html(){
-		if ( count($this->indicators) > 0 ){
+		if ( count($this->indicators) > 0 ){print_r($this->indicators);
 			foreach ( $this->indicators as $k => $data ) {
 				/* 
 				<div class='indicator-content'>

@@ -73,12 +73,95 @@ class SwitchAbierto extends Service {
 		$this->indicators[0]['name'] = "POS";
 		$this->indicators[0]['source'] = "Adquirente";
 		
-		$resp = $this->set_service_totals();
+		$resp = $this->set_sellcom_service_totals();
 		
-		$resp = $this->set_top_rejected();
+		//$resp = $this->set_top_rejected();
 		
 	}
 	
+	private function set_sellcom_service_totals()
+	{
+		global $obj_bd;
+		$arreglo_datos = array();
+		$this->indicators[0]['total_transactions'] = 0;
+		$this->indicators[0]['total_accepted'] = 0;
+		$this->indicators[0]['total_rejected'] = 0;
+
+
+		$query = "SELECT MAX(idpra_charts_SWITCH) AS id FROM " . PFX_MAIN_DB . "charts_switch WHERE pcs_type='adquirente' ";
+//echo $query;die();
+		$result = $obj_bd->query($query);
+
+		if($result !== FALSE)
+		{
+			if(count($result) > 0)
+			{
+				$total = $result[0];
+				$this->id_service = $total['id'];
+
+				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts_switch WHERE  idpra_charts_SWITCH=" . $this->id_service;
+				$result = $obj_bd->query($query);
+				if($result !== FALSE)
+				{
+					if(count($result) > 0)
+					{
+						$total = $result[0];
+						
+						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
+						
+						$datos = $total['pcs_top_5_rejected'];
+						if(count($datos) > 0)
+						{	
+							$sum = 0;
+							$arreglo_datos = explode(",", $datos);
+							for($i = 0; $i < 14; $i += 3)
+							{
+								$rejected =  array();
+								$rejected['code'] = $arreglo_datos[$i];
+								$rejected['motive'] = $arreglo_datos[$i+1];
+								$rejected['total'] = $arreglo_datos[$i+2];
+
+								$sum += $rejected['total'];
+
+								$this->indicators[0]['top_rejected'][] = $rejected;
+							}
+							$others = array();
+							$others['code'] = 0;
+							$others['motive'] = 'Otros';
+							$others['total'] = $this->indicators[0]['total_rejected'] - $sum;
+							 $this->indicators[0]['top_rejected'][] = $others;
+							return TRUE;
+						}
+						
+						return TRUE;
+					}
+					else 
+					{
+						$this->set_error("No se obtuvieron valores totales del servicio " , ERR_DB_QRY );
+						return FALSE;
+					}
+				}
+				else
+				{
+					$this->set_error("Ocurrió un error al obtener los totales del servicio " , ERR_DB_QRY );
+					return FALSE;
+				}
+			}
+			else
+			{
+				$this->set_error("No se obtuvo el id " , ERR_DB_QRY );
+				return FALSE;
+			}
+		}
+		else
+		{
+			$this->set_error("Ocurrió un error al obtener el id del servicio " , ERR_DB_QRY );
+			return FALSE;
+		}
+	}
+
 	private function set_service_totals(){
 		global $obj_bd;
 		$this->indicators[0]['total_transactions'] = 0;

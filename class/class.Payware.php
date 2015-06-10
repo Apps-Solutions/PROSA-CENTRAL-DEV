@@ -143,11 +143,134 @@ class Payware extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 		
-		$resp = $this->set_service_totals(); 
-		$resp = $this->set_top_rejected();
+		$resp = $this->set_sellcom_service_totals(); 
+		//$resp = $this->set_top_rejected();
 		
 	}
 	
+	private function set_sellcom_service_totals()
+	{
+		global $obj_bd;
+		$arreglo_pos = array();
+		$arreglo_atm = array();
+
+		$this->indicators[0]['total_transactions'] = 0;
+		$this->indicators[0]['total_accepted'] = 0;
+		$this->indicators[0]['total_rejected'] = 0;
+
+		$this->indicators[1]['total_transactions'] = 0;
+		$this->indicators[1]['total_accepted'] = 0;
+		$this->indicators[1]['total_rejected'] = 0;
+
+		$query = "SELECT MAX(idpra_charts_payware) AS id FROM " . PFX_MAIN_DB . "charts_payware WHERE pcp_type='emisor_pos' ";
+		$query2 = "SELECT MAX(idpra_charts_payware) AS id FROM " . PFX_MAIN_DB . "charts_payware WHERE pcp_type='emisor_atm' ";
+
+		$result = $obj_bd->query($query);
+		$result2 = $obj_bd->query($query2);
+
+		if($result !== FALSE && $result2 !== FALSE)
+		{
+			if (count($result) > 0 && count($result2) > 0) 
+			{
+				$total = $result[0];
+				$total2 = $result2[0];
+
+				$this->id_service = $total['id'];
+				$this->id_service2 = $total2['id'];
+
+				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts_payware WHERE idpra_charts_payware=" . $this->id_service;
+				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts_payware WHERE idpra_charts_payware=" . $this->id_service2;
+
+				$result = $obj_bd->query($query);
+				$result2 = $obj_bd->query($query2);
+
+				if ($result !== FALSE && $result2 !== FALSE) 
+				{
+					if (count($result) > 0 && count($result2) > 0) 
+					{
+						$total = $result[0];
+						$total2 = $result2[0];
+
+						$this->indicators[0]['total_transactions'] = $total['pcp_total_acepted'] + $total['pcp_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcp_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcp_total_rejected'];
+
+						$this->indicators[1]['total_transactions'] = $total2['pcp_total_acepted'] + $total2['pcp_total_rejected'];
+						$this->indicators[1]['total_accepted'] = $total2['pcp_total_acepted'];
+						$this->indicators[1]['total_rejected'] = $total2['pcp_total_rejected'];
+
+						$datos = $total['pcp_top_5_rejected'];
+						$datos2 = $total2['pcp_top_5_rejected'];
+
+						if (count($datos) > 0 && count($datos2) > 0) 
+						{
+							$t0 = 0;
+							$t1 = 0;
+
+							$arreglo_pos = explode(",", $datos);
+							$arreglo_atm = explode(",", $datos2);
+
+							for ($i=0 ; $i < 11 ; $i+= 3 ) 
+							{ 
+								$rejected =  array();
+								$rejected['code'] = $arreglo_pos[$i];
+								$rejected['motive'] = $arreglo_pos[$i+1];
+								$rejected['total'] = $arreglo_pos[$i+2];
+
+								$t0 += $rejected['total'];
+
+								$this->indicators[0]['top_rejected'][] = $rejected;
+
+								$rejected =  array();
+								$rejected['code'] = $arreglo_atm[$i];
+								$rejected['motive'] = $arreglo_atm[$i+1];
+								$rejected['total'] = $arreglo_atm[$i+2];
+
+								$t1 += $rejected['total'];
+
+								$this->indicators[1]['top_rejected'][] = $rejected;
+							}
+
+							$others = array();
+							$others['code'] = 0;
+							$others['motive'] = 'Otros';
+							$others['total'] = $this->indicators[0]['total_rejected'] - $t0;
+							$this->indicators[0]['top_rejected'][] = $others;
+
+							$others = array();
+							$others['code'] = 0;
+							$others['motive'] = 'Otros';
+							$others['total'] = $this->indicators[1]['total_rejected'] - $t1;
+							 $this->indicators[1]['top_rejected'][] = $others;
+							 return TRUE;
+						}
+
+						return TRUE;
+					}
+					else
+					{
+						$this->set_error("No se obtuvieron valores totales del servicio " , ERR_DB_QRY );
+						return FALSE;
+					}
+				}
+				else
+				{
+					$this->set_error("Ocurrió un error al obtener los totales del servicio " , ERR_DB_QRY );
+					return FALSE;
+				}
+			}
+			else
+			{
+				$this->set_error("No se obtuvo el id " , ERR_DB_QRY );
+				return FALSE;
+			}
+		}
+		else
+		{
+			$this->set_error("Ocurrió un error al obtener el id del servicio " , ERR_DB_QRY );
+			return FALSE;
+		}
+	}
 	
 	private function set_service_totals(){
 		 global $obj_bd;
