@@ -89,8 +89,12 @@ class Multiserv extends Service {
 		$this->indicators[0]['total_rejected'] = 0;
 
 
+<<<<<<< HEAD
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=9";
 //echo $query;die();
+=======
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_multiserv' AND pcs_se_id_service=9 ";		
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 		$result = $obj_bd->query($query);
 
 		if($result !== FALSE)

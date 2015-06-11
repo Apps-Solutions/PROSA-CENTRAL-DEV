@@ -108,8 +108,13 @@ class POS extends Service {
 
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_pos' AND pcs_se_id_service=7";
 		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=7";
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 		$result = $obj_bd->query($query);
+		
 		$result2 = $obj_bd->query($query2);
 
 		if($result !== FALSE && $result2 !== FALSE)
@@ -124,8 +129,13 @@ class POS extends Service {
 
 				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
 				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 				$result = $obj_bd->query($query);
+				
 				$result2 = $obj_bd->query($query2);
 
 				if ($result !== FALSE && $result2 !== FALSE) 
@@ -143,7 +153,11 @@ class POS extends Service {
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 
+<<<<<<< HEAD
 						$datos = $total['pcs_top_5_rejected'];
+=======
+						$datos = $total['pcs_top_5_rejected'];					
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 						$datos2 = $total2['pcs_top_5_rejected'];
 
 						if (count($datos) > 0 && count($datos2) > 0) 
@@ -391,7 +405,6 @@ class POS extends Service {
 			return FALSE;
 		} 
 	}
-
 	 public function is_up(){
  		
         $this->last_total = $this->get_last_total(); 
@@ -417,10 +430,12 @@ class POS extends Service {
                         $when = time();
                 }*/
 
+
                 //$day_total = $this->get_day_total( date('d', $when) );
                 //if ( $day_total ){
                     if ( /*$day_total > $this->last_total['total']*/ $this->last_total['total'] > $this->last_total['pre_total'] ){
                             //$this->set_last_total( $day_total );
+
                             return TRUE;
                     } else{
                             //$this->set_last_total( $day_total );
@@ -433,6 +448,7 @@ class POS extends Service {
                 return FALSE;
         }
     }
+
 
 	public function get_array(){
 		

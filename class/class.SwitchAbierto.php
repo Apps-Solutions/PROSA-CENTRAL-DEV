@@ -89,6 +89,10 @@ class SwitchAbierto extends Service {
 
 
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=4";
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 		$result = $obj_bd->query($query);
 
 		if($result !== FALSE)

@@ -90,9 +90,14 @@ class ATM extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 
+<<<<<<< HEAD
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_atm' AND pcs_se_id_service=8";
 		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_atm' AND pcs_se_id_service=8";
 
+=======
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_atm' AND pcs_se_id_service=8";	
+		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_atm' AND pcs_se_id_service=8 ";	
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 		$result = $obj_bd->query($query);
 		$result2 = $obj_bd->query($query2);
 
@@ -107,8 +112,12 @@ class ATM extends Service {
 				$this->id_service2 = $total2['id'];
 
 				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
+<<<<<<< HEAD
 				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
 
+=======
+				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;				
+>>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
 				$result = $obj_bd->query($query);
 				$result2 = $obj_bd->query($query2);
 
