@@ -1403,3 +1403,13 @@
 [2015-06-10 17:01:44] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados EMI  .
 [2015-06-10 17:01:44] hghg @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
 [2015-06-10 17:17:12] hghg @ ::1:  ERROR @ Class Multiserv Ocurrió un error al obtener el id del servicio 
+[2015-06-10 17:44:37] hghg @ ::1:  ERROR @ Class PREA Ocurrió un error al obtener el id del servicio 
+[2015-06-10 17:45:28] hghg @ ::1:  ERROR @ Class PREA Ocurrió un error al obtener el id del servicio 
+[2015-06-10 18:27:07] hghg @ ::1:  ERROR @ Class ATM Ocurrió un error al obtener el id del servicio 
+[2015-06-11 11:14:18] lol @ ::1:  MSG @ Class Session: Login successful user lol.
+[2015-06-11 12:05:32] lol @ ::1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-06-11 12:05:49] lol @ ::1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-06-11 12:08:03] lol @ ::1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-06-11 12:08:56] lol @ ::1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-06-11 12:09:35] lol @ ::1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.
+[2015-06-11 12:09:51] lol @ ::1:  ERROR @ Class POS Ocurrió un error al obtener la última actualización.

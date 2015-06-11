@@ -89,7 +89,7 @@ class Multiserv extends Service {
 		$this->indicators[0]['total_rejected'] = 0;
 
 
-		$query = "SELECT MAX(idpra_charts_MULTISERV) AS id FROM " . PFX_MAIN_DB . "charts_multiserv WHERE pcm_type='adquirente_pos' ";
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=9";
 //echo $query;die();
 		$result = $obj_bd->query($query);
 
@@ -100,7 +100,7 @@ class Multiserv extends Service {
 				$total = $result[0];
 				$this->id_service = $total['id'];
 
-				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts_multiserv WHERE  idpra_charts_MULTISERV=" . $this->id_service;
+				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts WHERE  idpra_charts=" . $this->id_service;
 				$result = $obj_bd->query($query);
 				if($result !== FALSE)
 				{
@@ -108,11 +108,11 @@ class Multiserv extends Service {
 					{
 						$total = $result[0];
 						
-						$this->indicators[0]['total_transactions'] = $total['pcm_total_acepted'] + $total['pcm_total_rejected'];
-						$this->indicators[0]['total_accepted'] = $total['pcm_total_acepted'];
-						$this->indicators[0]['total_rejected'] = $total['pcm_total_rejected'];
+						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
 						
-						$datos = $total['pcm_top_5_rejected'];
+						$datos = $total['pcs_top_5_rejected'];
 						if(count($datos) > 0)
 						{	
 							$sum = 0;

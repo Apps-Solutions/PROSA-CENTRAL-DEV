@@ -88,8 +88,7 @@ class SwitchAbierto extends Service {
 		$this->indicators[0]['total_rejected'] = 0;
 
 
-		$query = "SELECT MAX(idpra_charts_SWITCH) AS id FROM " . PFX_MAIN_DB . "charts_switch WHERE pcs_type='adquirente' ";
-//echo $query;die();
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=4";
 		$result = $obj_bd->query($query);
 
 		if($result !== FALSE)
@@ -99,7 +98,7 @@ class SwitchAbierto extends Service {
 				$total = $result[0];
 				$this->id_service = $total['id'];
 
-				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts_switch WHERE  idpra_charts_SWITCH=" . $this->id_service;
+				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts WHERE  idpra_charts=" . $this->id_service;
 				$result = $obj_bd->query($query);
 				if($result !== FALSE)
 				{

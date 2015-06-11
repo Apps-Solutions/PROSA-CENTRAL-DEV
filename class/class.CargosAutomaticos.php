@@ -87,7 +87,7 @@ if ( !class_exists('Service')){
 		$this->indicators[0]['total_rejected'] = 0;
 
 
-		$query = "SELECT MAX(idpra_charts_cargos_automaticos) AS id FROM " . PFX_MAIN_DB . "charts_cargos_automaticos WHERE pcca_type='adquirente' ";
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=6";
 //echo $query;die();
 		$result = $obj_bd->query($query);
 
@@ -98,7 +98,7 @@ if ( !class_exists('Service')){
 				$total = $result[0];
 				$this->id_service = $total['id'];
 
-				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts_cargos_automaticos WHERE  idpra_charts_cargos_automaticos=" . $this->id_service;
+				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts WHERE  idpra_charts=" . $this->id_service;
 				$result = $obj_bd->query($query);
 				if($result !== FALSE)
 				{
@@ -106,11 +106,11 @@ if ( !class_exists('Service')){
 					{
 						$total = $result[0];
 						
-						$this->indicators[0]['total_transactions'] = $total['pcca_total_acepted'] + $total['pcca_total_rejected'];
-						$this->indicators[0]['total_accepted'] = $total['pcca_total_acepted'];
-						$this->indicators[0]['total_rejected'] = $total['pcca_total_rejected'];
+						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
 						
-						$datos = $total['pcca_top_5_rejected'];
+						$datos = $total['pcs_top_5_rejected'];
 						if(count($datos) > 0)
 						{	
 							$sum = 0;

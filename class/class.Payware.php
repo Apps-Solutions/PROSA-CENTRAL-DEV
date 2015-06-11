@@ -162,8 +162,8 @@ class Payware extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 
-		$query = "SELECT MAX(idpra_charts_payware) AS id FROM " . PFX_MAIN_DB . "charts_payware WHERE pcp_type='emisor_pos' ";
-		$query2 = "SELECT MAX(idpra_charts_payware) AS id FROM " . PFX_MAIN_DB . "charts_payware WHERE pcp_type='emisor_atm' ";
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_pos' AND pcs_se_id_service=3";
+		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_atm' AND pcs_se_id_service=3";
 
 		$result = $obj_bd->query($query);
 		$result2 = $obj_bd->query($query2);
@@ -178,8 +178,8 @@ class Payware extends Service {
 				$this->id_service = $total['id'];
 				$this->id_service2 = $total2['id'];
 
-				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts_payware WHERE idpra_charts_payware=" . $this->id_service;
-				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts_payware WHERE idpra_charts_payware=" . $this->id_service2;
+				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
+				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
 
 				$result = $obj_bd->query($query);
 				$result2 = $obj_bd->query($query2);
@@ -191,16 +191,16 @@ class Payware extends Service {
 						$total = $result[0];
 						$total2 = $result2[0];
 
-						$this->indicators[0]['total_transactions'] = $total['pcp_total_acepted'] + $total['pcp_total_rejected'];
-						$this->indicators[0]['total_accepted'] = $total['pcp_total_acepted'];
-						$this->indicators[0]['total_rejected'] = $total['pcp_total_rejected'];
+						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
 
-						$this->indicators[1]['total_transactions'] = $total2['pcp_total_acepted'] + $total2['pcp_total_rejected'];
-						$this->indicators[1]['total_accepted'] = $total2['pcp_total_acepted'];
-						$this->indicators[1]['total_rejected'] = $total2['pcp_total_rejected'];
+						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcs_total_rejected'];
+						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
+						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 
-						$datos = $total['pcp_top_5_rejected'];
-						$datos2 = $total2['pcp_top_5_rejected'];
+						$datos = $total['pcs_top_5_rejected'];
+						$datos2 = $total2['pcs_top_5_rejected'];
 
 						if (count($datos) > 0 && count($datos2) > 0) 
 						{
