@@ -86,10 +86,16 @@ class POS extends Service {
 		$this->indicators[1]['total_transactions'] = 0;
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
+
+		$check=$this->get_pra_chart(7);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
 		
-		$resp = $this->set_sellcom_service_totals(); 
-		//$resp = $this->set_top_rejected();
-		
+			$resp = $this->set_top_rejected();
+		}
+
 	}
 	
 	private function set_sellcom_service_totals()
@@ -125,7 +131,10 @@ class POS extends Service {
 
 				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
 				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 				$result = $obj_bd->query($query);
 				
 				$result2 = $obj_bd->query($query2);
@@ -145,7 +154,10 @@ class POS extends Service {
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 						$datos = $total['pcs_top_5_rejected'];
 
 						$datos2 = $total2['pcs_top_5_rejected'];

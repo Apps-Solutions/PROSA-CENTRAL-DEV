@@ -143,8 +143,14 @@ class Payware extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 		
-		$resp = $this->set_sellcom_service_totals(); 
-		//$resp = $this->set_top_rejected();
+		$check=$this->get_pra_chart(3);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
+		
+			$resp = $this->set_top_rejected();
+		}
 		
 	}
 	

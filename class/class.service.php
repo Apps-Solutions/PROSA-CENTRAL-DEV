@@ -364,7 +364,7 @@ abstract class Service extends Object{
 			$top_total=array();
 			
 		foreach($this->indicators as $k => $data){
-		print_r($data);
+		//print_r($data);
 			
 			//Aceptadas
 		  	
@@ -415,5 +415,22 @@ $data = array(
    return $data;
   
 	}
+ /*Carlos Servín*/
+	public function get_pra_chart($service){
+	global $obj_bd;
+	$values=array(
+					":service" => $service,
+					":timea"   => time(),
+					":timeb"   => strtotime ( '-10 minute' , time() ) ,					
+				 );
+	$query="SELECT * FROM " . PFX_MAIN_DB . "charts WHERE pcs_se_id_service=:service AND pcs_timestamp BETWEEN :timeb AND :timea";
+	$result = $obj_bd->query($query, $values);
+		if(count($result)>0){
+			return TRUE;
+		}else{
+			return FALSE;
+		}
+	}
+
 }
 ?>

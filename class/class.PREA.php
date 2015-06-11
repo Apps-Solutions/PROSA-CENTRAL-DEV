@@ -96,8 +96,14 @@ class PREA extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 		
-		$resp = $this->set_sellcom_service_totals(); 
-		//$resp = $this->set_top_rejected();
+		$check=$this->get_pra_chart(2);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
+		
+			$resp = $this->set_top_rejected();
+		}
 		
 	}
 
@@ -150,7 +156,10 @@ class PREA extends Service {
 
 
 						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcs_total_rejected'];
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 

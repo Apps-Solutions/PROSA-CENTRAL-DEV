@@ -82,9 +82,14 @@ if ( !class_exists('Service')){
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 		
-		$resp = $this->set_sellcom_service_totals(); 
-		//$resp = $this->set_top_rejected();
+		$check=$this->get_pra_chart(5);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
 		
+			$resp = $this->set_top_rejected();
+		}
 	}
 	
 	private function set_sellcom_service_totals()
@@ -117,7 +122,10 @@ if ( !class_exists('Service')){
 				$this->id_service = $total['id'];
 				$this->id_service2 = $total2['id'];
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
 				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
 
@@ -134,6 +142,7 @@ if ( !class_exists('Service')){
 
 						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
 						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+<<<<<<< HEAD
 
 						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
 
@@ -141,6 +150,15 @@ if ( !class_exists('Service')){
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 
+=======
+
+						$this->indicators[0]['total_rejected'] = $total['pcs_rejected'];
+
+						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcs_total_rejected'];
+						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
+						$this->indicators[1]['total_rejected'] = $total2['pcs_rejected'];
+
+>>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 
 						$datos = $total['pcs_top_5_rejected'];
 						$datos2 = $total2['pcs_top_5_rejected'];
