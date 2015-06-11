@@ -91,10 +91,7 @@ if ( !class_exists('Service')){
 		$this->indicators[0]['total_rejected'] = 0;
 
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=6";
 
 //echo $query;die();

@@ -96,10 +96,7 @@ class ATM extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_atm' AND pcs_se_id_service=8";
 		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_atm' AND pcs_se_id_service=8";
 
@@ -121,10 +118,7 @@ class ATM extends Service {
 
 				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
 				$result = $obj_bd->query($query);
 				$result2 = $obj_bd->query($query2);
 

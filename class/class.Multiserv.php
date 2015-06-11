@@ -95,13 +95,9 @@ class Multiserv extends Service {
 
 
 
-<<<<<<< HEAD
-		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=9";
-//echo $query;die();
-=======
-		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=9 ";		
 
->>>>>>> e9ee5d24c4115f342792b687163eccb50898ded0
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=9";
+
 
 		$result = $obj_bd->query($query);
 
