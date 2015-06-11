@@ -216,12 +216,9 @@ abstract class Service extends Object{
 	} 
 	
 	public function get_indicators_html(){
-<<<<<<< HEAD
+
 		if ( count($this->indicators) > 0 ){//print_r($this->indicators);
-=======
-		if ( count($this->indicators) > 0 ){
-			//print_r($this->indicators);
->>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
+
 			foreach ( $this->indicators as $k => $data ) {
 				/* 
 				<div class='indicator-content'>

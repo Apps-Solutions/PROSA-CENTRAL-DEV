@@ -85,12 +85,9 @@ class PagosDiferidos extends Service {
 		$this->indicators[0]['total_rejected'] = 0;
 
 
-<<<<<<< HEAD
+
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_pos' AND pcs_se_id_service=1 ";
-=======
-		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_POS' AND pcs_se_id_service=1";
-//echo $query;die();
->>>>>>> 7f9ae33b02114fbc5920cf875a3b2f03a9f4267e
+
 		$result = $obj_bd->query($query);
 
 		if($result !== FALSE)
