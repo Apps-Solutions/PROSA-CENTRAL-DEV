@@ -71,11 +71,133 @@ class ATM extends Service {
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
 		
-		$resp = $this->set_service_totals(); 
-		$resp = $this->set_top_rejected();
+		$resp = $this->set_sellcom_service_totals(); 
+		//$resp = $this->set_top_rejected();
 		
 	}
 	
+	private function set_sellcom_service_totals()
+	{
+		global $obj_bd;
+		$arreglo_pos = array();
+		$arreglo_atm = array();
+
+		$this->indicators[0]['total_transactions'] = 0;
+		$this->indicators[0]['total_accepted'] = 0;
+		$this->indicators[0]['total_rejected'] = 0;
+
+		$this->indicators[1]['total_transactions'] = 0;
+		$this->indicators[1]['total_accepted'] = 0;
+		$this->indicators[1]['total_rejected'] = 0;
+
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_atm' AND pcs_se_id_service=8";	
+		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_atm' AND pcs_se_id_service=8 ";	
+		$result = $obj_bd->query($query);
+		$result2 = $obj_bd->query($query2);
+
+		if($result !== FALSE && $result2 !== FALSE)
+		{
+			if (count($result) > 0 && count($result2) > 0) 
+			{
+				$total = $result[0];
+				$total2 = $result2[0];
+
+				$this->id_service = $total['id'];
+				$this->id_service2 = $total2['id'];
+
+				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
+				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;				
+				$result = $obj_bd->query($query);
+				$result2 = $obj_bd->query($query2);
+
+				if ($result !== FALSE && $result2 !== FALSE) 
+				{
+					if (count($result) > 0 && count($result2) > 0) 
+					{
+						$total = $result[0];
+						$total2 = $result2[0];
+
+						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
+
+						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcs_total_rejected'];
+						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
+						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
+
+						$datos = $total['pcs_top_5_rejected'];
+						$datos2 = $total2['pcs_top_5_rejected'];
+
+						if (count($datos) > 0 && count($datos2) > 0) 
+						{
+							$t0 = 0;
+							$t1 = 0;
+
+							$arreglo_pos = explode(",", $datos);
+							$arreglo_atm = explode(",", $datos2);
+
+							for ($i=0 ; $i < 11 ; $i+= 3 ) 
+							{ 
+								$rejected =  array();
+								$rejected['code'] = $arreglo_pos[$i];
+								$rejected['motive'] = $arreglo_pos[$i+1];
+								$rejected['total'] = $arreglo_pos[$i+2];
+
+								$t0 += $rejected['total'];
+
+								$this->indicators[0]['top_rejected'][] = $rejected;
+
+								$rejected =  array();
+								$rejected['code'] = $arreglo_atm[$i];
+								$rejected['motive'] = $arreglo_atm[$i+1];
+								$rejected['total'] = $arreglo_atm[$i+2];
+
+								$t1 += $rejected['total'];
+
+								$this->indicators[1]['top_rejected'][] = $rejected;
+							}
+
+							$others = array();
+							$others['code'] = 0;
+							$others['motive'] = 'Otros';
+							$others['total'] = $this->indicators[0]['total_rejected'] - $t0;
+							$this->indicators[0]['top_rejected'][] = $others;
+
+							$others = array();
+							$others['code'] = 0;
+							$others['motive'] = 'Otros';
+							$others['total'] = $this->indicators[1]['total_rejected'] - $t1;
+							 $this->indicators[1]['top_rejected'][] = $others;
+							 return TRUE;
+						}
+
+						return TRUE;
+					}
+					else
+					{
+						$this->set_error("No se obtuvieron valores totales del servicio " , ERR_DB_QRY );
+						return FALSE;
+					}
+				}
+				else
+				{
+					$this->set_error("Ocurrió un error al obtener los totales del servicio " , ERR_DB_QRY );
+					return FALSE;
+				}
+			}
+			else
+			{
+				$this->set_error("No se obtuvo el id " , ERR_DB_QRY );
+				return FALSE;
+			}
+		}
+		else
+		{
+			$this->set_error("Ocurrió un error al obtener el id del servicio " , ERR_DB_QRY );
+			return FALSE;
+		}
+	}
+
 	
 	private function set_service_totals(){
 		 global $obj_bd;
@@ -179,7 +301,7 @@ class ATM extends Service {
 			} else { 
 				$this->set_error(" No se obtunvieron valores del servicio ATM Adquiriente" . ( $this->client_code != '' ? "(" . $this->client_code . ")" : "" ) . ".", ERR_DB_QRY ); 
 			}
-			$this->set_last_total( $t0 + $t1 ); 
+			//$this->set_last_total( $t0 + $t1 ); 
 		} else {
 			$this->set_error(" Ocurrió un error al obtener los totales del servicio " . ( $this->client_code != '' ? "(" . $this->client_code . ")" : "" ) . ".", ERR_DB_QRY );
 			return FALSE;
@@ -264,8 +386,8 @@ class ATM extends Service {
  		
 	    $this->last_total = $this->get_last_total(); 
 	    if ( $this->last_total ){ 
-            if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
-				return TRUE;
+            //if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
+			/*	return TRUE;
 
             if ( date('H') == 1 && date('i') < TIME_DB_UPDATE){
                 if ( date('d') == 1 ) {
@@ -282,20 +404,20 @@ class ATM extends Service {
             }else{
                 $flag = FALSE;
                 $when = time();
-            }
+            }*/
 
-            $day_total = $this->get_day_total( date('d', $when) );
-            if ( $day_total ){
-                if ( $day_total > $this->last_total['total'] ){
-                    $this->set_last_total( $day_total );
+            //$day_total = $this->get_day_total( date('d', $when) );
+            //if ( $day_total ){
+                if ( /*$day_total > $this->last_total['total']*/ $this->last_total['total'] > $this->last_total['pre_total'] ){
+                    //$this->set_last_total( $day_total );
                     return TRUE;
                 } else{
-                    $this->set_last_total( $day_total );
+                    //$this->set_last_total( $day_total );
                     return FALSE;
                 }
-            } else {
+            /*} else {
                     return FALSE;
-            }
+            }*/
         } else {
                 return FALSE;
         }

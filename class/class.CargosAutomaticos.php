@@ -72,11 +72,95 @@ if ( !class_exists('Service')){
 		$this->indicators[0]['name'] = "POS";
 		$this->indicators[0]['source'] = "Adquirente";
 		
-		$resp = $this->set_service_totals();
+		$resp = $this->set_sellcom_service_totals();
 		
-		$resp = $this->set_top_rejected();
+		//$resp = $this->set_top_rejected();
 		
 	}
+
+	private function set_sellcom_service_totals()
+	{
+		global $obj_bd;
+		$arreglo_datos = array();
+		$this->indicators[0]['total_transactions'] = 0;
+		$this->indicators[0]['total_accepted'] = 0;
+		$this->indicators[0]['total_rejected'] = 0;
+
+
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_cargos_automaticos' ";
+//echo $query;die();
+		$result = $obj_bd->query($query);
+
+		if($result !== FALSE)
+		{
+			if(count($result) > 0)
+			{
+				$total = $result[0];
+				$this->id_service = $total['id'];
+
+				$query = " SELECT * FROM  " . PFX_MAIN_DB . "charts WHERE  idpra_charts=" . $this->id_service;
+				$result = $obj_bd->query($query);
+				if($result !== FALSE)
+				{
+					if(count($result) > 0)
+					{
+						$total = $result[0];
+						
+						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
+						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
+						
+						$datos = $total['pcs_top_5_rejected'];
+						if(count($datos) > 0)
+						{	
+							$sum = 0;
+							$arreglo_datos = explode(",", $datos);
+							for($i = 0; $i < 14; $i += 3)
+							{
+								$rejected =  array();
+								$rejected['code'] = $arreglo_datos[$i];
+								$rejected['motive'] = $arreglo_datos[$i+1];
+								$rejected['total'] = $arreglo_datos[$i+2];
+
+								$sum += $rejected['total'];
+
+								$this->indicators[0]['top_rejected'][] = $rejected;
+							}
+							$others = array();
+							$others['code'] = 0;
+							$others['motive'] = 'Otros';
+							$others['total'] = $this->indicators[0]['total_rejected'] - $sum;
+							 $this->indicators[0]['top_rejected'][] = $others;
+							return TRUE;
+						}
+						
+						return TRUE;
+					}
+					else 
+					{
+						$this->set_error("No se obtuvieron valores totales del servicio " , ERR_DB_QRY );
+						return FALSE;
+					}
+				}
+				else
+				{
+					$this->set_error("Ocurrió un error al obtener los totales del servicio " , ERR_DB_QRY );
+					return FALSE;
+				}
+			}
+			else
+			{
+				$this->set_error("No se obtuvo el id " , ERR_DB_QRY );
+				return FALSE;
+			}
+		}
+		else
+		{
+			$this->set_error("Ocurrió un error al obtener el id del servicio " , ERR_DB_QRY );
+			return FALSE;
+		}
+	}
+
 	
 	private function set_service_totals(){
 		global $obj_bd;
@@ -133,7 +217,7 @@ if ( !class_exists('Service')){
 				$this->indicators[0]['total_accepted'] = $totals['ACCEPTED'];
 				$this->indicators[0]['total_rejected'] = $totals['REJECTED'];
 				
-				$this->set_last_total( $totals['TOTAL'] ); 
+				//$this->set_last_total( $totals['TOTAL'] ); 
 				return TRUE;
 			} else {
 				
@@ -221,8 +305,8 @@ if ( !class_exists('Service')){
 		
 		$this->last_total = $this->get_last_total();
 		if ( $this->last_total ){
-			if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
-				return TRUE;
+			//if ( $this->last_total['timestamp'] > time() - ( $this->time_prosa * 60 ) )
+			/*	return TRUE;
 			if ( date('H') == 1 && date('i') < TIME_DB_UPDATE){
 				if ( date('d') == 1 ) {
 					if ( $this->last_total['timestamp'] < time() - ( $this->time_prosa * 60 ) ){
@@ -238,19 +322,19 @@ if ( !class_exists('Service')){
 			}else{
 				$flag = FALSE;
 				$when = time();
-			} 
+			} */
 			
-			$day_total = $this->get_day_total( date('d', $when) );
-			if ( $day_total ){
-				if ( $day_total > $this->last_total['total'] ){
-					$this->set_last_total( $day_total );
+			//$day_total = $this->get_day_total( date('d', $when) );
+			//if ( $day_total ){
+				if ( /*$day_total > $this->last_total['total']*/ $this->last_total['total'] > $this->last_total['pre_total'] ){
+					//$this->set_last_total( $day_total );
 					return TRUE;
 				} else{ 
 					return FALSE;
 				}
-			} else {
+			/*} else {
 				return FALSE;
-			}
+			}*/
 		} else {
 			return FALSE;
 		}

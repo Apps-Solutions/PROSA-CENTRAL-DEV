@@ -10,6 +10,7 @@ abstract class Service extends Object{
      * Service ID
      */
     public $id_service = '';
+    public $id_service2 = '';
 	 /**
      * Property: id_service
      * Service ID
@@ -66,8 +67,6 @@ abstract class Service extends Object{
      */
     protected $total_rejected = 0;
 	
-
-
 	/**
      * Property: description
      * 
@@ -86,7 +85,8 @@ abstract class Service extends Object{
      * 
      */
     public $last_total = FALSE;
-	
+	public $pre_total = 0;
+	public $date;
 	 /**
      * Property: db
      * 
@@ -108,8 +108,6 @@ abstract class Service extends Object{
 	 */
 	 public $top_rejected = array();
 	
-	 public $pre_total;
-	 public $date;	
 	/**
      * Constructor: __construct
      * 
@@ -140,7 +138,7 @@ abstract class Service extends Object{
 	
 	protected function get_last_total(){
 		global $obj_bd;
-		$query = "SELECT lt_total, lt_timestamp, lt_pre_total, lt_fecha FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service = :id_service ";
+		$query = "SELECT lt_total, lt_pre_total, lt_fecha, lt_timestamp FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service = :id_service ";
 		$result = $obj_bd->query( $query, array( ':id_service' => $this->id_service) );
 		if ( $result !== FALSE ){
 			$resp = array();
@@ -148,17 +146,18 @@ abstract class Service extends Object{
 				$resp['total']	 	= $result[0]['lt_total'];
 				$resp['timestamp'] 	= $result[0]['lt_timestamp'];
 				$resp['pre_total']  = $result[0]['lt_pre_total'];
-    			$resp['date']   = $result[0]['lt_fecha'];
-				
+				$resp['date'] 		= $result[0]['lt_fecha'];
 			} else {
 				$resp['total']	 	= 0;
 				$resp['timestamp'] 	= 0;
+				$resp['pre_total']  = 0;
+				$resp['date']		= '';
 			}
 			
 			$this->last_total 		= $resp['total'];
 			$this->last_timestamp 	= $resp['timestamp'];
-			$this->pre_total   = $resp['pre_total'];
-   			$this->date    = $resp['date'];
+			$this->pre_total 		= $resp['pre_total'];
+			$this->date 			= $resp['date'];
 			
 			return $resp;
 		} else {
@@ -204,6 +203,7 @@ abstract class Service extends Object{
 	
 	public function get_indicators_html(){
 		if ( count($this->indicators) > 0 ){
+			//print_r($this->indicators);
 			foreach ( $this->indicators as $k => $data ) {
 				/* 
 				<div class='indicator-content'>
@@ -334,7 +334,6 @@ abstract class Service extends Object{
 	
 	
 	
-
 	public function return_indicators_xls(){
 		 /**/
 	
@@ -375,7 +374,6 @@ abstract class Service extends Object{
 		}
 		
 	///return $this->indicators['total_transactions'];	
-
 $data = array(
     array("A" => $this->service, "B" => " ", 				"C" =>"Estado del Servicio",  "D"=>($this->state ? 'UP' : 'DOWN' ), "E"=>" ", "F"=>"Última actualización", "G"=>date('Y:m:d H:i:s', $this->last_timestamp)),
     array("A" => " ", 			 "B" => " ", 				"C" =>" ",  "D"=>" ", 												"E"=>" ", "F"=>" ", "G"=>" "),

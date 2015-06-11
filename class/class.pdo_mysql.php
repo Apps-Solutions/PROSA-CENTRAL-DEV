@@ -27,7 +27,7 @@ class PDOMySQL{
 	
 	function PDOMySQL($bd_host, $bd_user, $bd_password, $bd_data_base){
 		try {
-			$this->connection = new PDO("mysql:host=$bd_host;dbname=$bd_data_base", $bd_user, $bd_password);
+			$this->connection = new PDO("mysql:host=localhost;dbname=prosa_dev", 'root', 'root');
 		
 			$this->connection->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
 		} catch ( PDOException $e ){
