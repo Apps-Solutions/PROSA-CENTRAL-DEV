@@ -114,7 +114,7 @@ class POS extends Service {
 
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='emisor_pos' AND pcs_se_id_service=7";
 		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=7";
-	
+
 		$result = $obj_bd->query($query);
 		
 		$result2 = $obj_bd->query($query2);
@@ -131,7 +131,6 @@ class POS extends Service {
 
 				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
 				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
-		
 				$result = $obj_bd->query($query);
 				
 				$result2 = $obj_bd->query($query2);
@@ -151,7 +150,8 @@ class POS extends Service {
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 
-						$datos = $total['pcs_top_5_rejected'];					
+						$datos = $total['pcs_top_5_rejected'];
+
 						$datos2 = $total2['pcs_top_5_rejected'];
 
 						if (count($datos) > 0 && count($datos2) > 0) 

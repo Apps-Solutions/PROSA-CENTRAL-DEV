@@ -154,7 +154,8 @@ class PREA extends Service {
 						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
 						$this->indicators[0]['total_rejected'] = $total['pcs_total_rejected'];
 
-						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcprea_total_rejected'];
+
+						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcs_total_rejected'];
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_total_rejected'];
 

@@ -108,7 +108,7 @@ if ( !class_exists('Service')){
 
 		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_3d' AND pcs_se_id_service=5";
 		$query2 = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_ssl' AND pcs_se_id_service=5";
-		
+
 		$result = $obj_bd->query($query);
 		$result2 = $obj_bd->query($query2);
 
@@ -122,8 +122,9 @@ if ( !class_exists('Service')){
 				$this->id_service = $total['id'];
 				$this->id_service2 = $total2['id'];
 
-				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts =" . $this->id_service;
-				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts =" . $this->id_service2;
+				$query = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service;
+				$query2 = " SELECT * FROM " . PFX_MAIN_DB . "charts WHERE idpra_charts=" . $this->id_service2;
+
 
 				$result = $obj_bd->query($query);
 				$result2 = $obj_bd->query($query2);
@@ -137,11 +138,13 @@ if ( !class_exists('Service')){
 
 						$this->indicators[0]['total_transactions'] = $total['pcs_total_acepted'] + $total['pcs_total_rejected'];
 						$this->indicators[0]['total_accepted'] = $total['pcs_total_acepted'];
+
 						$this->indicators[0]['total_rejected'] = $total['pcs_rejected'];
 
 						$this->indicators[1]['total_transactions'] = $total2['pcs_total_acepted'] + $total2['pcs_total_rejected'];
 						$this->indicators[1]['total_accepted'] = $total2['pcs_total_acepted'];
 						$this->indicators[1]['total_rejected'] = $total2['pcs_rejected'];
+
 
 						$datos = $total['pcs_top_5_rejected'];
 						$datos2 = $total2['pcs_top_5_rejected'];
