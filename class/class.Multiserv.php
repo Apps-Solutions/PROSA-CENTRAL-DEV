@@ -74,9 +74,14 @@ class Multiserv extends Service {
 		$this->indicators[0]['name'] = "POS";
 		$this->indicators[0]['source'] = "Adquirente";
 		
-		$resp = $this->set_sellcom_service_totals();
+		$check=$this->get_pra_chart(9);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
 		
-		//$resp = $this->set_top_rejected();
+			$resp = $this->set_top_rejected();
+		}
 		
 	}
 
@@ -89,7 +94,7 @@ class Multiserv extends Service {
 		$this->indicators[0]['total_rejected'] = 0;
 
 
-		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_multiserv' AND pcs_se_id_service=9 ";		
+		$query = "SELECT MAX(idpra_charts) AS id FROM " . PFX_MAIN_DB . "charts WHERE pcs_type='adquirente_pos' AND pcs_se_id_service=9 ";		
 		$result = $obj_bd->query($query);
 
 		if($result !== FALSE)

@@ -72,10 +72,14 @@ if ( !class_exists('Service')){
 		$this->indicators[0]['name'] = "POS";
 		$this->indicators[0]['source'] = "Adquirente";
 		
-		$resp = $this->set_sellcom_service_totals();
+		$check=$this->get_pra_chart(6);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
 		
-		//$resp = $this->set_top_rejected();
-		
+			$resp = $this->set_top_rejected();
+		}
 	}
 
 	private function set_sellcom_service_totals()

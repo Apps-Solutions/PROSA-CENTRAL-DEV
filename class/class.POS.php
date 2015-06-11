@@ -86,10 +86,16 @@ class POS extends Service {
 		$this->indicators[1]['total_transactions'] = 0;
 		$this->indicators[1]['total_accepted'] = 0;
 		$this->indicators[1]['total_rejected'] = 0;
+
+		$check=$this->get_pra_chart(7);
+		if($check===TRUE){
+		  
+		 	$resp = $this->set_sellcom_service_totals(); 
+		}else{
 		
-		$resp = $this->set_sellcom_service_totals(); 
-		//$resp = $this->set_top_rejected();
-		
+			$resp = $this->set_top_rejected();
+		}
+
 	}
 	
 	private function set_sellcom_service_totals()
