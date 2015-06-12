@@ -421,7 +421,7 @@ $data = array(
 	$values=array(
 					":service" => $service,
 					":timea"   => time(),
-					":timeb"   => strtotime ( '-10 minute' , time() ) ,					
+					":timeb"   => strtotime ( '-11 minute' , time() ) ,					
 				 );
 	$query="SELECT * FROM " . PFX_MAIN_DB . "charts WHERE pcs_se_id_service=:service AND pcs_timestamp BETWEEN :timeb AND :timea";
 	$result = $obj_bd->query($query, $values);
@@ -431,6 +431,80 @@ $data = array(
 			return FALSE;
 		}
 	}
+
+	public function insert_info_charts($indicators)
+	{
+		global $obj_bd; //echo 'si';
+		$id_service=explode("s",$_REQUEST['command']);
+		$val=$indicators;		  
+		$top_5=array();
+		$datatop=array();
+
+		for ($i=0; $i <= count($val)-1; $i++) 
+		{ 
+			foreach ($val[$i] as $key => $value) 
+			{   
+				foreach($value as $k => $data){
+				       	
+				    if ($i===0) 
+				    {				       	
+			        	$string1.=$data['code'].",".$data['motive']." ,".$data['total'].",";
+			        	
+			        	$values=array(
+			        		":total_acepted"   => $val[$i]['total_accepted'],
+			        		":total_rejected"  => $val[$i]['total_rejected'],
+			        		":top_5_rejected"  => $string1,
+			        		":id_service"  => $id_service[1],
+			        		":service_status"  => "UP",
+			        		":type"  => strtolower($val[$i]['source'].'_'.$val[$i]['name']),
+			        		":timestamp" => time()
+			      		); 
+			      		
+				    }
+				    elseif($i===1)
+				    {
+			         	$string2.=$data['code'].",".$data['motive']." ,".$data['total'].",";
+			         	
+			         	$values2=array(
+			        		":total_acepted"   => $val[$i]['total_accepted'],
+			        		":total_rejected"  => $val[$i]['total_rejected'],
+			        		":top_5_rejected"  => $string2,
+			        		":id_service"  => $id_service[1],
+			        		":service_status"  => "UP",
+			        		":type"  => strtolower($val[$i]['source'].'_'.$val[$i]['name']),
+			        		":timestamp" => time()
+			      		); 
+
+			      		
+				    }
+				    
+				}
+				
+			}
+		}  
+		$this->insert_true($values);
+		$this->insert_true($values2);
+		  
+ }
+
+ public function insert_true($datos)
+ {
+ 	global $obj_bd;
+
+ 	$query="INSERT INTO pra_charts (pcs_total_acepted, pcs_total_rejected, pcs_top_5_rejected, pcs_se_id_service, pcs_service_status, pcs_type, pcs_timestamp)". 
+		    " VALUES(:total_acepted, :total_rejected, :top_5_rejected, :id_service, :service_status, :type, :timestamp)";
+		 
+	$result = $obj_bd->query($query, $datos);
+		  
+	if(count($result)>0)
+	{
+		return TRUE;
+	}
+	else
+	{
+		return FALSE;
+ 	}
+}
 
 }
 ?>

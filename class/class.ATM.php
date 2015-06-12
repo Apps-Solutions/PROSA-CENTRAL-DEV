@@ -76,7 +76,7 @@ class ATM extends Service {
 		  
 		 	$resp = $this->set_sellcom_service_totals(); 
 		}else{
-		
+			$resp = $this->set_service_totals();
 			$resp = $this->set_top_rejected();
 		}
 		
