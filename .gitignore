@@ -1,4 +1,4 @@
-recursos
+﻿recursos
 
 .project
 
@@ -19,5 +19,7 @@ gfx/Sin título-5.fw.png
 certificados_pem/server_certificates_bundle_production.p12
 
 certificados_pem/entrust_root_certification_authority.pem
-
+class/pdo_mysql.php
+config/config.php
+log/pra_log
 *.p12

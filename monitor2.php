@@ -14,16 +14,16 @@ include_once(DIRECTORY_CLASS  . 'class.oracle_db.php');
 include_once DIRECTORY_CLASS .  "class.ldap.php";
 
 require_once DIRECTORY_CLASS . 'class.service.php';
-require_once DIRECTORY_CLASS . 'class.PagosDiferidos.php';
-require_once DIRECTORY_CLASS . 'class.PREA.php';
-require_once DIRECTORY_CLASS . 'class.Payware.php';
-require_once DIRECTORY_CLASS . 'class.SwitchAbierto.php';
-require_once DIRECTORY_CLASS . 'class.PROCOM.php';
-require_once DIRECTORY_CLASS . 'class.CargosAutomaticos.php';
-require_once DIRECTORY_CLASS . 'class.POS.php';
-require_once DIRECTORY_CLASS . 'class.ATM.php';
-require_once DIRECTORY_CLASS . 'class.Multiserv.php';
-require_once DIRECTORY_CLASS . 'class.SMS.php';
+require_once DIRECTORY_CLASS . 'class.admin.PagosDiferidos.php';
+require_once DIRECTORY_CLASS . 'class.admin.PREA.php';
+require_once DIRECTORY_CLASS . 'class.admin.Payware.php';
+require_once DIRECTORY_CLASS . 'class.admin.SwitchAbierto.php';
+require_once DIRECTORY_CLASS . 'class.admin.PROCOM.php';
+require_once DIRECTORY_CLASS . 'class.admin.CargosAutomaticos.php';
+require_once DIRECTORY_CLASS . 'class.admin.POS.php';
+require_once DIRECTORY_CLASS . 'class.admin.ATM.php';
+require_once DIRECTORY_CLASS . 'class.admin.Multiserv.php';
+require_once DIRECTORY_CLASS . 'class.admin.SMS.php';
 require_once DIRECTORY_CLASS . "class.notification.php";
 
 require_once DIRECTORY_CLASS . "class.agenda.php";
@@ -206,16 +206,16 @@ foreach ($services as $k => $srv) {
 	foreach ($clients as $j => $cli) {
 		
 		switch ( $ids ) {
-			case 1: $Service = new PagosDiferidos( $cli['ID_CLIENT'] ); break; 
-			case 2: $Service = new PREA( $cli['ID_CLIENT']  ); 			break; 
-			case 3: $Service = new Payware( $cli['ID_CLIENT']  ); 		break; 
-			case 4: $Service = new SwitchAbierto( $cli['ID_CLIENT']  ); break; 
-			case 5: $Service = new PROCOM( $cli['ID_CLIENT']  ); 		break; 
-			case 6: $Service = new CargosAutomaticos( $cli['ID_CLIENT']  ); break; 
-			case 7: $Service = new POS( $cli['ID_CLIENT']  ); 			break; 
-			case 8: $Service = new ATM( $cli['ID_CLIENT']  ); 			break; 
-			case 9: $Service = new Multiserv( $cli['ID_CLIENT']  ); 	break; 
-			case 10: $Service = new SMS( $cli['ID_CLIENT']  ); 			break; 
+			case 1: $Service = new AdminPagosDiferidos( $cli['ID_CLIENT'] ); break; 
+			case 2: $Service = new AdminPREA( $cli['ID_CLIENT']  ); 			break; 
+			case 3: $Service = new AdminPayware( $cli['ID_CLIENT']  ); 		break; 
+			case 4: $Service = new AdminSwitchAbierto( $cli['ID_CLIENT']  ); break; 
+			case 5: $Service = new AdminPROCOM( $cli['ID_CLIENT']  ); 		break; 
+			case 6: $Service = new AdminCargosAutomaticos( $cli['ID_CLIENT']  ); break; 
+			case 7: $Service = new AdminPOS( $cli['ID_CLIENT']  ); 			break; 
+			case 8: $Service = new AdminATM( $cli['ID_CLIENT']  ); 			break; 
+			case 9: $Service = new AdminMultiserv( $cli['ID_CLIENT']  ); 	break; 
+			case 10: $Service = new AdminSMS( $cli['ID_CLIENT']  ); 			break; 
 		}
 		
 		$sendto = array(); 
