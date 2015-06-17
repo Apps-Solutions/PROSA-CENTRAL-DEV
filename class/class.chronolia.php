@@ -10,6 +10,19 @@
 	public function __construct() {    
     	$this->db = new PDOMySQL(); 
 	}
+	
+	public function run_all(){
+		$this->insert_POS();
+		$this->insert_ATM();
+		$this->insert_multiserv();
+		$this->insert_pagos_diferidos();
+		$this->insert_payware();
+		$this->insert_prea();
+		$this->insert_procom();
+		$this->insert_SMS();
+		$this->insert_switch();
+		return TRUE;
+	}
 
 	//Inserta datos en el Servicio de POS S7
 	public function insert_POS(){
@@ -53,8 +66,7 @@
 		$query = "INSERT INTO ". PFX_SRV_DB . "TBL_MON_HORA_ATM_NAC (DIA, TOTAL, LN_TARJ, CODIGO_RESPUESTA) ".
 				 "VALUES(:dia, :total, :tarj, :code";
 		$result = $obj_bd->query( $query, $values );
-		print_r($values);
-		echo $query; 
+		
 		$query1 = "INSERT INTO ". PFX_SRV_DB . "TBL_MON_HORA_ATM_INT (DIA, TOTAL, LN_TARJ, CODIGO_RESPUESTA) ".
 				 "VALUES(:dia, :total, :tarj, :code)";
 		$result1 = $obj_bd->query( $query1, $values2 );
