@@ -90,7 +90,8 @@ class AdminPOS extends Service {
 			$resp = $this->set_service_totals();
 			$resp = $this->set_top_rejected();
 			$value = $this->indicators;
-			$resp = $this->insert_info_charts($value);
+			//$resp = $this->insert_info_charts($value);
+			$resp = $this->insert_old_last_total($value);
 
 	}
 	

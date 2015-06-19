@@ -17,12 +17,12 @@ require_once DIRECTORY_CLASS . 'class.service.php';
 require_once DIRECTORY_CLASS . 'class.admin.PagosDiferidos.php';
 require_once DIRECTORY_CLASS . 'class.admin.PREA.php';
 require_once DIRECTORY_CLASS . 'class.admin.Payware.php';
-require_once DIRECTORY_CLASS . 'class.admin.SwitchAbierto.php';
+require_once DIRECTORY_CLASS . 'class.admin.switch.php';
 require_once DIRECTORY_CLASS . 'class.admin.PROCOM.php';
-require_once DIRECTORY_CLASS . 'class.admin.CargosAutomaticos.php';
-require_once DIRECTORY_CLASS . 'class.admin.POS.php';
-require_once DIRECTORY_CLASS . 'class.admin.ATM.php';
-require_once DIRECTORY_CLASS . 'class.admin.Multiserv.php';
+require_once DIRECTORY_CLASS . 'class.admin.cargosautomaticos.php';
+require_once DIRECTORY_CLASS . 'class.admin.pos.php';
+require_once DIRECTORY_CLASS . 'class.admin.atm.php';
+require_once DIRECTORY_CLASS . 'class.admin.multiserv.php';
 require_once DIRECTORY_CLASS . 'class.admin.SMS.php';
 require_once DIRECTORY_CLASS . "class.notification.php";
 

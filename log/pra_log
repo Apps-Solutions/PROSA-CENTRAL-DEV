@@ -1446,3 +1446,8 @@
 [2015-06-12 12:49:32] lol @ ::1:  ERROR @ Class ATM No se obtunvieron valores del servicio para top rechazados ADQ  .
 [2015-06-12 12:49:36] lol @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio .
 [2015-06-12 12:49:36] lol @ ::1:  ERROR @ Class CargosAutomaticos No se obtunvieron valores del servicio para top rechazados  .
+[2015-06-15 13:22:51] lol @ ::1:  MSG @ Class Session: Login successful user lol.
+[2015-06-16 09:59:50] lol @ ::1:  MSG @ Class Session: Login successful user lol.
+[2015-06-16 10:40:24] lol @ ::1:  MSG @ Class Session: Login successful user lol.
+[2015-06-16 12:24:39] lol @ ::1:  ERROR @ Class LDAP: No LDAP Support on server.
+[2015-06-19 08:56:49] jeje @ ::1:  MSG @ Class Session: Login successful user jeje.
