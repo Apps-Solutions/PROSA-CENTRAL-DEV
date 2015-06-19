@@ -139,7 +139,7 @@ abstract class Service extends Object{
 	
 	protected function get_last_total(){
 		global $obj_bd;
-		$query = " SELECT MAX(id_last_total) AS id FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service=" . $this->id_service;
+		$query = " SELECT MAX(id_last_total) AS id FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service=" . $this->id_service;		
 		$result = $obj_bd->query($query);
 
 		if ($result !== FALSE) 
@@ -150,6 +150,7 @@ abstract class Service extends Object{
 				$this->id_last_total = $total['id'];
 					
 				$query = "SELECT lt_total, lt_pre_total, lt_fecha, lt_timestamp FROM " . PFX_MAIN_DB . "last_total WHERE lt_se_id_service = :id_service AND id_last_total= :id_last_total ";
+				
 				$result = $obj_bd->query( $query, array( ':id_service' => $this->id_service, ':id_last_total' => $this->id_last_total) );
 				//var_dump($this->id_last_total);
 				if ( $result !== FALSE ){
@@ -334,7 +335,7 @@ abstract class Service extends Object{
 			if ( $result !== FALSE){ 
 				if ( count($result) > 0 ){
 					$info = $result[0];
-					$this->client_code = $info['CL_CODE'];
+					$this->client_code = $info['cl_code'];
 					return TRUE;
 				} else {
 					$this->set_error("No se pudo obtener el código del cliente ( $this->id_client ).", ERR_DB_QRY );
@@ -491,8 +492,31 @@ $data = array(
  {
  	global $obj_bd;
 
- 	$query="INSERT INTO pra_charts (pcs_total_acepted, pcs_total_rejected, pcs_top_5_rejected, pcs_se_id_service, pcs_service_status, pcs_type, pcs_timestamp)". 
+ 	$query="INSERT INTO " . PFX_MAIN_DB . "charts (pcs_total_acepted, pcs_total_rejected, pcs_top_5_rejected, pcs_se_id_service, pcs_service_status, pcs_type, pcs_timestamp)". 
 		    " VALUES(:total_acepted, :total_rejected, :top_5_rejected, :id_service, :service_status, :type, :timestamp)";
+		 
+	$result = $obj_bd->query($query, $datos);
+		  
+	if(count($result)>0)
+	{
+		return TRUE;
+	}
+	else
+	{
+		return FALSE;
+ 	}
+}
+ 
+ public function insert_old_last_total($id_service){
+ 	global $obj_bd;
+	
+	$query0="SELECT x.id_last_total, x.lt_total FROM (SELECT * FROM pra_last_total ORDER BY lt_se_id_service  DESC) AS x WHERE lt_se_id_service=:id_service GROUP BY lt_se_id_service";
+	$result0 = $obj_bd->query($query0, array(":id_service"=> $id_service));
+	
+	echo $result0[0]['lt_total'];	
+
+ 	$query="INSERT INTO " . PFX_MAIN_DB . "last_total (lt_se_id_service, lt_total, lt_pre_total, lt_fecha, lt_timestamp)". 
+		    " VALUES(:lt_se_id_service, :lt_total, :lt_pre_total, :lt_fecha, :lt_timestamp)";
 		 
 	$result = $obj_bd->query($query, $datos);
 		  
