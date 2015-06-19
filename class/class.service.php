@@ -433,6 +433,8 @@ $data = array(
 		}
 	}
 
+	//insert_old_last_total();
+
 	public function insert_info_charts($indicators)
 	{
 		global $obj_bd; //echo 'si';
