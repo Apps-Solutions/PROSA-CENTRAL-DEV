@@ -23,7 +23,7 @@ require_once DIRECTORY_CLASS . 'class.admin.cargosautomaticos.php';
 require_once DIRECTORY_CLASS . 'class.admin.pos.php';
 require_once DIRECTORY_CLASS . 'class.admin.atm.php';
 require_once DIRECTORY_CLASS . 'class.admin.multiserv.php';
-require_once DIRECTORY_CLASS . 'class.admin.SMS.php';
+require_once DIRECTORY_CLASS . 'class.SMS.php';
 require_once DIRECTORY_CLASS . "class.notification.php";
 
 require_once DIRECTORY_CLASS . "class.agenda.php";
@@ -215,7 +215,7 @@ foreach ($services as $k => $srv) {
 			case 7: $Service = new AdminPOS( $cli['ID_CLIENT']  ); 			break; 
 			case 8: $Service = new AdminATM( $cli['ID_CLIENT']  ); 			break; 
 			case 9: $Service = new AdminMultiserv( $cli['ID_CLIENT']  ); 	break; 
-			case 10: $Service = new AdminSMS( $cli['ID_CLIENT']  ); 			break; 
+			case 10: $Service = new SMS( $cli['ID_CLIENT']  ); 			break; 
 		}
 		
 		$sendto = array(); 
