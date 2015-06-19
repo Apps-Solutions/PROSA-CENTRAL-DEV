@@ -76,7 +76,7 @@ class AdminATM extends Service {
 			$resp = $this->set_top_rejected();
 			$value = $this->indicators;
 			//$resp = $this->insert_info_charts($value);
-			$resp = $this->insert_old_last_total($value);
+			$resp = $this->insert_old_last_total($id_service=8, $value );
 
 	}
 	
