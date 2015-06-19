@@ -513,7 +513,7 @@ $data = array(
  	
  	global $obj_bd;
 	
-	$query0="SELECT x.id_last_total, x.lt_total FROM (SELECT * FROM pra_last_total ORDER BY lt_se_id_service  DESC) AS x WHERE lt_se_id_service=:id_service GROUP BY lt_se_id_service";
+	$query0="SELECT x.id_last_total, x.lt_total FROM (SELECT * FROM " . PFX_MAIN_DB . "last_total ORDER BY lt_se_id_service  DESC) AS x WHERE lt_se_id_service=:id_service GROUP BY lt_se_id_service";
 	$result0 = $obj_bd->query($query0, array(":id_service"=> $id_service));
 	
 	$lt_total=$result0[0]['lt_total'];
