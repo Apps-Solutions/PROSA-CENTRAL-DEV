@@ -64,6 +64,12 @@ $tokenapple="ebd345021f5ef663b58d7cd05ee6c92dd2646a02042df5eded4167e4eccf0ccd";
 			"user" 		=> $user			
 		);
 		break;
+		case 'chronolia':
+		$curl_post_data = array(
+			"request"	=> 'chronolia',
+			"user" 		=> $user			
+		);
+		break;
 	/**/default:
 		$curl_post_data = array(
 			"request"	=> 'login',

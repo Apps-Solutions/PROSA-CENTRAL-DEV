@@ -457,5 +457,21 @@ class prosaApi extends api{
 			return FALSE;
 		}
 	}	
+	
+	protected function chronolia(){
+		global $obj_bd; 
+		require_once 'class.chronolia.php';
+		$chronolia=new Chronolia ();
+		
+		$result=$chronolia->run_all();
+		
+		
+		if ( $result !== FALSE ){
+			return $result[0]['id_client'];
+		} else {
+			$this->set_error("Ocurrió un error al obtener el ID del Cliente del usuario ( " . $this->user . " ).", ERR_DB_QRY);
+			return FALSE;
+		}
+	}
 }
 ?>
